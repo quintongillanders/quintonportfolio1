@@ -9,7 +9,7 @@ function App() {
 
         <div className="hero-top">
           <img
-            src="/me.jpg.png"
+            src="/me.png"
             alt="Quinton Gillanders"
             className="hero-avatar"
           />

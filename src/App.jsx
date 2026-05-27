@@ -1,5 +1,10 @@
 import "./App.css";
 
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PhoneIcon from "@mui/icons-material/Phone";
+
 function App() {
   return (
     <div className="app">
@@ -37,112 +42,113 @@ function App() {
           Recently completed a capstone project developing the SchoolHIVE Marketplace NZ platform
           as part of a collaborative team. Experienced in building responsive user interfaces using
           React.js, CSS, and MUI. Strong problem-solving skills with experience working in structured
-          team environments and meeting project deadlines. What excites me about front-end
-          development is building user interfaces from concept to completion and seeing ideas
-          transformed into functional, responsive applications.
+          team environments and meeting project deadlines.
         </p>
       </section>
 
       {/* PROJECTS */}
-        <section id="projects" className="projects">
-          <h2>Projects</h2>
+      <section id="projects" className="projects">
+        <h2>Projects</h2>
 
-          <div className="project-grid">
+        <div className="project-grid">
 
-            {/* SCHOOLHIVE CARD */}
-            <div className="card small-card">
-
-              <div className="card-image">
-                <img
-                  src="/schoolhive.png"
-                  alt="SchoolHive project"
-                />
-              </div>
-
-              <div className="card-content">
-                <h3>SchoolHive Marketplace</h3>
-
-                <p>
-                  Built as part of my Unitec Capstone Project using React, Firebase, Material UI and JavaScript. (July 2025 - November 2025)
-                  Collaborated with 2 other students to design and develop the platform, implementing features such as user authentication, and product listings.
-                  The project was completed on time and received positive feedback for its user-friendly interface and functionality.
-                  It was also featured on the Unitec website, as well as media outlets such as RNZ.
-                </p>
-
-                <a
-                  href="https://www.schoolhive.co.nz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  View Website →
-                </a>
-              </div>
+          {/* SCHOOLHIVE */}
+          <div className="card small-card">
+            <div className="card-image">
+              <img src="/schoolhive.png" alt="SchoolHive project" />
             </div>
 
-            {/* HAZARD ID CARD */}
-            <div className="card small-card">
+            <div className="card-content">
+              <h3>SchoolHive Marketplace</h3>
 
-              <div className="card-image">
-                <img
-                  src="/hazardid.png.avif"
-                  alt="Hazard ID project"
-                />
-              </div>
+              <p>
+                Built as part of my Unitec Capstone Project using React, Firebase,
+                Material UI, and JavaScript (2025). Developed a responsive marketplace
+                platform with user authentication and product listings alongside two students.
+                Featured on the Unitec website and RNZ.
+              </p>
 
-              <div className="card-content">
-                <h3>Hazard ID</h3>
-
-                <p>
-                  A hazard identification and tracking tool built to help streamline safety reporting and risk management workflows.
-                  Designed and developed as a personal project with real-world application use cases in mind.
-                </p>
-
-                <a
-                  href="#"
-                  className="project-link"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  More details coming soon →
-                </a>
-              </div>
+              <a
+                href="https://www.schoolhive.co.nz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                View Website →
+              </a>
             </div>
-
           </div>
-        </section>
+
+          {/* HAZARD ID */}
+          <div className="card small-card">
+            <div className="card-image">
+              <img src="/hazardid.png.avif" alt="Hazard ID project" />
+            </div>
+
+            <div className="card-content">
+              <h3>Hazard ID</h3>
+
+              <p>
+                A hazard identification and tracking tool built to help streamline
+                safety reporting and risk management workflows.
+              </p>
+
+              <a
+                href="#"
+                className="project-link"
+                onClick={(e) => e.preventDefault()}
+              >
+                More details coming soon →
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
       {/* CONTACT */}
       <section id="contact" className="contact">
         <h2>Contact</h2>
 
-        <p>
-          Email:{" "}
-          <a href="mailto:quingillanders@gmail.com">
-            quingillanders@gmail.com
-          </a>
-        </p>
+        <ul className="contact-links">
 
-        <p>
-          GitHub:{" "}
-          <a
-            href="https://github.com/quintongillanders"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github.com/quintongillanders
-          </a>
-        </p>
+          <li>
+            <a href="mailto:quingillanders@gmail.com">
+              <EmailIcon />
+              <span>quingillanders@gmail.com</span>
+            </a>
+          </li>
 
-        <p>
-          LinkedIn:{" "}
-          <a
-            href="https://www.linkedin.com/in/quinton-gillanders-335985297/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            linkedin.com/in/quinton-gillanders
-          </a>
-        </p>
+          <li>
+            <a href="tel:+64221604203">
+              <PhoneIcon />
+              <span>+64 22 160 4203</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/quintongillanders"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon />
+              <span>GitHub</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/quinton-gillanders-335985297/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+
+        </ul>
       </section>
 
     </div>

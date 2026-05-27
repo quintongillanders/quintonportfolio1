@@ -224,3 +224,40 @@ h2 {
     padding: 90px 6%;
   }
 }
+
+/* CONTACT LIST */
+.contact-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 30px;
+  padding: 0;
+  align-items: center;
+}
+
+.contact-links li {
+  width: fit-content;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 1.05rem;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.contact-links a:hover {
+  background: rgba(79, 70, 229, 0.08);
+  transform: translateY(-2px);
+}
+
+.contact-links svg {
+  color: #4f46e5;
+  font-size: 1.3rem;
+}

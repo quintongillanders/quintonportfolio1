@@ -1,4 +1,3 @@
-
 /* RESET */
 * {
   margin: 0;
@@ -11,13 +10,13 @@ html, body {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
-  background: #f5f7ff;
+  background: #0b1220;
 }
 
 /* BODY */
 body {
-  background: #f5f7ff;
-  color: #1f2937;
+  background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
+  color: #e5e7eb;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
@@ -27,13 +26,13 @@ body {
 .app {
   width: 100%;
   min-height: 100vh;
-  background: #f5f7ff;
+  background: transparent;
 }
 
 /* SECTIONS */
 section {
   padding: 120px 8%;
-  background: #f5f7ff;
+  background: transparent;
 }
 
 /* HERO */
@@ -45,7 +44,6 @@ section {
   align-items: center;
   gap: 20px;
   text-align: center;
-  background: #f5f7ff;
 }
 
 .hero-top {
@@ -56,23 +54,23 @@ section {
 }
 
 .hero-avatar {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #686767;
-  box-shadow: 0 0 0 6px rgba(79, 70, 229, 0.15);
+  border: 3px solid #6366f1;
+  box-shadow: 0 0 0 8px rgba(99, 102, 241, 0.15);
 }
 
 .hero h1 {
   font-size: 4rem;
   font-weight: 700;
-  color: #111827;
+  color: #f8fafc;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #070707;
+  color: #cbd5e1;
   max-width: 650px;
 }
 
@@ -82,14 +80,14 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #080808;
+  color: #cbd5e1;
   text-decoration: none;
 }
 
 .arrow {
   font-size: 2rem;
   animation: bounce 1.5s infinite;
-  color: #4f46e5;
+  color: #6366f1;
 }
 
 @keyframes bounce {
@@ -101,21 +99,21 @@ section {
 h2 {
   font-size: 2.2rem;
   margin-bottom: 50px;
-  color: #111827;
+  color: #f8fafc;
 }
 
 /* TEXT */
 .about p,
 .contact p {
   font-size: 1.1rem;
-  color: #4b5563;
+  color: #94a3b8;
   max-width: 800px;
   margin: 0 auto 18px auto;
 }
 
 /* LINKS */
 .contact a {
-  color: #e55e46;
+  color: #f97316;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -137,16 +135,17 @@ h2 {
    CARD
 ========================= */
 .card {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.04);
   width: 100%;
   max-width: 420px;
   border-radius: 16px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   overflow: hidden;
-  transition: 0.2s ease;
+  transition: 0.25s ease;
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(10px);
 }
 
 /* IMAGE */
@@ -174,13 +173,13 @@ h2 {
 .card h3 {
   font-size: 1.2rem;
   margin: 0;
-  color: #111827;
+  color: #f8fafc;
 }
 
 /* TEXT */
 .card p {
   margin: 0;
-  color: #4b5563;
+  color: #94a3b8;
   line-height: 1.5;
   font-size: 0.95rem;
 }
@@ -190,20 +189,20 @@ h2 {
   margin-top: 6px;
   font-weight: 600;
   font-size: 0.95rem;
-  color: #4f46e5;
+  color: #6366f1;
   text-decoration: none;
 }
 
 .project-link:hover {
-  color: #3730a3;
+  color: #a78bfa;
   text-decoration: underline;
 }
 
 /* HOVER */
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(79, 70, 229, 0.15);
-  border-color: #e0e7ff;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(99, 102, 241, 0.2);
+  border-color: rgba(99, 102, 241, 0.4);
 }
 
 /* MOBILE */
@@ -245,7 +244,7 @@ h2 {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: #1f2937;
+  color: #e2e8f0;
   font-size: 1.05rem;
   padding: 10px 14px;
   border-radius: 10px;
@@ -253,11 +252,11 @@ h2 {
 }
 
 .contact-links a:hover {
-  background: rgba(79, 70, 229, 0.08);
+  background: rgba(99, 102, 241, 0.12);
   transform: translateY(-2px);
 }
 
 .contact-links svg {
-  color: #4f46e5;
+  color: #6366f1;
   font-size: 1.3rem;
 }

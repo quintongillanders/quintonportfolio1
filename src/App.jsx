@@ -65,65 +65,91 @@ function App() {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="projects">
-        <h2>Projects</h2>
+        <section id="projects" className="projects">
+          <h2>Projects</h2>
 
-        <div className="project-grid">
+          <div className="project-grid">
 
-          {/* SCHOOLHIVE */}
-          <div className="card">
-            <div className="card-image">
-              <img src="/schoolhive.png" alt="SchoolHive project" />
+            {/* SCHOOLHIVE */}
+            <div className="card">
+              <div className="card-image">
+                <img src="/schoolhive.png" alt="SchoolHive project" />
+              </div>
+
+              <div className="card-content">
+                <h3>SchoolHive Marketplace (2025)</h3>
+
+                <p>
+                  Built as part of my Unitec Capstone Project using React,
+                  Firebase, Material UI, and JavaScript (2025). Developed a
+                  responsive marketplace platform with user authentication and
+                  product listings alongside two students. Featured on the
+                  Unitec website and RNZ.
+                </p>
+
+                <a
+                  href="https://www.schoolhive.co.nz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  View Website →
+                </a>
+              </div>
             </div>
 
-            <div className="card-content">
-              <h3>SchoolHive Marketplace</h3>
+            {/* HAZARD ID */}
+            <div className="card">
+              <div className="card-image">
+                <img src="/hazardid.png.avif" alt="Hazard ID project" />
+              </div>
 
-              <p>
-                Built as part of my Unitec Capstone Project using React,
-                Firebase, Material UI, and JavaScript (2025). Developed a
-                responsive marketplace platform with user authentication and
-                product listings alongside two students. Featured on the
-                Unitec website and RNZ.
-              </p>
+              <div className="card-content">
+                <h3>Hazard ID (2026)</h3>
 
-              <a
-                href="https://www.schoolhive.co.nz/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                View Website →
-              </a>
+                <p>
+                  A hazard identification and tracking tool built to help streamline
+                  safety reporting and risk management workflows. Coming soon!
+                </p>
+
+                <a
+                  href="#"
+                  className="project-link"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  More details coming soon →
+                </a>
+              </div>
             </div>
+
+            {/* WEB GAME */}
+            <div className="card">
+              <div className="card-image">
+                <img src="/6420 web dev assignment.png" alt="Web Game project" />
+              </div>
+
+              <div className="card-content">
+                <h3>Worm Catching Game (2024)</h3>
+
+                <p>
+                  A browser-based game built using JavaScript, HTML and CSS as part of
+                  a web development assignment for my Bachelor of Computing Systems at
+                  Unitec in early 2024. It was a great learning experience for building
+                  interactive gameplay and improving my JavaScript skills.
+                </p>
+
+                <a
+                  href="#"
+                  className="project-link"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Play Game →
+                </a>
+              </div>
+            </div>
+
           </div>
-
-          {/* HAZARD ID */}
-          <div className="card">
-            <div className="card-image">
-              <img src="/hazardid.png.avif" alt="Hazard ID project" />
-            </div>
-
-            <div className="card-content">
-              <h3>Hazard ID</h3>
-
-              <p>
-                A hazard identification and tracking tool built to help
-                streamline safety reporting and risk management workflows.
-              </p>
-
-              <a
-                href="#"
-                className="project-link"
-                onClick={(e) => e.preventDefault()}
-              >
-                More details coming soon →
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </section>
+        </section>
 
       {/* GITHUB */}
       <section className="github">

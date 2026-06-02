@@ -119,16 +119,15 @@ h2 {
 }
 
 /* =========================
-   PROJECT GRID (2x2 CLEAN)
+   PROJECT GRID (FIXED CLEAN ROW LAYOUT)
 ========================= */
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 40px auto 0 auto;
-  justify-items: center;
-  align-items: stretch;
 }
 
 /* =========================
@@ -207,10 +206,6 @@ h2 {
 
 /* MOBILE */
 @media (max-width: 900px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
   .card {
     max-width: 100%;
   }
@@ -224,7 +219,7 @@ h2 {
   }
 }
 
-/* CONTACT LIST */
+/* CONTACT */
 .contact-links {
   list-style: none;
   display: flex;
@@ -264,7 +259,6 @@ h2 {
 /* =========================
    TECHNOLOGIES
 ========================= */
-
 .skills {
   text-align: center;
 }
@@ -296,7 +290,6 @@ h2 {
 /* =========================
    GITHUB
 ========================= */
-
 .github {
   text-align: center;
 }

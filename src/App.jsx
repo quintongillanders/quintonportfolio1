@@ -123,31 +123,31 @@ function App() {
             </div>
 
             {/* WEB GAME */}
-            <div className="card">
-              <div className="card-image">
-                <img src="/6420 web dev assignment.png" alt="Web Game project" />
+              <div className="card">
+                <div className="card-image">
+                  <img src="/6420 web dev assignment.png" alt="Web Game project" />
+                </div>
+
+                <div className="card-content">
+                  <h3>Worm Catching Game (2024)</h3>
+
+                  <p>
+                    A browser-based game built using JavaScript, HTML and CSS as part of
+                    a web development assignment for my Bachelor of Computing Systems at
+                    Unitec in early 2024. It was a great learning experience for building
+                    interactive gameplay and improving my JavaScript skills.
+                  </p>
+
+                  <a
+                    href="https://quintongillanders.github.io/wormcatchinggame.github.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    Play Game →
+                  </a>
+                </div>
               </div>
-
-              <div className="card-content">
-                <h3>Worm Catching Game (2024)</h3>
-
-                <p>
-                  A browser-based game built using JavaScript, HTML and CSS as part of
-                  a web development assignment for my Bachelor of Computing Systems at
-                  Unitec in early 2024. It was a great learning experience for building
-                  interactive gameplay and improving my JavaScript skills.
-                </p>
-
-                <a
-                  href="#"
-                  className="project-link"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Play Game →
-                </a>
-              </div>
-            </div>
-
           </div>
         </section>
 

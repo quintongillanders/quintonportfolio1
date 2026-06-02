@@ -87,16 +87,26 @@ function App() {
                   Unitec website and RNZ.
                 </p>
 
-                <a
-                  href="https://www.schoolhive.co.nz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  View Website →
-                </a>
+                <div className="project-buttons">
+                  <a
+                    href="https://www.schoolhive.co.nz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    View Website 
+                  </a>
+
+                  <a
+                    href="/schoolhive"
+                    className="project-link secondary"
+                  >
+                    Learn More 
+                  </a>
+               </div>
               </div>
             </div>
+
 
             {/* HAZARD ID */}
             <div className="card">
@@ -117,7 +127,7 @@ function App() {
                   className="project-link"
                   onClick={(e) => e.preventDefault()}
                 >
-                  More details coming soon →
+                  More details coming soon
                 </a>
               </div>
             </div>
@@ -144,7 +154,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="project-link"
                   >
-                    Play Game →
+                    Play Game
                   </a>
                 </div>
               </div>

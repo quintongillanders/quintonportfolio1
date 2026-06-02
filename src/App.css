@@ -315,3 +315,11 @@ h2 {
   width: 100%;
   height: auto;
 }
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}

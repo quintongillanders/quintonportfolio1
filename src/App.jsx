@@ -38,12 +38,30 @@ function App() {
         <h2>About Me</h2>
 
         <p>
-          Front-end focused software developer with a Bachelor of Computing Systems (2025).
-          Recently completed a capstone project developing the SchoolHIVE Marketplace NZ platform
-          as part of a collaborative team. Experienced in building responsive user interfaces using
-          React.js, CSS, and MUI. Strong problem-solving skills with experience working in structured
-          team environments and meeting project deadlines.
+          Front-end focused software developer with a Bachelor of Computing
+          Systems (2025). Recently completed a capstone project developing
+          the SchoolHIVE Marketplace NZ platform as part of a collaborative
+          team. Experienced in building responsive user interfaces using
+          React.js, CSS, and MUI. Strong problem-solving skills with
+          experience working in structured team environments and meeting
+          project deadlines.
         </p>
+      </section>
+
+      {/* TECHNOLOGIES */}
+      <section className="skills">
+        <h2>Technologies</h2>
+
+        <div className="skills-grid">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>Firebase</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>Material UI</span>
+          <span>Git</span>
+          <span>GitHub</span>
+        </div>
       </section>
 
       {/* PROJECTS */}
@@ -53,7 +71,7 @@ function App() {
         <div className="project-grid">
 
           {/* SCHOOLHIVE */}
-          <div className="card small-card">
+          <div className="card">
             <div className="card-image">
               <img src="/schoolhive.png" alt="SchoolHive project" />
             </div>
@@ -62,10 +80,11 @@ function App() {
               <h3>SchoolHive Marketplace</h3>
 
               <p>
-                Built as part of my Unitec Capstone Project using React, Firebase,
-                Material UI, and JavaScript (2025). Developed a responsive marketplace
-                platform with user authentication and product listings alongside two students.
-                Featured on the Unitec website and RNZ.
+                Built as part of my Unitec Capstone Project using React,
+                Firebase, Material UI, and JavaScript (2025). Developed a
+                responsive marketplace platform with user authentication and
+                product listings alongside two students. Featured on the
+                Unitec website and RNZ.
               </p>
 
               <a
@@ -80,7 +99,7 @@ function App() {
           </div>
 
           {/* HAZARD ID */}
-          <div className="card small-card">
+          <div className="card">
             <div className="card-image">
               <img src="/hazardid.png.avif" alt="Hazard ID project" />
             </div>
@@ -89,8 +108,8 @@ function App() {
               <h3>Hazard ID</h3>
 
               <p>
-                A hazard identification and tracking tool built to help streamline
-                safety reporting and risk management workflows.
+                A hazard identification and tracking tool built to help
+                streamline safety reporting and risk management workflows.
               </p>
 
               <a
@@ -104,6 +123,36 @@ function App() {
           </div>
 
         </div>
+      </section>
+
+      {/* GITHUB */}
+      <section className="github">
+        <h2>GitHub Activity</h2>
+
+        <p>
+          I actively build personal projects and continue developing my
+          software development skills through hands-on learning and
+          experimentation. This screenshot below shows that I have been consistently contributing to my repositories, with 461+ contributions during 2025-2026.
+          During my time at Unitec, I have also contributed to the SchoolHIVE project repository, which is a significant part of my portfolio and demonstrates my ability to work 
+          collaboratively on a real-world project.
+        </p>
+
+        <div className="github-card">
+          <img
+            src="/Github Contributions.png"
+            alt="GitHub Contributions"
+            className="github-image"
+          />
+        </div>
+
+        <a
+          href="https://github.com/quintongillanders"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-link"
+        >
+          View GitHub Profile →
+        </a>
       </section>
 
       {/* CONTACT */}

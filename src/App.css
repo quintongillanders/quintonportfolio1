@@ -260,3 +260,65 @@ h2 {
   color: #6366f1;
   font-size: 1.3rem;
 }
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.skills {
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skills-grid span {
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  color: #e2e8f0;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.skills-grid span:hover {
+  transform: translateY(-2px);
+  background: rgba(99, 102, 241, 0.2);
+}
+
+/* =========================
+   GITHUB
+========================= */
+
+.github {
+  text-align: center;
+}
+
+.github p {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #94a3b8;
+}
+
+.github-card {
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(148,163,184,0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.github-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}

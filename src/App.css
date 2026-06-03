@@ -17,8 +17,9 @@ html, body {
 body {
   background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
   color: #e5e7eb;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   line-height: 1.6;
+  font-size: 20px;
 }
 
 /* APP WRAPPER */
@@ -32,18 +33,19 @@ body {
 /* SECTIONS */
 section {
   padding: 120px 8%;
-  background: transparent;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   text-align: center;
+  gap: 20px;
 }
 
 .hero-top {
@@ -64,7 +66,6 @@ section {
 
 .hero h1 {
   font-size: 4rem;
-  font-weight: 700;
   color: #f8fafc;
 }
 
@@ -100,6 +101,7 @@ h2 {
   font-size: 2.2rem;
   margin-bottom: 50px;
   color: #f8fafc;
+  text-align: center;
 }
 
 /* TEXT */
@@ -111,15 +113,8 @@ h2 {
   margin: 0 auto 18px auto;
 }
 
-/* LINKS */
-.contact a {
-  color: #f97316;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 /* =========================
-   PROJECT GRID (FIXED CLEAN ROW LAYOUT)
+   PROJECT GRID
 ========================= */
 .project-grid {
   display: flex;
@@ -127,12 +122,10 @@ h2 {
   justify-content: center;
   gap: 40px;
   max-width: 1400px;
-  margin: 40px auto 0 auto;
+  margin: 40px auto 0;
 }
 
-/* =========================
-   CARD
-========================= */
+/* CARD */
 .card {
   background: rgba(255, 255, 255, 0.04);
   width: 100%;
@@ -141,10 +134,14 @@ h2 {
   border: 1px solid rgba(148, 163, 184, 0.15);
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   overflow: hidden;
-  transition: 0.25s ease;
   display: flex;
   flex-direction: column;
+  transition: 0.25s ease;
   backdrop-filter: blur(10px);
+
+  /* 🔥 IMPORTANT FIX */
+  align-items: center;
+  text-align: center;
 }
 
 /* IMAGE */
@@ -166,26 +163,37 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 
 /* TITLE */
 .card h3 {
   font-size: 1.2rem;
-  margin: 0;
   color: #f8fafc;
 }
 
 /* TEXT */
 .card p {
-  margin: 0;
   color: #94a3b8;
-  line-height: 1.5;
   font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-/* LINK */
+/* =========================
+   PROJECT BUTTONS (FIXED)
+========================= */
+.project-buttons {
+  display: flex;
+  justify-content: center;   /* 🔥 THIS IS THE FIX */
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* LINKS */
 .project-link {
-  margin-top: 6px;
   font-weight: 600;
   font-size: 0.95rem;
   color: #6366f1;
@@ -204,60 +212,8 @@ h2 {
   border-color: rgba(99, 102, 241, 0.4);
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
-  .card {
-    max-width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 2.8rem;
-  }
-
-  section {
-    padding: 90px 6%;
-  }
-}
-
-/* CONTACT */
-.contact-links {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 30px;
-  padding: 0;
-  align-items: center;
-}
-
-.contact-links li {
-  width: fit-content;
-}
-
-.contact-links a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #e2e8f0;
-  font-size: 1.05rem;
-  padding: 10px 14px;
-  border-radius: 10px;
-  transition: 0.2s ease;
-}
-
-.contact-links a:hover {
-  background: rgba(99, 102, 241, 0.12);
-  transform: translateY(-2px);
-}
-
-.contact-links svg {
-  color: #6366f1;
-  font-size: 1.3rem;
-}
-
 /* =========================
-   TECHNOLOGIES
+   SKILLS
 ========================= */
 .skills {
   text-align: center;
@@ -278,13 +234,6 @@ h2 {
   color: #e2e8f0;
   padding: 10px 18px;
   border-radius: 999px;
-  font-size: 0.95rem;
-  transition: 0.2s ease;
-}
-
-.skills-grid span:hover {
-  transform: translateY(-2px);
-  background: rgba(99, 102, 241, 0.2);
 }
 
 /* =========================
@@ -296,7 +245,7 @@ h2 {
 
 .github p {
   max-width: 800px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 30px;
   color: #94a3b8;
 }
 
@@ -304,22 +253,56 @@ h2 {
   max-width: 1000px;
   margin: 0 auto 30px auto;
   background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(148,163,184,0.15);
   border-radius: 16px;
+  border: 1px solid rgba(148,163,184,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
 .github-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
-.project-buttons {
+/* =========================
+   CONTACT
+========================= */
+.contact-links {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #e2e8f0;
+}
+
+/* =========================
+   CASE STUDY
+========================= */
+.case-study {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  text-align: left;
+}
+
+.case-study h1,
+.case-study h2 {
+  text-align: center;
+}
+
+.case-study p {
+  color: #94a3b8;
 }

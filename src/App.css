@@ -96,7 +96,7 @@ section {
   50% { transform: translateY(10px); }
 }
 
-/* HEADINGS (GLOBAL CENTRE FIX) */
+/* HEADINGS */
 h1, h2 {
   text-align: center;
 }
@@ -317,7 +317,7 @@ h1, h2 {
 }
 
 /* =========================
-   FULL WIDTH SCROLL IMAGES (CLEAN STORY FLOW)
+   FULL WIDTH GALLERIES
 ========================= */
 .case-gallery,
 .case-outcome-images,
@@ -343,6 +343,54 @@ h1, h2 {
 .case-gallery img:hover,
 .case-outcome-images img:hover,
 .case-visuals img:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   OVERVIEW IMAGE (NEW)
+========================= */
+.case-overview-image {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 60px;
+}
+
+.case-overview-image img {
+  width: 100%;
+  max-width: 780px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(148,163,184,0.2);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease;
+}
+
+.case-overview-image img:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   GENERIC CASE IMAGE CENTERING
+========================= */
+.case-image {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.case-image img {
+  width: 100%;
+  max-width: 700px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(148,163,184,0.2);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease;
+}
+
+.case-image img:hover {
   transform: scale(1.02);
 }
 

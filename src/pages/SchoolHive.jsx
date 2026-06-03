@@ -8,12 +8,11 @@ export default function SchoolHive() {
         ← Back to Home
       </Link>
 
-      {/* HERO IMAGE / MAIN SCREENSHOT */}
+      {/* HERO */}
       <div className="case-hero">
 
         <h1>SchoolHive Marketplace NZ</h1>
 
-        {/* added but minimal metadata (safe upgrade) */}
         <div className="case-meta">
           <span>🎓 Capstone Project</span>
           <span>⚛️ React + Firebase</span>
@@ -21,7 +20,7 @@ export default function SchoolHive() {
         </div>
 
         <p className="case-intro">
-          A student-focused marketplace platform built as part of my Unitec
+          A marketplace platform built as part of my Unitec
           Bachelor of Computing Systems Capstone Project (2025).
         </p>
 
@@ -31,12 +30,18 @@ export default function SchoolHive() {
 
       </div>
 
+      {/* OVERVIEW */}
       <h2>Overview</h2>
+
       <p>
         In July 2025, industry sponsors presented multiple capstone project ideas
-        to our class. One of these was SchoolHIVE Marketplace NZ, presented by
+        to our class at Unitec. One of these was SchoolHIVE Marketplace NZ, presented by
         Swanie Nelson from Community Builders Trust New Zealand (CBNZ).
       </p>
+
+      <div className="case-image">
+        <img src="/schoolhive1.jpg" alt="SchoolHive project pitch" />
+      </div>
 
       <p>
         The goal was to solve a real-world issue: many families struggle with the
@@ -45,25 +50,52 @@ export default function SchoolHive() {
         and sell second-hand items in a trusted environment.
       </p>
 
-      <p>
-        I worked in a team of three after selecting this project during the
-        initial project pitch phase.
-      </p>
-
-      <h2>Problem</h2>
-      <div className="case-card">
-        <p>
-          Students were relying on informal channels like group chats and social
-          media to trade items, which caused:
-        </p>
-        <ul>
-          <li>Lack of trust between buyers and sellers</li>
-          <li>Messy communication</li>
-          <li>No central listing system</li>
-        </ul>
+      <div className="case-image">
+        <img src="/schoolhive2.jpg" alt="SchoolHive marketplace concept" />
       </div>
 
+      <p>
+        I worked in a team of three after selecting this project during the
+        initial project pitch phase. We also had to select a project supervisor, and we chose of of our lecturers, Dr. Lei Song.
+      </p>
+
+      <div className="case-image">
+        <img src="/schoolhive3.jpg" alt="SchoolHive team collaboration" />
+      </div>
+
+      {/* TEAM QAK404 */}
+      <h2>Team QAK404</h2>
+      <p>
+        We had to decide on a team name and we went with QAK404.
+
+    <div className="case-image">
+        <img src="/schoolhive 5.png" alt="SchoolHive team collaboration" />
+      </div>
+
+      <p>QAK404 stands for each initial in our name, Quinton, Arishay, and Krijesh.
+      We also liked the 404 part because it’s a common error code in web development, and we thought it was a fun nod to our focus on building a web application.</p>
+      </p>
+
+
+      {/* PROBLEM */}
+      <h2>Problem</h2>
+
+      <div className="case-card">
+        <p>
+          Students in South Auckland, particularly those from low-socioeconomic communities, face significant barriers in accessing essential school resources such as uniforms, stationery, and tutoring.
+           These challenges impact not only their academic performance but also their confidence, attendance, and sense of belonging at school. 
+           Many families already experiencing financial hardship are unable to consistently provide these necessities, and schools often lack the capacity to fully bridge the gap.
+            As a result, students are often left relying on informal channels or struggling without adequate support, which further widens educational inequality and limits their opportunities to succeed.
+        </p>
+      </div>
+
+      <div className="case-image">
+        <img src="/schoolhive listing page.png" alt="SchoolHive team collaboration" />
+      </div>
+
+      {/* SOLUTION */}
       <h2>Solution</h2>
+
       <div className="case-card">
         <p>
           We built a structured web-based marketplace that allows users to:
@@ -76,7 +108,9 @@ export default function SchoolHive() {
         </ul>
       </div>
 
+      {/* TECH STACK */}
       <h2>Tech Stack</h2>
+
       <div className="case-card">
         <ul>
           <li>React.js</li>
@@ -84,28 +118,32 @@ export default function SchoolHive() {
           <li>Firestore Database</li>
           <li>Material UI</li>
           <li>JavaScript</li>
-          <li>CSS3</li>
+          <li>CSS</li>
         </ul>
       </div>
 
+      {/* ROLE */}
       <h2>My Role</h2>
+
       <div className="case-card">
         <p>
-          I focused on frontend development, UI design, and Firebase integration.
-          My responsibilities included:
+          We all played a part in every part of this project. A lot of my work was focused on frontend development, including:
         </p>
         <ul>
           <li>Building reusable React components</li>
           <li>Designing responsive layouts</li>
           <li>Implementing authentication flows</li>
           <li>Connecting frontend to Firebase backend</li>
+          <li>Mobile responsiveness</li>
+          <li>Creating an admin panel that allows for content management</li>
         </ul>
       </div>
 
+      {/* OUTCOME */}
       <h2>Outcome</h2>
+
       <div className="case-card">
 
-        {/* small enhancement: stats without changing layout */}
         <div className="case-stats">
           <div className="stat">
             <h4>3</h4>
@@ -118,7 +156,7 @@ export default function SchoolHive() {
           </div>
 
           <div className="stat">
-            <h4>2025</h4>
+            <h4>November 2025</h4>
             <p>Delivered</p>
           </div>
         </div>
@@ -135,15 +173,25 @@ export default function SchoolHive() {
 
       </div>
 
+      {/* LINKS */}
       <h2>Links</h2>
+
       <a
         href="https://www.schoolhive.co.nz/"
         target="_blank"
         rel="noopener noreferrer"
         className="project-link"
       >
-        View Live Website →
+        View SchoolHIVE Marketplace
       </a>
+
+      {/* Special Thanks */}
+      <h2>Special Thanks</h2>
+
+      <p>
+        Special Thank you to my project team members, Arishay Reddy and Krijesh Karki, Dr. Lei Song for supervising our project, and Swanie Nelson from CBNZ for being our project sponsor.
+        Also a huge thank you to Masoud Shakiba and Andrew David for being the Capstone Project course Co-ordinators.</p>
+        
 
     </div>
   );

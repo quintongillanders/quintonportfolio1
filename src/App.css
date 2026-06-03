@@ -10,12 +10,17 @@ html, body {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
-  background: #0b1220;
+  background: transparent;
 }
 
 /* BODY */
 body {
-  background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(99,102,241,0.25), transparent 35%),
+    radial-gradient(circle at 85% 10%, rgba(139,92,246,0.22), transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(59,130,246,0.18), transparent 45%),
+    linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
+  background-attachment: fixed;
   color: #e5e7eb;
   font-family: "Inter", system-ui, sans-serif;
   line-height: 1.6;
@@ -610,4 +615,31 @@ h2 {
   .case-section {
     margin: 50px 0 !important;
   }
+}
+
+/* GLASS LAYER OVERLAY */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at center,
+    rgba(255,255,255,0.04),
+    transparent 60%
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.6;
+}
+
+/* ========================
+   CENTER ALL PARAGRAPHS
+   ======================== */
+p {
+  text-align: center !important;
+  max-width: 900px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 22px !important;
+  line-height: 1.8 !important;
 }

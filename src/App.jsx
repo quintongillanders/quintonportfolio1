@@ -32,7 +32,7 @@ function App() {
               </div>
 
               <p>
-                Frontend Developer focused on React, Firebase,
+                Software Developer focused on React, Firebase,
                 and modern web experiences.
               </p>
 

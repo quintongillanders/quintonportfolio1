@@ -73,8 +73,20 @@ export default function SchoolHive() {
       </div>
 
       <p>QAK404 stands for each initial in our name, Quinton, Arishay, and Krijesh.
+
+        </p>
+
+        <div className="case-image">
+        <img src="/schoolhive9.jpg" alt="SchoolHive team collaboration" />
+      </div>
+
+      <p>
       We also liked the 404 part because it’s a common error code in web development, and we thought it was a fun nod to our focus on building a web application.</p>
       </p>
+
+      <div className="case-image">
+        <img src="/schoolhive5.png" alt="SchoolHive team collaboration" />
+      </div>
 
 
       {/* PROBLEM */}
@@ -82,16 +94,20 @@ export default function SchoolHive() {
 
       <div className="case-card">
         <p>
-          Students in South Auckland, particularly those from low-socioeconomic communities, face significant barriers in accessing essential school resources such as uniforms, stationery, and tutoring.
-           These challenges impact not only their academic performance but also their confidence, attendance, and sense of belonging at school. 
-           Many families already experiencing financial hardship are unable to consistently provide these necessities, and schools often lack the capacity to fully bridge the gap.
+          Students in South Auckland, particularly those from low-socioeconomic communities, face significant barriers in accessing essential school resources such as uniforms, stationery, and tutoring.</p>
+
+
+           <p>These challenges impact not only their academic performance but also their confidence, attendance, and sense of belonging at school. </p>
+
+
+           <p>Many families already experiencing financial hardship are unable to consistently provide these necessities, and schools often lack the capacity to fully bridge the gap. </p>
+
+           <p>
             As a result, students are often left relying on informal channels or struggling without adequate support, which further widens educational inequality and limits their opportunities to succeed.
         </p>
       </div>
 
-      <div className="case-image">
-        <img src="/schoolhive listing page.png" alt="SchoolHive team collaboration" />
-      </div>
+    
 
       {/* SOLUTION */}
       <h2>Solution</h2>
@@ -105,7 +121,23 @@ export default function SchoolHive() {
           <li>Post and manage listings</li>
           <li>Browse available items</li>
           <li>Interact through a clean, simple UI</li>
+
+           <div className="case-image">
+            <img src="/schoolhive login.png" alt="SchoolHive team collaboration" />
+          </div>
+
+      <div className="case-image">
+        <img src="/createlisting.png" alt="SchoolHive team collaboration" />
+      </div>
+
+      <div className="case-image">
+        <img src="/schoolhive6.jpg" alt="SchoolHive team collaboration" />
+      </div>
+
         </ul>
+        
+
+
       </div>
 
       {/* TECH STACK */}
@@ -173,6 +205,17 @@ export default function SchoolHive() {
 
       </div>
 
+      <h2>Whanau Day Showcase</h2>
+
+      <p>At the end of the semester, on November 20, 2025, Unitec School of Computing hosted it's Whanau day showcase, in which all the computing students showcased their projects.</p>
+
+      <p>With enough votes from students, friends and families, team QAK404, our team, and the SchoolHIVE project, won 1st place!</p>
+
+      <div className="case-image">
+        <img src="/whanaudaywin.jpg" alt="SchoolHive team collaboration" />
+      </div>
+
+
       {/* LINKS */}
       <h2>Links</h2>
 
@@ -189,7 +232,7 @@ export default function SchoolHive() {
       <h2>Special Thanks</h2>
 
       <p>
-        Special Thank you to my project team members, Arishay Reddy and Krijesh Karki, Dr. Lei Song for supervising our project, and Swanie Nelson from CBNZ for being our project sponsor.
+        Special Thank you to my project team members, Arishay Reddy, Krijesh Karki, Dr. Lei Song for supervising our project, and Swanie Nelson from CBNZ for being our project sponsor.
         Also a huge thank you to Masoud Shakiba and Andrew David for being the Capstone Project course Co-ordinators.</p>
         
 

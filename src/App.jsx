@@ -170,7 +170,8 @@ function App() {
                       A browser-based game built using JavaScript, HTML and CSS as part of
                       a web development assignment for my Bachelor of Computing Systems at
                       Unitec in early 2024. It was a great learning experience for building
-                      interactive gameplay and improving my JavaScript skills.
+                      interactive gameplay and improving my JavaScript skills. Please note that this game is not available on mobile.
+                      
                     </p>
 
                     <a
@@ -179,7 +180,7 @@ function App() {
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      Play Game
+                      Play Game 
                     </a>
 
                   </div>

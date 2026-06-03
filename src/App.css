@@ -97,8 +97,10 @@ section {
 }
 
 /* HEADINGS */
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
+  line-height: 1.2;
+  margin: 0;
 }
 
 /* TEXT */
@@ -283,7 +285,7 @@ h1, h2 {
 }
 
 .case-study h2 {
-  margin-top: 70px;
+  margin-top: 60px;
   margin-bottom: 20px;
   font-size: 2rem;
   color: #f8fafc;
@@ -511,4 +513,65 @@ h1, h2 {
   .case-hero h1 {
     font-size: 2.2rem;
   }
+}
+
+/* =========================
+   CASE-STUDY STYLE SPACING (GLOBAL UPGRADE)
+   Makes home page match your SchoolHive rhythm
+   ========================= */
+
+/* stronger vertical rhythm between blocks */
+section {
+  padding: 120px 8%;
+}
+
+/* FIX: better spacing between headings + content blocks */
+section > h1,
+section > h2,
+section > h3 {
+  margin-bottom: 28px !important;
+  margin-top: 0 !important;
+}
+
+/* FIX: paragraphs breathe properly like case study */
+p {
+  margin-bottom: 22px !important;
+  line-height: 1.8 !important;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FIX: spacing between grouped content (cards, grids, etc.) */
+.project-grid,
+.skills-grid,
+.contact-links {
+  margin-top: 40px;
+}
+
+/* FIX: makes sections feel like "chapters" like SchoolHive */
+.about,
+.skills,
+.projects,
+.github,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* FIX: tighter heading hierarchy like case study */
+h1 {
+  margin-bottom: 18px !important;
+}
+
+h2 {
+  margin-bottom: 24px !important;
+  margin-top: 60px;
+}
+
+/* FIX: removes clumping inside cards/text blocks */
+.card p {
+  margin-bottom: 14px !important;
+  line-height: 1.6 !important;
 }

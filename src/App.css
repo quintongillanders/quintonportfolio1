@@ -575,3 +575,39 @@ h2 {
   margin-bottom: 14px !important;
   line-height: 1.6 !important;
 }
+
+/* =========================
+   MOBILE FIX: CASE STUDY IMAGES
+   (keeps desktop unchanged)
+========================= */
+
+@media (max-width: 900px) {
+
+  /* make all case images fully visible */
+  .case-overview-image img,
+  .case-image img {
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+  }
+
+  /* galleries: prevent cropping + improve scroll flow */
+  .case-gallery img,
+  .case-outcome-images img,
+  .case-visuals img {
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  /* add breathing room so images don't feel cramped */
+  .case-gallery,
+  .case-outcome-images,
+  .case-visuals {
+    gap: 30px !important;
+  }
+
+  /* slightly reduce huge desktop spacing for mobile */
+  .case-section {
+    margin: 50px 0 !important;
+  }
+}

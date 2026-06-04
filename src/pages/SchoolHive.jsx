@@ -168,10 +168,10 @@ export default function SchoolHive() {
           <li>Building reusable React components</li>
           <li>Designing responsive layouts</li>
           <li>Implementing authentication flows</li>
-          <li>Connecting frontend to Firebase backend</li>
           <li>Mobile responsiveness</li>
           <li>Creating an admin panel that allows for content management</li>
         </ul>
+        <p>Pictures still being added, check back soon!</p>
       </div>
 
       {/* OUTCOME */}

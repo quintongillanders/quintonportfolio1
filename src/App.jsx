@@ -13,6 +13,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 
 import { Routes, Route } from "react-router-dom";
 import SchoolHive from "./pages/SchoolHive";
+import WormGameCaseStudy from "./pages/Worm Catching Game";
 
 function App() {
   return (
@@ -217,14 +218,12 @@ function App() {
                       Play Game 
                     </a>
 
-                    <a
-                      href="https://quintongillanders.github.io/wormcatchinggame.github.io/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      Learn more (Coming soon)
-                    </a>
+                     <a
+                        href="/wormcatchinggame"
+                        className="project-link secondary"
+                      >
+                        Learn More
+                      </a>
 
                   </div>
 
@@ -319,6 +318,9 @@ function App() {
 
       {/* SCHOOLHIVE PAGE */}
       <Route path="/schoolhive" element={<SchoolHive />} />
+
+      {/* WORM CATCHING GAME PAGE */}
+      <Route path="/wormcatchinggame" element={<WormGameCaseStudy />} />
 
     </Routes>
   );

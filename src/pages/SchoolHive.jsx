@@ -5,7 +5,7 @@ export default function SchoolHive() {
     <div className="case-study">
 
       <Link to="/" className="back-link">
-        ← Back to Home
+        ← Back
       </Link>
 
       {/* HERO */}

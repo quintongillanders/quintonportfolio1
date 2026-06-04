@@ -208,9 +208,9 @@ export default function SchoolHive() {
 
       </div>
 
-      <h2>Whanau Day Showcase</h2>
+      <h2>Whānau Day Showcase</h2>
 
-      <p>At the end of the semester, on November 20, 2025, Unitec School of Computing hosted it's Whanau day showcase, in which all the computing students showcased their projects.</p>
+      <p>At the end of the semester, on November 20, 2025, Unitec School of Computing hosted it's Whānau day showcase, in which all the computing students showcased their projects.</p>
 
       <p>With enough votes from students, friends and families, team QAK404, our team, and the SchoolHIVE project, won 1st place!</p>
 

@@ -56,13 +56,22 @@ function App() {
 
               <p>
                 I'm a software developer with a Bachelor of Computing
-                Systems (2025). Recently completed a capstone project developing
+                Systems from Unitec (2025). Recently completed a capstone project developing
                 the SchoolHIVE Marketplace NZ platform as part of a collaborative
                 team. Experienced in building responsive user interfaces using
                 React.js, CSS, and MUI. Strong problem-solving skills with
                 experience working in structured team environments and meeting
                 project deadlines.
               </p>
+
+              <a
+              href="/Quinton Gillanders CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+              >
+                View My CV
+              </a>
 
             </section>
 

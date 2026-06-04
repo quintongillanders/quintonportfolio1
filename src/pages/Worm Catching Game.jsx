@@ -43,7 +43,7 @@ export default function WormGameCaseStudy() {
 
       <div className="case-card">
         <p>
-          Case study in progress.
+          Case study in progress, check back later for the case study!
         </p>
       </div>
 

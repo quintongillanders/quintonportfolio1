@@ -1,5 +1,11 @@
 import "./App.css";
 
+import CodeIcon from "@mui/icons-material/Code";
+import JavascriptIcon from "@mui/icons-material/Javascript";
+import HtmlIcon from "@mui/icons-material/Html";
+import CssIcon from "@mui/icons-material/Css";
+import StorageIcon from "@mui/icons-material/Storage";
+import ApiIcon from "@mui/icons-material/Api";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -65,14 +71,42 @@ function App() {
               <h2>Technologies</h2>
 
               <div className="skills-grid">
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>Firebase</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>Material UI</span>
-                <span>Git</span>
-                <span>GitHub</span>
+
+                <div className="skill">
+                  <JavascriptIcon />
+                  <span>JavaScript</span>
+                </div>
+
+                <div className="skill">
+                  <CodeIcon />
+                  <span>React</span>
+                </div>
+
+                <div className="skill">
+                  <StorageIcon />
+                  <span>Firebase</span>
+                </div>
+
+                <div className="skill">
+                  <HtmlIcon />
+                  <span>HTML</span>
+                </div>
+
+                <div className="skill">
+                  <CssIcon />
+                  <span>CSS</span>
+                </div>
+
+                <div className="skill">
+                  <ApiIcon />
+                  <span>Material UI</span>
+                </div>
+
+                <div className="skill">
+                  <GitHubIcon />
+                  <span>GitHub</span>
+                </div>
+
               </div>
 
             </section>

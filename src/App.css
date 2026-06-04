@@ -660,3 +660,28 @@ h2 {
 h3 {
   font-size: 1.4rem;
 }
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 6px 0;          /* no bubble padding */
+  background: transparent; /* removes pill */
+  border: none;            /* removes border */
+  color: #e2e8f0;
+
+  transition: 0.2s ease;
+}
+
+.skill:hover {
+  transform: translateY(-3px);
+  border-color: rgba(99,102,241,0.4);
+}

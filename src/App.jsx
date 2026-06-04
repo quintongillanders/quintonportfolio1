@@ -55,7 +55,7 @@ function App() {
               <h2>About Me</h2>
 
               <p>
-                Front-end focused software developer with a Bachelor of Computing
+                I'm a software developer with a Bachelor of Computing
                 Systems (2025). Recently completed a capstone project developing
                 the SchoolHIVE Marketplace NZ platform as part of a collaborative
                 team. Experienced in building responsive user interfaces using

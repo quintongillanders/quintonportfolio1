@@ -188,10 +188,21 @@ h1, h2, h3 {
 }
 
 .project-link {
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: #6366f1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+  border-radius: 10px;
+
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+
+  color: #e5e7eb;
   text-decoration: none;
+  font-weight: 600;
+
+  transition: all 0.2s ease;
 }
 
 .project-link:hover {
@@ -199,11 +210,16 @@ h1, h2, h3 {
   text-decoration: underline;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(99, 102, 241, 0.2);
-  border-color: rgba(99, 102, 241, 0.4);
+.project-link.secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.25);
 }
+
+.project-link.secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
 
 /* =========================
    SKILLS
@@ -350,11 +366,7 @@ h1, h2, h3 {
   transition: transform 0.3s ease;
 }
 
-.case-gallery img:hover,
-.case-outcome-images img:hover,
-.case-visuals img:hover {
-  transform: scale(1.02);
-}
+
 
 /* =========================
    OVERVIEW IMAGE (NEW)
@@ -374,10 +386,6 @@ h1, h2, h3 {
   border: 1px solid rgba(148,163,184,0.2);
   box-shadow: 0 20px 50px rgba(0,0,0,0.35);
   transition: transform 0.3s ease;
-}
-
-.case-overview-image img:hover {
-  transform: scale(1.02);
 }
 
 /* =========================
@@ -757,4 +765,8 @@ ul {
 li {
   margin-bottom: 10px;
   color: #cbd5e1;
+}
+
+.case-study img:hover {
+  transform: none !important;
 }

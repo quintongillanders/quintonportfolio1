@@ -217,6 +217,15 @@ function App() {
                       Play Game 
                     </a>
 
+                    <a
+                      href="https://quintongillanders.github.io/wormcatchinggame.github.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Learn more (Coming soon)
+                    </a>
+
                   </div>
 
                 </div>

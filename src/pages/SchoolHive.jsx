@@ -4,9 +4,12 @@ export default function SchoolHive() {
   return (
     <div className="case-study">
 
-      <Link to="/" className="back-link">
-        ← Back
+
+      <div className="back-button-container">
+      <Link to="/" className="back-button">
+        ← Back to homepage
       </Link>
+    </div>
 
       {/* HERO */}
       <div className="case-hero">
@@ -223,9 +226,9 @@ export default function SchoolHive() {
         href="https://www.schoolhive.co.nz/"
         target="_blank"
         rel="noopener noreferrer"
-        className="project-link"
+        className="link-button"
       >
-        View SchoolHIVE Marketplace
+        Click here to see SchoolHive Marketplace NZ live site
       </a>
 
       {/* Special Thanks */}

@@ -26,7 +26,7 @@ function Home() {
       link: "https://www.rnz.co.nz/news/ldr/578864/otara-rangatahi-lead-digital-solution-to-school-costs"
     },
     {
-      title: "SchoolHIVE Marketplace Capstone Project Wins 1st Place at Unitec Whānau Day Showcase (November 2025)",
+      title: "Team QAK 404 Capstone Project Wins 1st Place at Unitec Whānau Day Showcase (November 2025)",
       description:
         "Team QAK404, developers of the SchoolHIVE Marketplace, win first place at the Unitec Whānau Day Showcase on November 20th, 2025.",
       image: "/whanaudaywin.jpg",
@@ -140,45 +140,17 @@ function Home() {
       </section>
 
       {/* SKILLS */}
-      <section id="skills" className="skills">
+        <section id="skills" className="skills">
 
-        <h2>Skills</h2>
+          <h2>Skills</h2>
 
-        <div className="skills-grid">
+          <p className="skills-text">
+            I work primarily with JavaScript and React to build responsive, interactive web applications. 
+            I also have experience with Mobile Development (Android Studio), Firebase, Material UI and version control using Git.
+            Other Languages and tools I'm familiar with include Python, Java, and C#.
+          </p>
 
-          <div className="skill">
-            <JavascriptIcon />
-            <span>JavaScript</span>
-          </div>
-
-          <div className="skill">
-            <CodeIcon />
-            <span>React</span>
-          </div>
-
-          <div className="skill">
-            <StorageIcon />
-            <span>Firebase</span>
-          </div>
-
-          <div className="skill">
-            <HtmlIcon />
-            <span>HTML</span>
-          </div>
-
-          <div className="skill">
-            <CssIcon />
-            <span>CSS</span>
-          </div>
-
-          <div className="skill">
-            <ApiIcon />
-            <span>Material UI</span>
-          </div>
-
-        </div>
-
-      </section>
+        </section>
 
       {/* PROJECTS */}
       <section id="projects" className="projects">

@@ -1094,6 +1094,7 @@ html {
   margin: 0;
   color: #f8fafc;
   line-height: 1.1;
+  text-align: center;
 }
 
 /* PARAGRAPH UNDER NAME */
@@ -1297,4 +1298,62 @@ html {
   margin-top: auto;
   display: inline-flex;
   justify-content: center;
+}
+
+/* =========================
+   HERO CAROUSEL MOBILE FIX
+========================= */
+
+@media (max-width: 900px) {
+
+  .hero-split {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 80px 6%;
+  }
+
+  .hero-left {
+    transform: none;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-name {
+  text-align: center;
+}
+
+  .hero-text {
+    text-align: center;
+  }
+
+  /* MAKE CAROUSEL FULL WIDTH */
+  .hero-right {
+    width: 100%;
+  }
+
+  .featured-box {
+    width: 100%;
+    max-width: 420px;
+    height: 460px; /* slightly shorter for mobile */
+  }
+
+  .featured-image-wrapper {
+    height: 220px; /* smaller image area for mobile */
+  }
+
+  .featured-content {
+    padding: 14px;
+  }
+
+  .featured-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .featured-content p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-dots {
+    margin-top: 10px;
+  }
 }

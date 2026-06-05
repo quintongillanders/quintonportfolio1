@@ -16,26 +16,26 @@ import StorageIcon from "@mui/icons-material/Storage";
 import ApiIcon from "@mui/icons-material/Api";
 
 function Home() {
+
   const featuredProjects = [
     {
-      title: "SchoolHive Marketplace (2025)",
+      title: "SchoolHIVE Marketplace Launches at Otara Music and Arts Centre (November 2025)",
       description:
-        "Built as part of my Unitec Capstone Project using React, Firebase, Material UI and JavaScript. Developed alongside two students and featured on the Unitec website and RNZ.",
-      image: "/schoolhive.png",
-      link: "/schoolhive",
+        "The SchoolHIVE Marketplace officially launches at the Otara Music and Arts Centre in November 2025.",
+      image: "/rnz schoolhive.png",
+      link: "https://www.rnz.co.nz/news/ldr/578864/otara-rangatahi-lead-digital-solution-to-school-costs"
     },
     {
-      title: "Worm Catching Game (2024)",
+      title: "SchoolHIVE Marketplace Capstone Project Wins 1st Place at Unitec Whānau Day Showcase (November 2025)",
       description:
-        "A browser-based game built with JavaScript, HTML and CSS as part of a Unitec web development assignment. Great for learning interactive gameplay and DOM manipulation.",
-      image: "/6420 web dev assignment.png",
-      link: "/wormcatchinggame",
+        "Team QAK404, developers of the SchoolHIVE Marketplace, win first place at the Unitec Whānau Day Showcase on November 20th, 2025.",
+      image: "/whanaudaywin.jpg",
     },
     {
-      title: "Hazard ID (2026)",
+      title: "Gillanders Brothers Graduate from Unitec!",
       description:
-        "A hazard identification and tracking tool currently under development to streamline safety reporting and risk management workflows.",
-      image: "/hazardid.png.avif",
+        "Quinton Gillanders and Alex Gillanders graduate from Unitec on April 1st, 2026.",
+      image: "/graduation.png",
       link: "#",
     },
   ];

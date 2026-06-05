@@ -209,12 +209,13 @@ function App() {
                   <div className="card-content">
 
                     <h3>Worm Catching Game (2024)</h3>
+                    <h3>(Best played on desktop)</h3>
 
                     <p>
                       A browser-based game built using JavaScript, HTML and CSS as part of
                       a web development assignment for my Bachelor of Computing Systems at
                       Unitec in early 2024. It was a great learning experience for building
-                      interactive gameplay and improving my JavaScript skills. Please note that this game is not available on mobile.
+                      interactive gameplay and improving my JavaScript skills.
                       
                     </p>
 
@@ -239,38 +240,6 @@ function App() {
                 </div>
 
               </div>
-
-            </section>
-
-            {/* GITHUB */}
-            <section className="github">
-
-              <h2>GitHub Activity</h2>
-
-              <p>
-                I actively build personal projects and continue developing my
-                software development skills through hands-on learning and
-                experimentation. This screenshot below shows that I have been consistently contributing to my repositories, with 461+ contributions during 2025-2026.
-                During my time at Unitec, I have also contributed to the SchoolHIVE project repository, which is a significant part of my portfolio and demonstrates my ability to work
-                collaboratively on a real-world project.
-              </p>
-
-              <div className="github-card">
-                <img
-                  src="/Github Contributions.png"
-                  alt="GitHub Contributions"
-                  className="github-image"
-                />
-              </div>
-
-              <a
-                href="https://github.com/quintongillanders"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                View GitHub Profile
-              </a>
 
             </section>
 

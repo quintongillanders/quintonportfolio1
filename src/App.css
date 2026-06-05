@@ -179,18 +179,27 @@ h1, h2, h3 {
   font-size: 0.95rem;
 }
 
+/* =========================
+   PROJECT BUTTONS (FIXED + CENTERED)
+========================= */
+
 .project-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 12px;
-  margin-top: 20px;
-  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
 }
 
+/* BUTTON BASE */
 .project-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  width: auto;
+  max-width: fit-content;
 
   padding: 10px 16px;
   border-radius: 10px;
@@ -203,13 +212,17 @@ h1, h2, h3 {
   font-weight: 600;
 
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
+/* HOVER */
 .project-link:hover {
   color: #a78bfa;
   text-decoration: underline;
+  transform: translateY(-2px);
 }
 
+/* SECONDARY BUTTON */
 .project-link.secondary {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(148, 163, 184, 0.25);
@@ -217,9 +230,8 @@ h1, h2, h3 {
 
 .project-link.secondary:hover {
   background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(148, 163, 184, 0.35);
 }
-
-
 
 /* =========================
    SKILLS
@@ -798,4 +810,14 @@ li {
   font-size: 0.8rem;
   color: #ccc; /* or your theme color */
   text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.about .project-link {
+  display: inline-flex;
+  width: fit-content;
+  margin: 0 auto;
 }

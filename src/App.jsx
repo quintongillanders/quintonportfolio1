@@ -39,8 +39,7 @@ function App() {
               </div>
 
               <p>
-                Software Developer focused on React, Firebase,
-                and modern web experiences.
+                Software Developer focused on modern web experiences.
               </p>
 
               <a href="#about" className="scroll-indicator">
@@ -75,10 +74,10 @@ function App() {
 
             </section>
 
-            {/* TECHNOLOGIES */}
+            {/* SKILLS*/}
             <section className="skills">
 
-              <h2>Technologies</h2>
+              <h2>Skills</h2>
 
               <div className="skills-grid">
 

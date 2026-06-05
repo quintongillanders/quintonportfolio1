@@ -144,18 +144,34 @@ export default function SchoolHive() {
       </div>
 
       {/* TECH STACK */}
-      <h2>Tech Stack</h2>
+        <h2>Tech Stack</h2>
 
-      <div className="case-card">
-        <ul>
-          <li>React.js</li>
-          <li>Firebase Authentication</li>
-          <li>Firestore Database</li>
-          <li>Material UI</li>
-          <li>JavaScript</li>
-          <li>CSS</li>
-        </ul>
-      </div>
+        <div className="tech-stack">
+          <div className="tech-item">
+            <img src="/react.png" alt="React" />
+            <span>React</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/firebase.png" alt="Firebase" />
+            <span>Firebase</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/mui.png" alt="Material UI" />
+            <span>Material UI</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/javascript.png" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/css.png" alt="CSS" />
+            <span>CSS</span>
+          </div>
+        </div>
 
       {/* ROLE */}
       <h2>My Role</h2>

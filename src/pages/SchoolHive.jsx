@@ -181,13 +181,11 @@ export default function SchoolHive() {
           We all played a part in every part of this project. A lot of my work was focused on frontend development, including:
         </p>
         <ul>
-          <li>Building reusable React components</li>
           <li>Designing responsive layouts</li>
           <li>Implementing authentication flows</li>
           <li>Mobile responsiveness</li>
           <li>Creating an admin panel that allows for content management</li>
         </ul>
-        <p>Pictures still being added, check back soon!</p>
       </div>
 
       {/* OUTCOME */}

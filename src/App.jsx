@@ -1,6 +1,7 @@
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 
@@ -15,46 +16,126 @@ import StorageIcon from "@mui/icons-material/Storage";
 import ApiIcon from "@mui/icons-material/Api";
 
 function Home() {
+  const featuredProjects = [
+    {
+      title: "SchoolHive Marketplace (2025)",
+      description:
+        "Built as part of my Unitec Capstone Project using React, Firebase, Material UI and JavaScript. Developed alongside two students and featured on the Unitec website and RNZ.",
+      image: "/schoolhive.png",
+      link: "/schoolhive",
+    },
+    {
+      title: "Worm Catching Game (2024)",
+      description:
+        "A browser-based game built with JavaScript, HTML and CSS as part of a Unitec web development assignment. Great for learning interactive gameplay and DOM manipulation.",
+      image: "/6420 web dev assignment.png",
+      link: "/wormcatchinggame",
+    },
+    {
+      title: "Hazard ID (2026)",
+      description:
+        "A hazard identification and tracking tool currently under development to streamline safety reporting and risk management workflows.",
+      image: "/hazardid.png.avif",
+      link: "#",
+    },
+  ];
+
+  const [currentProject, setCurrentProject] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentProject(
+        (prev) => (prev + 1) % featuredProjects.length
+      );
+    }, 10000); // Change news story every 10 seconds
+
+    return () => clearInterval(interval);
+  }, [featuredProjects.length]);
+
   return (
     <div className="app">
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero-split">
 
-        <div className="hero-top">
-          <img
-            src="/me.png"
-            alt="Quinton Gillanders"
-            className="hero-avatar"
-          />
+        {/* LEFT SIDE */}
+          <div className="hero-left">
 
-          <h1>Quinton Gillanders</h1>
+            <img
+              src="/me.png"
+              alt="Quinton Gillanders"
+              className="hero-avatar"
+            />
+
+            <h1 className="hero-name">Quinton Gillanders</h1>
+
+            <p className="hero-text">
+              I'm a software developer with a Bachelor of Computing
+              Systems from Unitec (2025). Recently completed a capstone
+              project developing the SchoolHIVE Marketplace NZ platform as
+              part of a collaborative team. Experienced in building
+              responsive user interfaces using React.js, CSS and MUI.
+            </p>
+
+            <a
+              href="/Quinton Gillanders CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              View My CV
+            </a>
+
+          </div>
+
+        {/* RIGHT SIDE - AUTO SCROLLING FEATURED PROJECT */}
+        <div className="hero-right">
+
+          <div className="featured-box">
+
+           <div className="featured-image-wrapper">
+            {featuredProjects.map((project, index) => (
+              <img
+                key={index}
+                src={project.image}
+                alt={project.title}
+                className={`featured-image ${
+                  index === currentProject ? "active" : ""
+                }`}
+              />
+            ))}
+          </div>
+
+           <div className="featured-content">
+
+
+              <h2>
+                {featuredProjects[currentProject].title}
+              </h2>
+
+              <p>
+                {featuredProjects[currentProject].description}
+              </p>
+
+              <div className="carousel-dots">
+
+              {featuredProjects.map((_, index) => (
+                <button
+                  key={index}
+                  className={`carousel-dot ${
+                    index === currentProject ? "active" : ""
+                  }`}
+                  onClick={() => setCurrentProject(index)}
+                />
+              ))}
+
+            </div>
+
+            </div>
+
+          </div>
+
         </div>
-
-        <p>
-          I'm a software developer with a Bachelor of Computing
-          Systems from Unitec (2025). Recently completed a capstone project developing
-          the SchoolHIVE Marketplace NZ platform as part of a collaborative
-          team. Experienced in building responsive user interfaces using
-          React.js, CSS, and MUI. Strong problem-solving skills with
-          experience working in structured team environments and meeting
-          project deadlines.
-        </p>
-
-        <a
-          href="/Quinton Gillanders CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-link"
-        >
-          View My CV
-        </a>
-
-        <a href="#about" className="scroll-indicator">
-          <div className="arrow">↓</div>
-          <span>Scroll to find out more about me!</span>
-        </a>
-
 
       </section>
 
@@ -65,12 +146,35 @@ function Home() {
 
         <div className="skills-grid">
 
-          <div className="skill"><JavascriptIcon /><span>JavaScript</span></div>
-          <div className="skill"><CodeIcon /><span>React</span></div>
-          <div className="skill"><StorageIcon /><span>Firebase</span></div>
-          <div className="skill"><HtmlIcon /><span>HTML</span></div>
-          <div className="skill"><CssIcon /><span>CSS</span></div>
-          <div className="skill"><ApiIcon /><span>Material UI</span></div>
+          <div className="skill">
+            <JavascriptIcon />
+            <span>JavaScript</span>
+          </div>
+
+          <div className="skill">
+            <CodeIcon />
+            <span>React</span>
+          </div>
+
+          <div className="skill">
+            <StorageIcon />
+            <span>Firebase</span>
+          </div>
+
+          <div className="skill">
+            <HtmlIcon />
+            <span>HTML</span>
+          </div>
+
+          <div className="skill">
+            <CssIcon />
+            <span>CSS</span>
+          </div>
+
+          <div className="skill">
+            <ApiIcon />
+            <span>Material UI</span>
+          </div>
 
         </div>
 
@@ -95,11 +199,8 @@ function Home() {
               <h3>SchoolHive Marketplace (2025)</h3>
 
               <p>
-                Built as part of my Unitec Capstone Project using React,
-                Firebase, Material UI, and JavaScript (2025). Developed a
-                responsive marketplace platform with user authentication and
-                product listings alongside two students. Featured on the
-                Unitec website and RNZ.
+                Built as part of my Unitec Capstone Project using React, Firebase, Material UI and JavaScript. 
+                Developed alongside two students and featured on the Unitec website and RNZ.
               </p>
 
               <div className="project-buttons">
@@ -138,8 +239,8 @@ function Home() {
               <h3>Hazard ID (2026)</h3>
 
               <p>
-                A hazard identification and tracking tool built to help streamline
-                safety reporting and risk management workflows. Coming soon!
+                A hazard identification and tracking tool built to help
+                streamline safety reporting and risk management workflows. Coming soon!
               </p>
 
               <div className="project-buttons">
@@ -160,22 +261,23 @@ function Home() {
           <div className="card">
 
             <div className="card-image">
-              <img src="/6420 web dev assignment.png" alt="Web Game project" />
+              <img
+                src="/6420 web dev assignment.png"
+                alt="Web Game project"
+              />
             </div>
 
             <div className="card-content">
 
               <h3>Worm Catching Game (2024)</h3>
-              <h3>(Best played on desktop)</h3>
+              <h3>(Not playable on mobile)</h3>
 
               <p>
-                A browser-based game built using JavaScript, HTML and CSS as part of
-                a web development assignment for my Bachelor of Computing Systems at
-                Unitec in early 2024. It was a great learning experience for building
-                interactive gameplay and improving my JavaScript skills.
+                A browser-based game built using JavaScript, HTML and CSS
+                as part of a web development assignment for my Bachelor of
+                Computing Systems at Unitec.
               </p>
 
-             
               <div className="project-buttons">
 
                 <a

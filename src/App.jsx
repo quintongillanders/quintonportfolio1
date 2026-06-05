@@ -32,22 +32,6 @@ function Home() {
         </div>
 
         <p>
-          Software Developer focused on modern web experiences.
-        </p>
-
-        <a href="#about" className="scroll-indicator">
-          <div className="arrow">↓</div>
-          <span>Scroll to find out more about me!</span>
-        </a>
-
-      </section>
-
-      {/* ABOUT */}
-      <section id="about" className="about">
-
-        <h2>About Me</h2>
-
-        <p>
           I'm a software developer with a Bachelor of Computing
           Systems from Unitec (2025). Recently completed a capstone project developing
           the SchoolHIVE Marketplace NZ platform as part of a collaborative
@@ -65,6 +49,12 @@ function Home() {
         >
           View My CV
         </a>
+
+        <a href="#about" className="scroll-indicator">
+          <div className="arrow">↓</div>
+          <span>Scroll to find out more about me!</span>
+        </a>
+
 
       </section>
 

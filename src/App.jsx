@@ -152,7 +152,6 @@ function Home() {
                 safety reporting and risk management workflows. Coming soon!
               </p>
 
-              {/* FIX APPLIED HERE */}
               <div className="project-buttons">
                 <a
                   href="#"
@@ -186,21 +185,26 @@ function Home() {
                 interactive gameplay and improving my JavaScript skills.
               </p>
 
-              <a
-                href="https://quintongillanders.github.io/wormcatchinggame.github.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                Play Game
-              </a>
+             
+              <div className="project-buttons">
 
-              <a
-                href="/wormcatchinggame"
-                className="project-link secondary"
-              >
-                Learn More
-              </a>
+                <a
+                  href="https://quintongillanders.github.io/wormcatchinggame.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  Play Game
+                </a>
+
+                <a
+                  href="/wormcatchinggame"
+                  className="project-link secondary"
+                >
+                  Learn More
+                </a>
+
+              </div>
 
             </div>
 

@@ -170,8 +170,11 @@ export default function SchoolHive() {
           <div className="tech-item">
             <img src="/css.png" alt="CSS" />
             <span>CSS</span>
+            
+            
           </div>
         </div>
+        
 
       {/* ROLE */}
       <h2>My Role</h2>

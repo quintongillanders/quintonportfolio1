@@ -15,6 +15,9 @@ import CssIcon from "@mui/icons-material/Css";
 import StorageIcon from "@mui/icons-material/Storage";
 import ApiIcon from "@mui/icons-material/Api";
 
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
 function Home() {
 
   const featuredProjects = [
@@ -117,19 +120,48 @@ function Home() {
                 {featuredProjects[currentProject].description}
               </p>
 
-              <div className="carousel-dots">
+              <div className="carousel-controls">
 
-              {featuredProjects.map((_, index) => (
-                <button
-                  key={index}
-                  className={`carousel-dot ${
-                    index === currentProject ? "active" : ""
-                  }`}
-                  onClick={() => setCurrentProject(index)}
-                />
-              ))}
+                  {/* Previous button */}
+                  <button
+                    className="carousel-arrow"
+                    onClick={() =>
+                      setCurrentProject(
+                        (currentProject - 1 + featuredProjects.length) %
+                          featuredProjects.length
+                      )
+                    }
+                  >
+                    <ChevronLeftIcon />
+                  </button>
 
-            </div>
+                  {/* Existing dots */}
+                  <div className="carousel-dots">
+                    {featuredProjects.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`carousel-dot ${
+                          index === currentProject ? "active" : ""
+                        }`}
+                        onClick={() => setCurrentProject(index)}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Next button */}
+                  <button
+                    className="carousel-arrow"
+                    onClick={() =>
+                      setCurrentProject(
+                        (currentProject + 1) %
+                          featuredProjects.length
+                      )
+                    }
+                  >
+                    <ChevronRightIcon />
+                  </button>
+
+                </div>
 
             </div>
 

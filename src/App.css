@@ -1373,3 +1373,11 @@ html {
 .carousel-arrow svg {
   font-size: 28px;
 }
+
+.case-video video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}

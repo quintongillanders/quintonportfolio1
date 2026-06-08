@@ -252,7 +252,7 @@ export default function SchoolHive() {
       <h2>Special Thanks</h2>
 
       <p>
-        Special Thank you to my project team members, Arishay Reddy, Krijesh Karki, Dr. Lei Song for supervising our project, and Swanie Nelson from CBNZ for being our project sponsor.
+        Special thank you to my project team members, Arishay Reddy, Krijesh Karki, Dr. Lei Song for supervising our project, and Swanie Nelson from CBNZ for being our project sponsor.
         Also a huge thank you to Masoud Shakiba and Andrew David for being the Capstone Project course Co-ordinators.</p>
         
 

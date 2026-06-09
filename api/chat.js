@@ -6,6 +6,10 @@ export default async function handler(req, res) {
   try {
     const { message } = req.body;
 
+    if (!message) {
+      return res.status(400).json({ error: "Message is required" });
+    }
+
     if (!process.env.OPENAI_API_KEY) {
       return res.status(500).json({ error: "Missing API key" });
     }
@@ -28,30 +32,27 @@ export default async function handler(req, res) {
             content: message,
           },
         ],
+        temperature: 0.7,
+        max_tokens: 500,
       }),
     });
 
     const data = await response.json();
-
-    // Log for debugging (you'll see this in Vercel logs)
-    console.log("OpenAI response:", data);
+    console.log("OpenAI full response:", JSON.stringify(data, null, 2));
 
     if (!response.ok) {
-      return res.status(500).json({
-        error: "OpenAI API failed",
-        details: data,
-      });
+      console.error("OpenAI API error:", data);
+      return res.status(500).json({ error: "OpenAI API failed", details: data });
     }
 
-    const reply = data?.choices?.[0]?.message?.content;
+    const reply = data?.choices?.[0]?.message?.content?.trim();
 
     if (!reply) {
-      return res.status(500).json({
-        error: "No reply from OpenAI",
-        raw: data,
-      });
+      console.error("No reply content found");
+      return res.status(500).json({ error: "No reply from OpenAI", raw: data });
     }
 
+    console.log("Sending reply:", reply);
     return res.status(200).json({ reply });
 
   } catch (error) {

@@ -45,23 +45,95 @@ function Home() {
 
   const [currentProject, setCurrentProject] = useState(0);
 
+  // ---------------- CHAT STATE ----------------
   const [messages, setMessages] = useState([
-  {
-    sender: "bot",
-    text: "Hi there! I'm Quinton's AI assistant. Ask me about SchoolHIVE, Quinton's projects or his skills!"
-  }
-]);
+    {
+      sender: "bot",
+      text: "Hi there! I'm Quinton's chat Assistant. Ask me anything about Quinton's work, or education"
+    }
+  ]);
 
-const [input, setInput] = useState("");
+  const [input, setInput] = useState("");
 
+  const messagesEndRef = useRef(null);
+  const [isFirstRender, setIsFirstRender] = useState(true);
 
+  // ---------------- HARD CODED KNOWLEDGE BASE ----------------
+  const knowledgeBase = {
+  schoolhive: {
+    keywords: [
+      "schoolhive",
+      "school hive",
+      "marketplace",
+      "rnz",
+      "capstone"
+    ],
+    response: [
+      "SchoolHIVE Marketplace NZ was Quinton Gillanders’ 2025 capstone project built using React, Firebase, and Material UI.",
+      "The platform was designed to solve real-world issues around access to school uniforms and essential school resources in South Auckland communities.",
+      "Quinton worked in a team of three (QAK404), and the project was successfully delivered, featured on RNZ, and won 1st place at the Unitec Whānau Day showcase."
+    ]
+  },
 
-const messagesEndRef = useRef(null);
-const [isFirstRender, setIsFirstRender] = useState(true);
+  skills: {
+    keywords: ["skills", "react", "javascript", "firebase", "css", "html"],
+    response: [
+      "Quinton works primarily with React and JavaScript for frontend development.",
+      "He also has experience with Firebase, Material UI, HTML, CSS, Python, Java, and C#.",
+      "His main focus is building responsive, user-friendly web applications."
+    ]
+  },
 
+  education: {
+    keywords: ["education", "study", "unitec", "degree", "course", "school"],
+    response: [
+      "Quinton Gillanders completed a Bachelor of Computing Systems at Unitec in 2025. ",
+      "During his studies, he focused heavily on software development, particularly frontend web development using React and JavaScript. ",
+      "He also completed a final-year capstone project (SchoolHIVE Marketplace NZ), where he worked in a team to build a real-world production web application. "
+    ]
+  },
 
-   const sendMessage = async () => {
-    console.log("SEND CLICKED");
+  projects: {
+    keywords: ["projects", "worm", "game", "hazard", "what has he built"],
+    response: [
+      "Quinton has built several projects including the SchoolHIVE Marketplace capstone project, the Worm Catching Game, and a developing Hazard ID system. ",
+      "His work mainly focuses on interactive web applications and frontend user experience."
+    ]
+  },
+
+  wormgame: {
+    keywords: ["worm", "worm game", "catching game", "javascript game"],
+    response: [
+      "The Worm Catching Game was a 2024 web development project built by Quinton using HTML, CSS, and JavaScript. ",
+      "It was designed as an interactive browser-based game where players catch moving worms to score points within a time limit. ",
+      "The project included keyboard controls, sound effects, a timer system, and a full game-over screen. "
+    ]
+  }, 
+};
+
+const [typingMessage, setTypingMessage] = useState(null);
+
+const typeMessage = (text, delay = 25) => {
+  return new Promise((resolve) => {
+    let i = 0;
+    let current = "";
+
+    const interval = setInterval(() => {
+      current += text[i];
+      i++;
+
+      setTypingMessage(current);
+
+      if (i >= text.length) {
+        clearInterval(interval);
+        resolve();
+      }
+    }, delay);
+  });
+};
+
+  // ---------------- REPLACED SEND MESSAGE ----------------
+  const sendMessage = async () => {
   if (!input.trim()) return;
 
   const userMessage = {
@@ -71,38 +143,34 @@ const [isFirstRender, setIsFirstRender] = useState(true);
 
   setMessages((prev) => [...prev, userMessage]);
 
-  const currentInput = input;
+  const query = input.toLowerCase();
   setInput("");
 
-  try {
-    const response = await fetch("http://localhost:3001/chat", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        message: currentInput
-      })
-    });
+  let matchedResponse = null;
 
-    const data = await response.json();
+  for (const key in knowledgeBase) {
+    const entry = knowledgeBase[key];
 
-    const botMessage = {
-      sender: "bot",
-      text: data.reply
-    };
-
-    setMessages((prev) => [...prev, botMessage]);
-
-  } catch (err) {
-    setMessages((prev) => [
-      ...prev,
-      {
-        sender: "bot",
-        text: "Error connecting to AI."
-      }
-    ]);
+    if (entry.keywords.some((kw) => query.includes(kw))) {
+      matchedResponse = entry.response;
+      break;
+    }
   }
+
+  const finalText =
+    matchedResponse?.join("\n\n") ||
+    "I don't have info on that yet — try asking about SchoolHIVE, skills, or projects!";
+
+  // typing animation
+  setTypingMessage("");
+
+
+  setMessages((prev) => [
+    ...prev,
+    { sender: "bot", text: finalText }
+  ]);
+
+  setTypingMessage(null);
 };
 
   useEffect(() => {
@@ -110,22 +178,21 @@ const [isFirstRender, setIsFirstRender] = useState(true);
       setCurrentProject(
         (prev) => (prev + 1) % featuredProjects.length
       );
-    }, 10000); // Change news story every 10 seconds
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [featuredProjects.length]);
-  
 
- useEffect(() => {
-  if (isFirstRender) {
-    setIsFirstRender(false);
-    return;
-  }
+  useEffect(() => {
+    if (isFirstRender) {
+      setIsFirstRender(false);
+      return;
+    }
 
-  messagesEndRef.current?.scrollIntoView({
-    behavior: "smooth"
-  });
-}, [messages]);
+    messagesEndRef.current?.scrollIntoView({
+      behavior: "smooth"
+    });
+  }, [messages]);
 
   return (
     <div className="app">
@@ -133,107 +200,97 @@ const [isFirstRender, setIsFirstRender] = useState(true);
       {/* HERO */}
       <section className="hero-split">
 
-        {/* LEFT SIDE */}
-          <div className="hero-left">
+        <div className="hero-left">
 
-            <img
-              src="/me.png"
-              alt="Quinton Gillanders"
-              className="hero-avatar"
-            />
+          <img
+            src="/me.png"
+            alt="Quinton Gillanders"
+            className="hero-avatar"
+          />
 
-            <h1 className="hero-name">Quinton Gillanders</h1>
+          <h1 className="hero-name">Quinton Gillanders</h1>
 
-            <p className="hero-text">
-              I'm a software developer with a Bachelor of Computing
-              Systems from Unitec (2025). Recently completed a capstone
-              project developing the SchoolHIVE Marketplace NZ platform as
-              part of a collaborative team. Experienced in building
-              responsive user interfaces using React.js, CSS and MUI.
-            </p>
+          <p className="hero-text">
+            I'm a software developer with a Bachelor of Computing
+            Systems from Unitec (2025). Recently completed a capstone
+            project developing the SchoolHIVE Marketplace NZ platform as
+            part of a collaborative team. Experienced in building
+            responsive user interfaces using React.js, CSS and MUI.
+          </p>
 
-            <a
-              href="/Quinton Gillanders CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              View My CV
-            </a>
+          <a
+            href="/Quinton Gillanders CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            View My CV
+          </a>
 
-          </div>
+        </div>
 
-        {/* RIGHT SIDE - AUTO SCROLLING FEATURED PROJECT */}
         <div className="hero-right">
 
           <div className="featured-box">
 
-           <div className="featured-image-wrapper">
-            {featuredProjects.map((project, index) => (
-              <img
-                key={index}
-                src={project.image}
-                alt={project.title}
-                className={`featured-image ${
-                  index === currentProject ? "active" : ""
-                }`}
-              />
-            ))}
-          </div>
+            <div className="featured-image-wrapper">
+              {featuredProjects.map((project, index) => (
+                <img
+                  key={index}
+                  src={project.image}
+                  alt={project.title}
+                  className={`featured-image ${
+                    index === currentProject ? "active" : ""
+                  }`}
+                />
+              ))}
+            </div>
 
-           <div className="featured-content">
+            <div className="featured-content">
 
+              <h2>{featuredProjects[currentProject].title}</h2>
 
-              <h2>
-                {featuredProjects[currentProject].title}
-              </h2>
-
-              <p>
-                {featuredProjects[currentProject].description}
-              </p>
+              <p>{featuredProjects[currentProject].description}</p>
 
               <div className="carousel-controls">
 
-                  {/* Previous button */}
-                  <button
-                    className="carousel-arrow"
-                    onClick={() =>
-                      setCurrentProject(
-                        (currentProject - 1 + featuredProjects.length) %
-                          featuredProjects.length
-                      )
-                    }
-                  >
-                    <ChevronLeftIcon />
-                  </button>
+                <button
+                  className="carousel-arrow"
+                  onClick={() =>
+                    setCurrentProject(
+                      (currentProject - 1 + featuredProjects.length) %
+                        featuredProjects.length
+                    )
+                  }
+                >
+                  <ChevronLeftIcon />
+                </button>
 
-                  {/* Existing dots */}
-                  <div className="carousel-dots">
-                    {featuredProjects.map((_, index) => (
-                      <button
-                        key={index}
-                        className={`carousel-dot ${
-                          index === currentProject ? "active" : ""
-                        }`}
-                        onClick={() => setCurrentProject(index)}
-                      />
-                    ))}
-                  </div>
-
-                  {/* Next button */}
-                  <button
-                    className="carousel-arrow"
-                    onClick={() =>
-                      setCurrentProject(
-                        (currentProject + 1) %
-                          featuredProjects.length
-                      )
-                    }
-                  >
-                    <ChevronRightIcon />
-                  </button>
-
+                <div className="carousel-dots">
+                  {featuredProjects.map((_, index) => (
+                    <button
+                      key={index}
+                      className={`carousel-dot ${
+                        index === currentProject ? "active" : ""
+                      }`}
+                      onClick={() => setCurrentProject(index)}
+                    />
+                  ))}
                 </div>
+
+                <button
+                  className="carousel-arrow"
+                  onClick={() =>
+                    setCurrentProject(
+                      (currentProject + 1) %
+                        featuredProjects.length
+                    )
+                  }
+                >
+                  <ChevronRightIcon />
+                </button>
+
+              </div>
 
             </div>
 
@@ -244,17 +301,17 @@ const [isFirstRender, setIsFirstRender] = useState(true);
       </section>
 
       {/* SKILLS */}
-        <section id="skills" className="skills">
+      <section id="skills" className="skills">
 
-          <h2>Skills</h2>
+        <h2>Skills</h2>
 
-          <p className="skills-text">
-            I work primarily with JavaScript and React to build responsive, interactive web applications. 
-            I also have experience with Mobile Development (Android Studio), Firebase, Material UI and version control using Git.
-            Other Languages and tools I'm familiar with include Python, Java, and C#.
-          </p>
+        <p className="skills-text">
+          I work primarily with JavaScript and React to build responsive, interactive web applications. 
+          I also have experience with Mobile Development (Android Studio), Firebase, Material UI and version control using Git.
+          Other Languages and tools I'm familiar with include Python, Java, and C#.
+        </p>
 
-        </section>
+      </section>
 
       {/* PROJECTS */}
       <section id="projects" className="projects">
@@ -263,7 +320,6 @@ const [isFirstRender, setIsFirstRender] = useState(true);
 
         <div className="project-grid">
 
-          {/* SCHOOLHIVE */}
           <div className="card">
 
             <div className="card-image">
@@ -290,10 +346,7 @@ const [isFirstRender, setIsFirstRender] = useState(true);
                   View Website
                 </a>
 
-                <a
-                  href="/schoolhive"
-                  className="project-link secondary"
-                >
+                <a href="/schoolhive" className="project-link secondary">
                   Learn More
                 </a>
 
@@ -303,7 +356,6 @@ const [isFirstRender, setIsFirstRender] = useState(true);
 
           </div>
 
-          {/* HAZARD ID */}
           <div className="card">
 
             <div className="card-image">
@@ -315,8 +367,7 @@ const [isFirstRender, setIsFirstRender] = useState(true);
               <h3>Hazard ID (2026)</h3>
 
               <p>
-                A hazard identification and tracking tool built to help
-                streamline safety reporting and risk management workflows. Coming soon!
+                A hazard identification and tracking tool built to help streamline safety reporting and risk management workflows. Coming soon!
               </p>
 
               <div className="project-buttons">
@@ -333,25 +384,17 @@ const [isFirstRender, setIsFirstRender] = useState(true);
 
           </div>
 
-          {/* WORM GAME */}
           <div className="card">
 
             <div className="card-image">
-              <img
-                src="/6420 web dev assignment.png"
-                alt="Web Game project"
-              />
+              <img src="/6420 web dev assignment.png" alt="Web Game project" />
             </div>
 
             <div className="card-content">
 
               <h3>Worm Catching Game (2024)</h3>
-              <h3>(Not playable on mobile)</h3>
-
               <p>
-                A browser-based game built using JavaScript, HTML and CSS
-                as part of a web development assignment for my Bachelor of
-                Computing Systems at Unitec.
+                A browser-based game built using JavaScript, HTML and CSS as part of a web development assignment for my Bachelor of Computing Systems at Unitec.
               </p>
 
               <div className="project-buttons">
@@ -365,10 +408,7 @@ const [isFirstRender, setIsFirstRender] = useState(true);
                   Play Game
                 </a>
 
-                <a
-                  href="/wormcatchinggame"
-                  className="project-link secondary"
-                >
+                <a href="/wormcatchinggame" className="project-link secondary">
                   Learn More
                 </a>
 
@@ -382,36 +422,30 @@ const [isFirstRender, setIsFirstRender] = useState(true);
 
       </section>
 
-
-        {/* AI CHATBOT */}
+      {/* CHATBOT (NOW HARD CODED) */}
       <section id="chatbot" className="chatbot">
 
         <h2>Get to know me!</h2>
-        <h3>(This section is still in progress, please check back later)</h3>
-
         <p>
-          Ask me anything about my projects, skills, education or experience.
-          (Please note: this section of my portfolio is still in progress, please check back later!)
+          If you would just like a quick summary of what I do and what I've worked on, try asking below!
         </p>
 
         <div className="chatbot-box">
 
-            <div className="chat-messages">
+          <div className="chat-messages">
 
-          {messages.map((message, index) => (
+            {messages.map((message, index) => (
+              <div
+                key={index}
+                className={`chat-message ${message.sender}`}
+              >
+                {message.text}
+              </div>
+            ))}
 
-            <div
-              key={index}
-              className={`chat-message ${message.sender}`}
-            >
-              {message.text}
-            </div>
+            <div ref={messagesEndRef}></div>
 
-          ))}
-
-          <div ref={messagesEndRef}></div>
-
-        </div>
+          </div>
 
           <div className="chat-input-area">
 
@@ -422,16 +456,11 @@ const [isFirstRender, setIsFirstRender] = useState(true);
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  sendMessage();
-
-                }
+                if (e.key === "Enter") sendMessage();
               }}
             />
-            <button
-              className="chat-send"
-              onClick={sendMessage}
-            >
+
+            <button className="chat-send" onClick={sendMessage}>
               Send
             </button>
 
@@ -439,14 +468,11 @@ const [isFirstRender, setIsFirstRender] = useState(true);
 
         </div>
 
-</section>
+      </section>
 
-     
-      </div>
-    );
-  }
-
-
+    </div>
+  );
+}
 
 function App() {
   return (

@@ -29,7 +29,7 @@ function Navbar() {
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#chatbot">AI Chat</a>
+        <a href="#chatbot">Get to know me</a>
       </div>
 
       {/* RIGHT (DESKTOP ICONS) */}
@@ -73,7 +73,7 @@ function Navbar() {
           <a href="#about" onClick={closeMenu}>About</a>
           <a href="#skills" onClick={closeMenu}>Skills</a>
           <a href="#projects" onClick={closeMenu}>Projects</a>
-          <a href="#chatbot" onClick={closeMenu}>AI Chat</a>
+          <a href="#chatbot" onClick={closeMenu}>Get to know me</a>
 
           <div className="mobile-icons">
 

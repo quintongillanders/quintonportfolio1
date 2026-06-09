@@ -87,29 +87,45 @@ function Home() {
   education: {
     keywords: ["education", "study", "unitec", "degree", "course", "school"],
     response: [
-      "Quinton Gillanders completed a Bachelor of Computing Systems at Unitec in 2025. ",
-      "During his studies, he focused heavily on software development, particularly frontend web development using React and JavaScript. ",
-      "He also completed a final-year capstone project (SchoolHIVE Marketplace NZ), where he worked in a team to build a real-world production web application. "
+      "Quinton Gillanders completed a Bachelor of Computing Systems at Unitec in 2025.",
+      "During his studies, he focused heavily on software development, particularly frontend web development using React and JavaScript.",
+      "He also completed a final-year capstone project (SchoolHIVE Marketplace NZ), where he worked in a team to build a real-world production web application."
     ]
   },
 
   projects: {
-    keywords: ["projects", "worm", "game", "hazard", "what has he built"],
+    keywords: ["what has he built", "built", "portfolio"],
     response: [
-      "Quinton has built several projects including the SchoolHIVE Marketplace capstone project, the Worm Catching Game, and a developing Hazard ID system. ",
-      "His work mainly focuses on interactive web applications and frontend user experience."
+      "Quinton has built several projects including the SchoolHIVE Marketplace capstone project, the Worm Catching Game, and a developing Hazard ID system.",
+      "His work mainly focuses on interactive web applications."
     ]
   },
 
   wormgame: {
-    keywords: ["worm", "worm game", "catching game", "javascript game"],
+    keywords: [
+      "worm",
+      "worm game",
+      "catching game",
+      "worm catching game",
+      "javascript game"
+    ],
     response: [
-      "The Worm Catching Game was a 2024 web development project built by Quinton using HTML, CSS, and JavaScript. ",
-      "It was designed as an interactive browser-based game where players catch moving worms to score points within a time limit. ",
-      "The project included keyboard controls, sound effects, a timer system, and a full game-over screen. "
+      "The Worm Catching Game was a 2024 web development project built by Quinton using HTML, CSS, and JavaScript.",
+      "It was designed as an interactive browser-based game where players catch moving worms to score points within a time limit.",
+      "The project included keyboard controls, sound effects, a timer system, and a full game-over screen."
     ]
-  }, 
+  },
+
+   hazardid: {
+    keywords: ["hazard", "hazard id", "hazardid", "safety tool"],
+    response: [
+      "Hazard ID is a project Quinton is currently working on.",
+      "It is a hazard identification and tracking tool designed to improve safety reporting and risk management workflows.",
+      "The project is still in development and will be released soon."
+    ]
+  }
 };
+
 
 const [typingMessage, setTypingMessage] = useState(null);
 

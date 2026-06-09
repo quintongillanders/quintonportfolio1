@@ -54,7 +54,10 @@ function Home() {
 
 const [input, setInput] = useState("");
 
+
+
 const messagesEndRef = useRef(null);
+const [isFirstRender, setIsFirstRender] = useState(true);
 
 
    const sendMessage = async () => {
@@ -112,7 +115,12 @@ const messagesEndRef = useRef(null);
   }, [featuredProjects.length]);
   
 
-  useEffect(() => {
+ useEffect(() => {
+  if (isFirstRender) {
+    setIsFirstRender(false);
+    return;
+  }
+
   messagesEndRef.current?.scrollIntoView({
     behavior: "smooth"
   });
@@ -378,9 +386,11 @@ const messagesEndRef = useRef(null);
       <section id="chatbot" className="chatbot">
 
         <h2>Get to know me!</h2>
+        <h3>(This section is still in progress, please check back later)</h3>
 
         <p>
           Ask me anything about my projects, skills, education or experience.
+          (Please note: this section of my portfolio is still in progress, please check back later!)
         </p>
 
         <div className="chatbot-box">

@@ -3,9 +3,13 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { message } = req.body;
-
   try {
+    const { message } = req.body;
+
+    if (!process.env.OPENAI_API_KEY) {
+      return res.status(500).json({ error: "Missing API key" });
+    }
+
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -18,7 +22,7 @@ export default async function handler(req, res) {
           {
             role: "system",
             content:
-              "You are a helpful AI portfolio assistant for Quinton Gillanders. Answer questions about his skills, projects, and experience in a friendly tone.",
+              "You are a helpful portfolio assistant for Quinton Gillanders. Answer clearly and concisely.",
           },
           {
             role: "user",
@@ -30,12 +34,21 @@ export default async function handler(req, res) {
 
     const data = await response.json();
 
-    const reply = data.choices?.[0]?.message?.content;
+    console.log("OpenAI response:", data);
 
-    res.status(200).json({ reply });
+    const reply = data?.choices?.[0]?.message?.content;
+
+    if (!reply) {
+      return res.status(500).json({
+        error: "No reply from OpenAI",
+        raw: data,
+      });
+    }
+
+    return res.status(200).json({ reply });
 
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ reply: "AI error occurred." });
+    console.error("API ERROR:", error);
+    return res.status(500).json({ error: "Server error", details: error.message });
   }
 }

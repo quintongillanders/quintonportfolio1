@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Navbar from "./components/Navbar";
 
@@ -45,6 +45,99 @@ function Home() {
 
   const [currentProject, setCurrentProject] = useState(0);
 
+  const [messages, setMessages] = useState([
+  {
+    sender: "bot",
+    text: "Hi there! I'm Quinton's AI assistant. Ask me about SchoolHIVE, Quinton's projects or his skills!"
+  }
+]);
+
+const [input, setInput] = useState("");
+
+const messagesEndRef = useRef(null);
+
+
+    const sendMessage = () => {
+
+  if (!input.trim()) return;
+
+  const userMessage = {
+    sender: "user",
+    text: input
+  };
+
+ let reply = "";
+
+if (input.toLowerCase().includes("schoolhive")) {
+
+  reply =
+    "SchoolHIVE was my Unitec Capstone Project built with React, Firebase and Material UI.";
+
+}
+else if (input.toLowerCase().includes("unitec")) {
+
+  reply =
+    "Quinton graduated with a Bachelor of Computing Systems from Unitec.";
+
+}
+else if (input.toLowerCase().includes("react")) {
+
+  reply =
+    "Quinton has used React to build SchoolHIVE and this portfolio website.";
+
+}
+else if (input.toLowerCase().includes("javascript")) {
+
+  reply =
+    "JavaScript is Quinton's primary language and is used throughout his projects.";
+
+}
+else if (input.toLowerCase().includes("firebase")) {
+
+  reply =
+    "SchoolHIVE uses Firebase Authentication and Firestore.";
+
+}
+else if (input.toLowerCase().includes("hazard")) {
+
+  reply =
+    "Hazard ID is an upcoming hazard reporting application currently in development.";
+
+}
+else if (input.toLowerCase().includes("worm")) {
+
+  reply =
+    "The Worm Catching Game is a browser game built using HTML, CSS and JavaScript.";
+
+}
+else {
+
+  reply =
+    "Sorry, I don't know the answer to that yet. Soon I'll be powered by AI!";
+
+}
+
+  const botMessage = {
+    sender: "bot",
+    text: reply
+  };
+
+  setMessages((prev) => [
+  ...prev,
+  userMessage
+]);
+
+setTimeout(() => {
+  setMessages((prev) => [
+    ...prev,
+    botMessage
+  ]);
+}, 800);
+
+  setInput("");
+
+};
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentProject(
@@ -54,6 +147,12 @@ function Home() {
 
     return () => clearInterval(interval);
   }, [featuredProjects.length]);
+
+  useEffect(() => {
+  messagesEndRef.current?.scrollIntoView({
+    behavior: "smooth"
+  });
+}, [messages]);
 
   return (
     <div className="app">
@@ -310,9 +409,69 @@ function Home() {
 
       </section>
 
-    </div>
-  );
-}
+
+        {/* AI CHATBOT */}
+      <section id="chatbot" className="chatbot">
+
+        <h2>Get to know me!</h2>
+
+        <p>
+          Ask me anything about my projects, skills, education or experience.
+        </p>
+
+        <div className="chatbot-box">
+
+            <div className="chat-messages">
+
+          {messages.map((message, index) => (
+
+            <div
+              key={index}
+              className={`chat-message ${message.sender}`}
+            >
+              {message.text}
+            </div>
+
+          ))}
+
+          <div ref={messagesEndRef}></div>
+
+        </div>
+
+          <div className="chat-input-area">
+
+            <input
+              className="chat-input"
+              type="text"
+              placeholder="Ask me anything..."
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  sendMessage();
+
+                }
+              }}
+            />
+            <button
+              className="chat-send"
+              onClick={sendMessage}
+            >
+              Send
+            </button>
+
+          </div>
+
+        </div>
+
+</section>
+
+     
+      </div>
+    );
+  }
+
+
 
 function App() {
   return (

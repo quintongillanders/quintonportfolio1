@@ -61,6 +61,7 @@ const [isFirstRender, setIsFirstRender] = useState(true);
 
 
    const sendMessage = async () => {
+    console.log("SEND CLICKED");
   if (!input.trim()) return;
 
   const userMessage = {
@@ -74,7 +75,7 @@ const [isFirstRender, setIsFirstRender] = useState(true);
   setInput("");
 
   try {
-    const response = await fetch("/api/chat", {
+    const response = await fetch("http://localhost:3001/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

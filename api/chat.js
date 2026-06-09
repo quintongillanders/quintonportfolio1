@@ -21,8 +21,7 @@ export default async function handler(req, res) {
         messages: [
           {
             role: "system",
-            content:
-              "You are a helpful portfolio assistant for Quinton Gillanders. Answer clearly and concisely.",
+            content: "You are a helpful portfolio assistant for Quinton Gillanders. Answer clearly and concisely.",
           },
           {
             role: "user",
@@ -34,7 +33,15 @@ export default async function handler(req, res) {
 
     const data = await response.json();
 
+    // Log for debugging (you'll see this in Vercel logs)
     console.log("OpenAI response:", data);
+
+    if (!response.ok) {
+      return res.status(500).json({
+        error: "OpenAI API failed",
+        details: data,
+      });
+    }
 
     const reply = data?.choices?.[0]?.message?.content;
 
@@ -49,29 +56,9 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error("API ERROR:", error);
-    return res.status(500).json({ error: "Server error", details: error.message });
+    return res.status(500).json({ 
+      error: "Server error", 
+      details: error.message 
+    });
   }
 }
-
-// 🔥 IMPORTANT DEBUG
-console.log("OPENAI RAW RESPONSE:", JSON.stringify(data, null, 2));
-
-// ❌ If OpenAI returned an error, show it properly
-if (!response.ok) {
-  return res.status(500).json({
-    error: "OpenAI API failed",
-    details: data,
-  });
-}
-
-// ❌ If structure is missing
-if (!data?.choices?.length) {
-  return res.status(500).json({
-    error: "Invalid OpenAI response format",
-    raw: data,
-  });
-}
-
-const reply = data.choices[0].message.content;
-
-return res.status(200).json({ reply });

@@ -57,8 +57,7 @@ const [input, setInput] = useState("");
 const messagesEndRef = useRef(null);
 
 
-    const sendMessage = () => {
-
+   const sendMessage = async () => {
   if (!input.trim()) return;
 
   const userMessage = {
@@ -66,76 +65,40 @@ const messagesEndRef = useRef(null);
     text: input
   };
 
- let reply = "";
+  setMessages((prev) => [...prev, userMessage]);
 
-if (input.toLowerCase().includes("schoolhive")) {
-
-  reply =
-    "SchoolHIVE was my Unitec Capstone Project built with React, Firebase and Material UI.";
-
-}
-else if (input.toLowerCase().includes("unitec")) {
-
-  reply =
-    "Quinton graduated with a Bachelor of Computing Systems from Unitec.";
-
-}
-else if (input.toLowerCase().includes("react")) {
-
-  reply =
-    "Quinton has used React to build SchoolHIVE and this portfolio website.";
-
-}
-else if (input.toLowerCase().includes("javascript")) {
-
-  reply =
-    "JavaScript is Quinton's primary language and is used throughout his projects.";
-
-}
-else if (input.toLowerCase().includes("firebase")) {
-
-  reply =
-    "SchoolHIVE uses Firebase Authentication and Firestore.";
-
-}
-else if (input.toLowerCase().includes("hazard")) {
-
-  reply =
-    "Hazard ID is an upcoming hazard reporting application currently in development.";
-
-}
-else if (input.toLowerCase().includes("worm")) {
-
-  reply =
-    "The Worm Catching Game is a browser game built using HTML, CSS and JavaScript.";
-
-}
-else {
-
-  reply =
-    "Sorry, I don't know the answer to that yet. Soon I'll be powered by AI!";
-
-}
-
-  const botMessage = {
-    sender: "bot",
-    text: reply
-  };
-
-  setMessages((prev) => [
-  ...prev,
-  userMessage
-]);
-
-setTimeout(() => {
-  setMessages((prev) => [
-    ...prev,
-    botMessage
-  ]);
-}, 800);
-
+  const currentInput = input;
   setInput("");
 
+  try {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        message: currentInput
+      })
+    });
+
+    const data = await response.json();
+
+    const botMessage = {
+      sender: "bot",
+      text: data.reply
+    };
+
+    setMessages((prev) => [...prev, botMessage]);
+
+  } catch (err) {
+    setMessages((prev) => [
+      ...prev,
+      {
+        sender: "bot",
+        text: "Error connecting to AI."
+      }
+    ]);
+  }
 };
 
   useEffect(() => {
@@ -147,6 +110,7 @@ setTimeout(() => {
 
     return () => clearInterval(interval);
   }, [featuredProjects.length]);
+  
 
   useEffect(() => {
   messagesEndRef.current?.scrollIntoView({

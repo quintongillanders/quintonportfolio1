@@ -52,3 +52,26 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: "Server error", details: error.message });
   }
 }
+
+// 🔥 IMPORTANT DEBUG
+console.log("OPENAI RAW RESPONSE:", JSON.stringify(data, null, 2));
+
+// ❌ If OpenAI returned an error, show it properly
+if (!response.ok) {
+  return res.status(500).json({
+    error: "OpenAI API failed",
+    details: data,
+  });
+}
+
+// ❌ If structure is missing
+if (!data?.choices?.length) {
+  return res.status(500).json({
+    error: "Invalid OpenAI response format",
+    raw: data,
+  });
+}
+
+const reply = data.choices[0].message.content;
+
+return res.status(200).json({ reply });

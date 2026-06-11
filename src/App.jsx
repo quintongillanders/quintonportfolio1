@@ -329,114 +329,147 @@ const typeMessage = (text, delay = 25) => {
 
       </section>
 
-      {/* PROJECTS */}
-      <section id="projects" className="projects">
+     {/* PROJECTS */}
+<section id="projects" className="projects">
 
-        <h2>Projects</h2>
+  <h2>Projects</h2>
 
-        <div className="project-grid">
+  <div className="project-grid">
 
-          <div className="card">
+    <div className="card">
 
-            <div className="card-image">
-              <img src="/schoolhive.png" alt="SchoolHive project" />
-            </div>
+      <div className="card-image">
+        <img src="/6420 web dev assignment.png" alt="Web Game Project" />
+      </div>
 
-            <div className="card-content">
+      <div className="card-content">
 
-              <h3>SchoolHive Marketplace (2025)</h3>
+        <h3>Worm Catching Game (2024)</h3>
 
-              <p>
-                Built as part of my Unitec Capstone Project using React, Firebase, Material UI and JavaScript. 
-                Developed alongside two students and featured on the Unitec website and RNZ.
-              </p>
+        <p>
+          A browser-based game built using JavaScript, HTML and CSS as part of a web development assignment for my Bachelor of Computing Systems at Unitec.
+        </p>
 
-              <div className="project-buttons">
+        <div className="project-buttons">
 
-                <a
-                  href="https://www.schoolhive.co.nz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  View Website
-                </a>
+          <a
+            href="https://quintongillanders.github.io/wormcatchinggame.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            Play Game
+          </a>
 
-                <a href="/schoolhive" className="project-link secondary">
-                  Learn More
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div className="card">
-
-            <div className="card-image">
-              <img src="/hazardid.png.avif" alt="Hazard ID project" />
-            </div>
-
-            <div className="card-content">
-
-              <h3>Hazard ID (2026)</h3>
-
-              <p>
-                A hazard identification and tracking tool built to help streamline safety reporting and risk management workflows. Coming soon!
-              </p>
-
-              <div className="project-buttons">
-                <a
-                  href="#"
-                  className="project-link"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  More details coming soon
-                </a>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div className="card">
-
-            <div className="card-image">
-              <img src="/6420 web dev assignment.png" alt="Web Game project" />
-            </div>
-
-            <div className="card-content">
-
-              <h3>Worm Catching Game (2024)</h3>
-              <p>
-                A browser-based game built using JavaScript, HTML and CSS as part of a web development assignment for my Bachelor of Computing Systems at Unitec.
-              </p>
-
-              <div className="project-buttons">
-
-                <a
-                  href="https://quintongillanders.github.io/wormcatchinggame.github.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  Play Game
-                </a>
-
-                <a href="/wormcatchinggame" className="project-link secondary">
-                  Learn More
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
+          <a href="/wormcatchinggame" className="project-link secondary">
+            Learn More
+          </a>
 
         </div>
 
-      </section>
+      </div>
+
+    </div>
+
+    <div className="card">
+
+      <div className="card-image">
+        <img src="/schoolhive.png" alt="SchoolHive project" />
+      </div>
+
+      <div className="card-content">
+
+        <h3>SchoolHive Marketplace (2025)</h3>
+
+        <p>
+          Built as part of my Unitec Capstone Project using React, Firebase, Material UI and JavaScript.
+          Developed alongside two students and featured on the Unitec website and RNZ.
+        </p>
+
+        <div className="project-buttons">
+
+          <a
+            href="https://www.schoolhive.co.nz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            View Website
+          </a>
+
+          <a href="/schoolhive" className="project-link secondary">
+            Learn More
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="card">
+
+      <div className="card-image">
+        <img src="/hazardid.png.avif" alt="Hazard ID project" />
+      </div>
+
+      <div className="card-content">
+
+        <h3>Hazard ID (2026)</h3>
+
+        <p>
+          A hazard identification and tracking tool built to help streamline safety reporting and risk management workflows. Coming soon!
+        </p>
+
+        <div className="project-buttons">
+
+          <a
+            href="#"
+            className="project-link"
+            onClick={(e) => e.preventDefault()}
+          >
+            More details coming soon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="card">
+
+      <div className="card-image">
+        <img src="/hazardid.png.avif" alt="Upcoming project" />
+      </div>
+
+      <div className="card-content">
+
+        <h3>Upcoming Project (2026)</h3>
+
+        <p>
+          More details will be revealed at a later date about this project. Check back soon!
+        </p>
+
+        <div className="project-buttons">
+
+          <a
+            href="#"
+            className="project-link"
+            onClick={(e) => e.preventDefault()}
+          >
+            More details coming soon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* CHATBOT (NOW HARD CODED) */}
       <section id="chatbot" className="chatbot">

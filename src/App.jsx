@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 
 import SchoolHive from "./pages/SchoolHive";
 import WormGameCaseStudy from "./pages/Worm Catching Game";
+import NotFound from "./pages/NotFound";
 
 import CodeIcon from "@mui/icons-material/Code";
 import JavascriptIcon from "@mui/icons-material/Javascript";
@@ -544,6 +545,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/schoolhive" element={<SchoolHive />} />
         <Route path="/wormcatchinggame" element={<WormGameCaseStudy />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );

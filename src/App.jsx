@@ -494,36 +494,6 @@ const typeMessage = (text, delay = 25) => {
 
     </div>
 
-    <div className="card">
-
-      <div className="card-image">
-        <img src="/hazardid.png.avif" alt="Upcoming project" />
-      </div>
-
-      <div className="card-content">
-
-        <h3>Upcoming Project (2026)</h3>
-
-        <p>
-          More details will be revealed at a later date about this project. Check back soon!
-        </p>
-
-        <div className="project-buttons">
-
-          <a
-            href="#"
-            className="project-link"
-            onClick={(e) => e.preventDefault()}
-          >
-            More details coming soon
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
   </div>
 
 </section>

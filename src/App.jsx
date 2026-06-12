@@ -123,6 +123,18 @@ function Home() {
       "It is a hazard identification and tracking tool designed to improve safety reporting and risk management workflows.",
       "The project is still in development and will be released soon."
     ]
+  }, 
+
+  socialmedia: {
+    keywords: ["social", "instagram", "facebook", "discord", "github", "linkedin", "mobile"],
+    response: [
+      "If you would like to get in touch with Quinton, you can use the links at the top of the page.",
+      "The links include Quinton's email, Github, LinkedIn, and mobile number.",
+      "Additionally, you can also conect with him on Facebook, Instagram, or Discord.",
+      "Discord: settledown191",
+      "Facebook: https://www.facebook.com/quinton.gillanders", 
+      "Instagram: https://www.instagram.com/quintongillanders/", 
+    ]
   }
 };
 

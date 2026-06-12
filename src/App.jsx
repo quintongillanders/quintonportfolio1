@@ -334,13 +334,57 @@ const typeMessage = (text, delay = 25) => {
 
         <h2>Skills</h2>
 
-        <p className="skills-text">
-          I work primarily with JavaScript and React to build responsive, interactive web applications. 
-          I also have experience with Mobile Development (Android Studio), Firebase, Material UI and version control using Git.
-          Other Languages and tools I'm familiar with include Python, Java, and C#.
-        </p>
+        <div className="tech-stack">
+
+          <div className="tech-item">
+            <img src="/react.png" alt="React" />
+            <span>React</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/javascript.png" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/firebase.png" alt="Firebase" />
+            <span>Firebase</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/mui.png" alt="Material UI" />
+            <span>Material UI</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/HTML.png" alt="HTML" />
+            <span>HTML</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/css.png" alt="CSS" />
+            <span>CSS</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/python.png" alt="Python" />
+            <span>Python</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/java.png" alt="Java" />
+            <span>Java</span>
+          </div>
+
+          <div className="tech-item">
+            <img src="/csharp.png" alt="C#" />
+            <span>C#</span>
+          </div>
+
+        </div>
 
       </section>
+
 
      {/* PROJECTS */}
 <section id="projects" className="projects">

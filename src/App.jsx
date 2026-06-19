@@ -498,7 +498,7 @@ const typeMessage = (text, delay = 25) => {
     <div className="card">
 
       <div className="card-image">
-        <img src="/hazardid.png.avif" alt="Hazard ID project" />
+        <img src="/aichat1.png" alt="Aichatbot project" />
       </div>
 
       <div className="card-content">

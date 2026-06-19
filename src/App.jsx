@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 
 import SchoolHive from "./pages/SchoolHive";
 import WormGameCaseStudy from "./pages/Worm Catching Game";
+import AiChatBotCaseStudy from "./pages/aichatbot";
 import NotFound from "./pages/NotFound";
 
 import CodeIcon from "@mui/icons-material/Code";
@@ -494,6 +495,43 @@ const typeMessage = (text, delay = 25) => {
 
     </div>
 
+    <div className="card">
+
+      <div className="card-image">
+        <img src="/hazardid.png.avif" alt="Hazard ID project" />
+      </div>
+
+      <div className="card-content">
+
+        <h3>AI Chatbot (2026)</h3>
+
+        <p>
+          A friendly AI chatbot that I have started working on and will continue to work on over time.
+        </p>
+
+        <div className="project-buttons">
+
+          <a
+            href="https://aichatbot-lilac-two.vercel.app/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            Visit Chatbot
+          </a>
+
+          <a href="/aichatbot" className="project-link secondary">
+            Learn More
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
   </div>
 
 </section>
@@ -559,6 +597,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/schoolhive" element={<SchoolHive />} />
         <Route path="/wormcatchinggame" element={<WormGameCaseStudy />} />
+        <Route path="/aichatbot" element={<AiChatBotCaseStudy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

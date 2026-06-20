@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -11,8 +12,26 @@ import CloseIcon from "@mui/icons-material/Close";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const closeMenu = () => setOpen(false);
+
+  const navigateToSection = (sectionId) => {
+    navigate(`/#${sectionId}`);
+
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
+
+    closeMenu();
+  };
 
   return (
     <nav className="navbar">
@@ -26,10 +45,35 @@ function Navbar() {
 
       {/* CENTER (DESKTOP) */}
       <div className="nav-center">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#chatbot">Get to know me</a>
+
+        <button
+          className="nav-link-button"
+          onClick={() => navigateToSection("about")}
+        >
+          About
+        </button>
+
+        <button
+          className="nav-link-button"
+          onClick={() => navigateToSection("skills")}
+        >
+          Skills
+        </button>
+
+        <button
+          className="nav-link-button"
+          onClick={() => navigateToSection("projects")}
+        >
+          Projects
+        </button>
+
+        <button
+          className="nav-link-button"
+          onClick={() => navigateToSection("chatbot")}
+        >
+          Get to know me
+        </button>
+
       </div>
 
       {/* RIGHT (DESKTOP ICONS) */}
@@ -62,7 +106,10 @@ function Navbar() {
       </div>
 
       {/* HAMBURGER ICON (MOBILE) */}
-      <div className="hamburger" onClick={() => setOpen(!open)}>
+      <div
+        className="hamburger"
+        onClick={() => setOpen(!open)}
+      >
         {open ? <CloseIcon /> : <MenuIcon />}
       </div>
 
@@ -70,17 +117,59 @@ function Navbar() {
       {open && (
         <div className="mobile-menu">
 
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a href="#skills" onClick={closeMenu}>Skills</a>
-          <a href="#projects" onClick={closeMenu}>Projects</a>
-          <a href="#chatbot" onClick={closeMenu}>Get to know me</a>
+          <button
+            className="nav-link-button"
+            onClick={() => navigateToSection("about")}
+          >
+            About
+          </button>
+
+          <button
+            className="nav-link-button"
+            onClick={() => navigateToSection("skills")}
+          >
+            Skills
+          </button>
+
+          <button
+            className="nav-link-button"
+            onClick={() => navigateToSection("projects")}
+          >
+            Projects
+          </button>
+
+          <button
+            className="nav-link-button"
+            onClick={() => navigateToSection("chatbot")}
+          >
+            Get to know me
+          </button>
 
           <div className="mobile-icons">
 
-            <a href="mailto:quingillanders@gmail.com"><EmailIcon /></a>
-            <a href="tel:+64221604203"><PhoneIcon /></a>
-            <a href="https://github.com/quintongillanders" target="_blank"><GitHubIcon /></a>
-            <a href="https://www.linkedin.com/in/quinton-gillanders-335985297/" target="_blank"><LinkedInIcon /></a>
+            <a href="mailto:quingillanders@gmail.com">
+              <EmailIcon />
+            </a>
+
+            <a href="tel:+64221604203">
+              <PhoneIcon />
+            </a>
+
+            <a
+              href="https://github.com/quintongillanders"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/quinton-gillanders-335985297/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon />
+            </a>
 
           </div>
 

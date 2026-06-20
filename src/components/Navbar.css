@@ -168,3 +168,19 @@
     font-size: 18px;
   }
 }
+
+.nav-link-button {
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  font-size: 18px; 
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.nav-link-button:hover {
+  opacity: 0.8;
+}

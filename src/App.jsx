@@ -241,7 +241,7 @@ const typeMessage = (text, delay = 25) => {
     <div className="app">
 
       {/* HERO */}
-      <section className="hero-split">
+      <section id="about" className="hero-split">
 
         <div className="hero-left">
 

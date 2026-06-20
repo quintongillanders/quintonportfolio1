@@ -31,7 +31,7 @@ function Home() {
       link: "https://www.rnz.co.nz/news/ldr/578864/otara-rangatahi-lead-digital-solution-to-school-costs"
     },
     {
-      title: "Team QAK 404 Capstone Project Wins 1st Place at Unitec Whānau Day Showcase (November 2025)",
+      title: "Team QAK404 Capstone Project Wins 1st Place at Unitec Whānau Day Showcase (November 2025)",
       description:
         "Team QAK404, developers of the SchoolHIVE Marketplace, win first place at the Unitec Whānau Day Showcase on November 20th, 2025.",
       image: "/whanaudaywin.jpg",

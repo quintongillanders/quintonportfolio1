@@ -137,6 +137,19 @@ function Home() {
       "Facebook: https://www.facebook.com/quinton.gillanders", 
       "Instagram: https://www.instagram.com/quintongillanders/", 
     ]
+  }, 
+
+  aichatbot: {
+    keywords: ["ai", "aichat", "aichatbot", "bot", "chat"],
+    response : [
+      "The AI Chatbot is a project that Quinton wanted to work on to learn more about AI and to improve his skills.",
+      "It is an ongoing project that he is continuing to work on in his free time.",
+      "Currently the chatbot features real AI powered conversations, and conversation memory.", 
+      "Upon refresh the AI will forget everything at the moment.",
+      "The AI also features basic web knowledge, for example, if you ask it about a certain game, tv show, movie or something else,",
+      "it will retrieve that information from the internet, and provide the context to the language model.",
+      "It is not 100% complete, as it makes alot of mistakes, but it is mostly accurate. Stay tuned for more updates!"
+    ]
   }
 };
 

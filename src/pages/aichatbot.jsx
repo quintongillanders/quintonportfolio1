@@ -13,7 +13,7 @@ export default function ProjectName() {
       {/* HERO */}
       <div className="case-hero">
 
-        <h1>My First AI Chatbot</h1>
+        <h1>QuinC AI</h1>
 
         <div className="case-meta">
           <span>🏷️ Personal Project</span>

@@ -516,7 +516,7 @@ const typeMessage = (text, delay = 25) => {
 
       <div className="card-content">
 
-        <h3>AI Chatbot (2026)</h3>
+        <h3>QuinC AI (2026)</h3>
 
         <p>
           A friendly AI chatbot that I have started working on and will continue to work on over time.

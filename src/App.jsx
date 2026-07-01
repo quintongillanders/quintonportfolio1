@@ -62,6 +62,26 @@ function Home() {
 
   // ---------------- HARD CODED KNOWLEDGE BASE ----------------
   const knowledgeBase = {
+  greetings: {
+    keywords: [
+      "hi",
+      "hello",
+      "hey",
+      "hiya",
+      "kia ora",
+      "yo",
+      "sup",
+      "good morning",
+      "good afternoon",
+      "good evening"
+    ],
+    response: [
+      "Hello! 👋 I'm Quinton's AI Assistant.",
+      "I'm here to answer questions about Quinton's projects, skills, education, and experience.",
+      "Feel free to ask me about SchoolHIVE, Hazard ID, QuinC AI, the Worm Catching Game, Quinton's education, skills, or social media."
+    ]
+  },
+
   schoolhive: {
     keywords: [
       "schoolhive",
@@ -71,35 +91,63 @@ function Home() {
       "capstone"
     ],
     response: [
-      "SchoolHIVE Marketplace NZ was Quinton Gillanders’ 2025 capstone project built using React, Firebase, and Material UI.",
+      "SchoolHIVE Marketplace NZ was Quinton Gillanders' 2025 capstone project built using React, Firebase, and Material UI.",
       "The platform was designed to solve real-world issues around access to school uniforms and essential school resources in South Auckland communities.",
-      "Quinton worked in a team of three (QAK404), and the project was successfully delivered, featured on RNZ, and won 1st place at the Unitec Whānau Day showcase."
+      "Quinton worked in a team of three (QAK404), and the project was successfully delivered, featured on RNZ, and won 1st place at the Unitec Whānau Day Showcase."
     ]
   },
 
   skills: {
-    keywords: ["skills", "react", "javascript", "firebase", "css", "html"],
+    keywords: [
+      "skills",
+      "skill",
+      "react",
+      "javascript",
+      "firebase",
+      "html",
+      "css",
+      "python",
+      "java",
+      "c#",
+      "material ui",
+      "mui"
+    ],
     response: [
-      "Quinton works primarily with React and JavaScript for frontend development.",
-      "He also has experience with Firebase, Material UI, HTML, CSS, Python, Java, and C#.",
+      "Quinton primarily develops web applications using React and JavaScript.",
+      "He also has experience with Firebase, Material UI, HTML, CSS, Python, Java and C#.",
       "His main focus is building responsive, user-friendly web applications."
     ]
   },
 
   education: {
-    keywords: ["education", "study", "unitec", "degree", "course", "school"],
+    keywords: [
+      "education",
+      "study",
+      "studied",
+      "degree",
+      "course",
+      "unitec",
+      "university"
+    ],
     response: [
-      "Quinton Gillanders completed a Bachelor of Computing Systems at Unitec in 2025.",
-      "During his studies, he focused heavily on software development, particularly frontend web development using React and JavaScript.",
-      "He also completed a final-year capstone project (SchoolHIVE Marketplace NZ), where he worked in a team to build a real-world production web application."
+      "Quinton completed a Bachelor of Computing Systems at Unitec in 2025.",
+      "During his studies he specialised in software development with a strong focus on React and JavaScript.",
+      "His final-year capstone project was the SchoolHIVE Marketplace NZ platform."
     ]
   },
 
   projects: {
-    keywords: ["what has he built", "built", "portfolio"],
+    keywords: [
+      "projects",
+      "project",
+      "portfolio",
+      "built",
+      "what has he built",
+      "work"
+    ],
     response: [
-      "Quinton has built several projects including the SchoolHIVE Marketplace capstone project, the Worm Catching Game, and a developing Hazard ID system.",
-      "His work mainly focuses on interactive web applications."
+      "Quinton has built several projects including SchoolHIVE Marketplace NZ, the Worm Catching Game, Hazard ID and QuinC AI.",
+      "His work mainly focuses on interactive web applications built with React."
     ]
   },
 
@@ -107,48 +155,68 @@ function Home() {
     keywords: [
       "worm",
       "worm game",
-      "catching game",
       "worm catching game",
+      "catching game",
       "javascript game"
     ],
     response: [
-      "The Worm Catching Game was a 2024 web development project built by Quinton using HTML, CSS, and JavaScript.",
-      "It was designed as an interactive browser-based game where players catch moving worms to score points within a time limit.",
-      "The project included keyboard controls, sound effects, a timer system, and a full game-over screen."
+      "The Worm Catching Game was built in 2024 using HTML, CSS and JavaScript.",
+      "Players catch moving worms before the timer runs out.",
+      "The project includes keyboard controls, sound effects, a timer and a game over screen."
     ]
   },
 
-   hazardid: {
-    keywords: ["hazard", "hazard id", "hazardid", "safety tool"],
+  hazardid: {
+    keywords: [
+      "hazard",
+      "hazard id",
+      "hazardid",
+      "safety",
+      "safety tool"
+    ],
     response: [
-      "Hazard ID is a project Quinton is currently working on.",
-      "It is a hazard identification and tracking tool designed to improve safety reporting and risk management workflows.",
-      "The project is still in development and will be released soon."
+      "Hazard ID is a project Quinton is currently developing.",
+      "It is a hazard identification and tracking system designed to improve workplace safety reporting and risk management.",
+      "The project is still under development."
     ]
-  }, 
+  },
 
   socialmedia: {
-    keywords: ["social", "instagram", "facebook", "discord", "github", "linkedin", "mobile"],
+    keywords: [
+      "social",
+      "social media",
+      "contact",
+      "github",
+      "linkedin",
+      "facebook",
+      "instagram",
+      "discord",
+      "email",
+      "mobile"
+    ],
     response: [
-      "If you would like to get in touch with Quinton, you can use the links at the top of the page.",
-      "The links include Quinton's email, Github, LinkedIn, and mobile number.",
-      "Additionally, you can also conect with him on Facebook, Instagram, or Discord.",
+      "You can find Quinton's contact links at the top of the portfolio website.",
+      "These include his email address, GitHub, LinkedIn and mobile number.",
       "Discord: settledown191",
-      "Facebook: https://www.facebook.com/quinton.gillanders", 
-      "Instagram: https://www.instagram.com/quintongillanders/", 
+      "Facebook: https://www.facebook.com/quinton.gillanders",
+      "Instagram: https://www.instagram.com/quintongillanders/"
     ]
-  }, 
+  },
 
   aichatbot: {
-    keywords: ["ai", "aichat", "aichatbot", "bot", "chat"],
-    response : [
-      "The AI Chatbot is a project that Quinton wanted to work on to learn more about AI and to improve his skills.",
-      "It is an ongoing project that he is continuing to work on in his free time.",
-      "Currently the chatbot features real AI powered conversations, and conversation memory.", 
-      "Upon refresh the AI will forget everything at the moment.",
-      "The AI also features basic web knowledge using DuckDuckGo, for example, if you ask it about a certain game, tv show, movie or something else,",
-      "it will retrieve that information from the internet, and provide the context to the language model.",
-      "It is not 100% complete, as it makes alot of mistakes, but it is mostly accurate. Stay tuned for more updates!"
+    keywords: [
+      "ai",
+      "chatbot",
+      "chat bot",
+      "quinc ai",
+      "quinc",
+      "bot"
+    ],
+    response: [
+      "QuinC AI is Quinton's personal AI chatbot project.",
+      "The project was created to learn more about AI and modern web technologies.",
+      "It currently supports AI conversations, conversation memory and basic web search.",
+      "It is still actively being improved with new features."
     ]
   }
 };

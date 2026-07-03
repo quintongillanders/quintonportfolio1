@@ -611,6 +611,36 @@ const typeMessage = (text, delay = 25) => {
 
     </div>
 
+    <div className="card">
+
+  <div className="card-image">
+    <img src="/hazardid.png.avif" alt="Coming Soon project" />
+  </div>
+
+  <div className="card-content">
+
+    <h3>Coming Soon...</h3>
+
+    <p>
+      My biggest project yet. Stay tuned.
+    </p>
+
+    <div className="project-buttons">
+
+      <a
+        href="#"
+        className="project-link"
+        onClick={(e) => e.preventDefault()}
+      >
+        Coming Soon
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
 
 
   </div>

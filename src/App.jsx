@@ -20,6 +20,8 @@ import ApiIcon from "@mui/icons-material/Api";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
+import DynamicBackground from "./components/DynamicBackground";
+
 function Home() {
 
   const featuredProjects = [
@@ -701,7 +703,10 @@ const typeMessage = (text, delay = 25) => {
 
 function App() {
   return (
+
+    
     <>
+      <DynamicBackground />
       <Navbar />
 
       <Routes>

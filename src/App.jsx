@@ -325,8 +325,8 @@ const typeMessage = (text, delay = 25) => {
 
           <p className="hero-text">
             I'm a software developer with a Bachelor of Computing
-            Systems from Unitec (2025). Recently completed a capstone
-            project developing the SchoolHIVE Marketplace NZ platform as
+            Systems from Unitec (2025). Completed a capstone
+            project from July to November 2025 developing the SchoolHIVE Marketplace NZ platform as
             part of a collaborative team. Experienced in building
             responsive user interfaces using React.js, CSS and MUI.
           </p>

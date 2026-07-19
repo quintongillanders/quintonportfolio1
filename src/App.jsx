@@ -8,6 +8,9 @@ import Navbar from "./components/Navbar";
 import SchoolHive from "./pages/SchoolHive";
 import WormGameCaseStudy from "./pages/Worm Catching Game";
 import AiChatBotCaseStudy from "./pages/aichatbot";
+import SuccessTutoring from "./pages/SuccessTutoring";
+import DanubeOrchards from "./pages/DanubeOrchards";
+import NewZealandInsulators from "./pages/NZI";
 import NotFound from "./pages/NotFound";
 
 import CodeIcon from "@mui/icons-material/Code";
@@ -489,7 +492,7 @@ const typeMessage = (text, delay = 25) => {
 
               <div className="experience-content">
 
-                <h3>Danube Orchards</h3>
+                <h3>Danube Orchards (Family Business)</h3>
 
                 <span>Seasonal Orchard Worker</span>
 
@@ -580,6 +583,7 @@ const typeMessage = (text, delay = 25) => {
 
   <h2>Projects</h2>
 
+  <p>Here are some of the projects I have worked on, including my capstone project, SchoolHIVE Marketplace NZ.</p>
 
   <div className="project-grid">
 
@@ -820,6 +824,9 @@ function App() {
         <Route path="/schoolhive" element={<SchoolHive />} />
         <Route path="/wormcatchinggame" element={<WormGameCaseStudy />} />
         <Route path="/aichatbot" element={<AiChatBotCaseStudy />} />
+        <Route path="/success-tutoring" element={<SuccessTutoring />} />
+        <Route path="/danube" element={<DanubeOrchards />} />
+        <Route path="/nzi" element={<NewZealandInsulators />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

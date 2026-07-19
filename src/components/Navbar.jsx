@@ -38,10 +38,17 @@ function Navbar() {
 
       {/* LEFT */}
       <div className="nav-left">
-        <a href="/" className="logo" onClick={closeMenu}>
+
+        <a
+          href="/"
+          className="logo"
+          onClick={closeMenu}
+        >
           Quinton Gillanders
         </a>
+
       </div>
+
 
       {/* CENTER (DESKTOP) */}
       <div className="nav-center">
@@ -53,6 +60,7 @@ function Navbar() {
           About
         </button>
 
+
         <button
           className="nav-link-button"
           onClick={() => navigateToSection("skills")}
@@ -60,12 +68,22 @@ function Navbar() {
           Skills
         </button>
 
+
+        <button
+          className="nav-link-button"
+          onClick={() => navigateToSection("experience")}
+        >
+          Work History
+        </button>
+
+
         <button
           className="nav-link-button"
           onClick={() => navigateToSection("projects")}
         >
           Projects
         </button>
+
 
         <button
           className="nav-link-button"
@@ -76,16 +94,25 @@ function Navbar() {
 
       </div>
 
+
       {/* RIGHT (DESKTOP ICONS) */}
       <div className="nav-right">
 
-        <a href="mailto:quingillanders@gmail.com" aria-label="Email">
+        <a
+          href="mailto:quingillanders@gmail.com"
+          aria-label="Email"
+        >
           <EmailIcon />
         </a>
 
-        <a href="tel:+64221604203" aria-label="Phone">
+
+        <a
+          href="tel:+64221604203"
+          aria-label="Phone"
+        >
           <PhoneIcon />
         </a>
+
 
         <a
           href="https://github.com/quintongillanders"
@@ -94,6 +121,7 @@ function Navbar() {
         >
           <GitHubIcon />
         </a>
+
 
         <a
           href="https://www.linkedin.com/in/quinton-gillanders-335985297/"
@@ -105,6 +133,7 @@ function Navbar() {
 
       </div>
 
+
       {/* HAMBURGER ICON (MOBILE) */}
       <div
         className="hamburger"
@@ -113,9 +142,12 @@ function Navbar() {
         {open ? <CloseIcon /> : <MenuIcon />}
       </div>
 
+
       {/* MOBILE MENU */}
       {open && (
+
         <div className="mobile-menu">
+
 
           <button
             className="nav-link-button"
@@ -124,12 +156,22 @@ function Navbar() {
             About
           </button>
 
+
           <button
             className="nav-link-button"
             onClick={() => navigateToSection("skills")}
           >
             Skills
           </button>
+
+
+          <button
+            className="nav-link-button"
+            onClick={() => navigateToSection("experience")}
+          >
+            Work History
+          </button>
+
 
           <button
             className="nav-link-button"
@@ -138,6 +180,7 @@ function Navbar() {
             Projects
           </button>
 
+
           <button
             className="nav-link-button"
             onClick={() => navigateToSection("chatbot")}
@@ -145,15 +188,19 @@ function Navbar() {
             Get to know me
           </button>
 
+
           <div className="mobile-icons">
+
 
             <a href="mailto:quingillanders@gmail.com">
               <EmailIcon />
             </a>
 
+
             <a href="tel:+64221604203">
               <PhoneIcon />
             </a>
+
 
             <a
               href="https://github.com/quintongillanders"
@@ -163,6 +210,7 @@ function Navbar() {
               <GitHubIcon />
             </a>
 
+
             <a
               href="https://www.linkedin.com/in/quinton-gillanders-335985297/"
               target="_blank"
@@ -171,9 +219,12 @@ function Navbar() {
               <LinkedInIcon />
             </a>
 
+
           </div>
 
+
         </div>
+
       )}
 
     </nav>

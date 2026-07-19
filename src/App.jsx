@@ -469,11 +469,117 @@ const typeMessage = (text, delay = 25) => {
 
       </section>
 
+      {/* WORK EXPERIENCE */}
+        <section id="experience" className="experience">
+
+          <h2>Work History</h2>
+
+          <p>While I have experience in Software Development, I also have a strong background in various industries.</p>
+
+          <div className="experience-grid">
+
+            <div className="experience-card">
+
+              <div className="experience-image">
+                <img 
+                  src="/danube.jpg" 
+                  alt="Danube Orchards"
+                />
+              </div>
+
+              <div className="experience-content">
+
+                <h3>Danube Orchards</h3>
+
+                <span>Seasonal Orchard Worker</span>
+
+                <p>
+                  <p>
+                  Danube Orchards was my families multi-generation orchard located in Whenuapai, Auckland. 
+                  Please take the time to read about this, as it was a very important part of my life,
+                  as well as my families history.
+                </p>
+
+                </p>
+
+                <a href="/danube" className="project-link">
+                  Learn More
+                </a>
+
+              </div>
+
+            </div>
+
+
+            <div className="experience-card">
+
+              <div className="experience-image">
+                <img 
+                  src="/nzi.jpg" 
+                  alt="New Zealand Insulators"
+                />
+              </div>
+
+              <div className="experience-content">
+
+                <h3>New Zealand Insulators</h3>
+
+                <span>Warehouse Assistant</span>
+
+                <p>
+                  Worked at New Zealand Insulators from 2017 to 2023.
+                  Developed experience in manufacturing processes, quality
+                  control, teamwork and operating within an industrial
+                  environment.
+                </p>
+
+                <a href="/nzi" className="project-link">
+                  Learn More
+                </a>
+
+              </div>
+
+            </div>
+
+
+            <div className="experience-card">
+
+              <div className="experience-image">
+                <img 
+                  src="/success-tutoring.jpg" 
+                  alt="Success Tutoring New Lynn"
+                />
+              </div>
+
+              <div className="experience-content">
+
+                <h3>Success Tutoring New Lynn</h3>
+
+                <span>AI Lab Tutor</span>
+
+                <p>
+                  I have only taught 2 classes so far in July 2026, and may be expanding to teaching twice a month.
+                </p>
+
+                <a href="/success-tutoring" className="project-link">
+                  Learn More
+                </a>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </section>
+
 
      {/* PROJECTS */}
 <section id="projects" className="projects">
 
   <h2>Projects</h2>
+
 
   <div className="project-grid">
 

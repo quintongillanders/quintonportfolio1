@@ -21,7 +21,7 @@ export default function NZI() {
         </div>
 
         <p className="case-intro">
-          Coming Soon...
+          Information on this role coming soon
         </p>
 
       </div>

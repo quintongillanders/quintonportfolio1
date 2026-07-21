@@ -165,7 +165,7 @@ export default function DanubeOrchards() {
             className="case-image"
           />
 
-        <p>In the photo above, you can see our final get together at Danube Orchards, which was my cousin's wedding night on Febuary 27th, 2026. 
+        <p>In the photo above, you can see our final get together at Danube Orchards, which was my cousin's wedding night on Febuary 28th, 2026. 
           We also had many Christmas functions and other events here.</p>
         </div>
 

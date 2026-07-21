@@ -208,6 +208,34 @@ function Home() {
     ]
   },
 
+  danube: {
+  keywords: [
+    "danube",
+    "danube orchards",
+    "orchard",
+    "strawberries",
+    "strawberry",
+    "family business",
+    "rakich",
+    "arthur",
+    "lorraine",
+    "whenuapai",
+    "grandfather",
+    "grandad",
+    "grandparents",
+    "pack house",
+    "packing shed",
+    "family orchard"
+  ],
+  response: [
+    "Danube Orchards was Quinton Gillanders' family's multi-generational strawberry business.",
+    "The orchard grew strawberries for 94 years, with the Whenuapai orchard operating for 52 years after being established by his grandfather Arthur Rakich in 1974.",
+    "Quinton worked in the packing shed from 2014 until the final strawberry season ended in February 2026, checking punnets before they were sealed and prepared for supermarkets such as New World and Pak'nSave.",
+    "The orchard was an important part of Quinton's childhood and family life, hosting birthdays, Christmas celebrations, weddings and many family gatherings.",
+    "In 2026 the property was sold to Auckland Transport for a future Park and Ride, marking the end of nearly a century of strawberry growing."
+  ]
+},
+
   aichatbot: {
     keywords: [
       "ai",

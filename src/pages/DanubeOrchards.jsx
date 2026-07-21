@@ -39,7 +39,7 @@ export default function DanubeOrchards() {
         <h2>A Place Full of Memories</h2>
 
         <p>
-          Danube Orchards was my families multi generational family business.
+          Danube Orchards was my families multi generational family business on my mum's side of the family.
           We were growing strawberries for 94 years, and only for 52 years we grew them in Whenuapai.
           My Dida (Grandfather in Croatian), Arthur Rakich, built the Orchard in 1974, where him and my Nana,
           Lorraine Rakich, would live until she passed on my 17th birthday in 2016.
@@ -48,7 +48,7 @@ export default function DanubeOrchards() {
         </p>
 
         <img
-          src="/images/danube/memories.jpg"
+          src="/danube front shop.JPEG"
           alt="Danube Orchards"
           className="case-image"
         />
@@ -75,13 +75,13 @@ export default function DanubeOrchards() {
         <div className="gallery-grid">
 
           <img
-            src="/images/danube/work1.jpg"
+            src="/work1.jpg.JPEG"
             alt="Working at Danube Orchards"
             className="case-image"
           />
 
           <img
-            src="/images/danube/work2.jpg"
+            src="/work2.JPEG"
             alt="Working at Danube Orchards"
             className="case-image"
           />
@@ -106,10 +106,20 @@ export default function DanubeOrchards() {
         </p>
 
         <img
-          src="/images/danube/family.jpg"
+          src="/danube.jpg"
           alt="Family at Danube Orchards"
           className="case-image"
         />
+
+        <img
+          src="/workers.JPEG"
+          alt="Family at Danube Orchards"
+          className="case-image"
+        />
+
+        <p>
+          We also had a lot of staff working at the Orchard, some of which had been with us since the beginning.
+        </p>
 
       </section>
 
@@ -129,23 +139,34 @@ export default function DanubeOrchards() {
         <div className="gallery-grid">
 
           <img
-            src="/images/danube/memory1.jpg"
+            src="/95th1.JPEG"
             alt="Memory 1"
             className="case-image"
           />
 
+          <p>
+            In the photo above, you can see from left to right, My Auntie Sonya, My Uncle Gary, My Grandad Arthur, My Mum Yvonne, My Dad Don, My Uncle Anthony and my Auntie Caroline.
+            This was a photo from my Grandad's 95th Birthday, taken on April 11th, 2025.
+          </p>
+
           <img
-            src="/images/danube/memory2.jpg"
+            src="/family95th.JPEG"
             alt="Memory 2"
             className="case-image"
           />
 
+          <p>
+            In the photo above, you can see my grandad in the middle surrounded by all of his grandchildren, and great grandchildren. Taken on April 11th 2025, his 95th birthday.
+          </p>
+
           <img
-            src="/images/danube/memory3.jpg"
+            src="/Wedding.JPEG"
             alt="Memory 3"
             className="case-image"
           />
 
+        <p>In the photo above, you can see our final get together at Danube Orchards, which was my cousin's wedding night on Febuary 27th, 2026. 
+          We also had many Christmas functions and other events here.</p>
         </div>
 
       </section>
@@ -164,11 +185,18 @@ export default function DanubeOrchards() {
         </p>
 
         <img
-          src="/images/danube/final.jpg"
+          src="/final.JPEG"
           alt="Danube Orchards Final Day"
           className="case-image"
         />
 
+        <p>This final picture shows all the hydroponics that were growing the strawberries are no longer there. We took them down between March and April 2026.</p>
+
+      </section>
+
+      <section className="case-section">
+
+        <h2>Thank you to everyone who has supported my family over the years</h2>
       </section>
 
     </div>

@@ -361,6 +361,16 @@ h1, h2, h3 {
   display: block;
 }
 
+/* CONTENT IMAGES */
+.case-image {
+  width: 100%;
+  max-width: 1000px; 
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 16px;
+}
+
 /* =========================
    FULL WIDTH GALLERIES
 ========================= */

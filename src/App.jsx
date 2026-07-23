@@ -751,6 +751,37 @@ const typeMessage = (text, delay = 25) => {
 
     </div>
 
+
+    <div className="card">
+
+        <div className="card-image">
+          <img src="/hazardid.png.avif" alt="Coming Soon project" />
+        </div>
+
+        <div className="card-content">
+
+          <h3>Coming Soon...</h3>
+
+          <p>
+           More details on this project will be shared in the coming months.
+          </p>
+
+          <div className="project-buttons">
+
+            <a
+              href="#"
+              className="project-link"
+              onClick={(e) => e.preventDefault()}
+            >
+              Coming Soon
+            </a>
+
+          </div>
+
+        </div>
+
+    </div>
+
     <div className="card">
 
   <div className="card-image">
@@ -762,7 +793,7 @@ const typeMessage = (text, delay = 25) => {
     <h3>Coming Soon...</h3>
 
     <p>
-      My biggest project yet. Stay tuned.
+      More details on this project will be shared in the coming months.
     </p>
 
     <div className="project-buttons">

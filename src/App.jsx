@@ -236,6 +236,29 @@ function Home() {
   ]
 },
 
+      successtutoring: {
+        keywords: [
+          "success tutoring",
+          "success tutoring new lynn",
+          "tutoring",
+          "tutor",
+          "ai lab",
+          "ai tutor",
+          "new lynn",
+          "primary school",
+          "teacher",
+          "teaching",
+          "workshops",
+          "students"
+        ],
+        response: [
+          "In July 2026, Quinton worked with Success Tutoring New Lynn as an AI Lab Tutor.",
+          "He delivered two weekly AI workshops for young students, introducing them to Artificial Intelligence through fun, interactive activities and demonstrations.",
+          "The workshops focused on helping students understand what AI is, how it can be used creatively, and the importance of using AI responsibly.",
+          "Quinton hopes to continue working with Success Tutoring and expand the AI Lab programme in the future."
+        ]
+      },
+
   aichatbot: {
     keywords: [
       "ai",

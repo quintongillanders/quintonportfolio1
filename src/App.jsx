@@ -64,7 +64,7 @@ function Home() {
   const [messages, setMessages] = useState([
     {
       sender: "bot",
-      text: "Hi there! I'm Quinton's chat Assistant. Ask me anything about Quinton's work, or education"
+      text: "Hi there! I'm Quinton's chat Assistant. Ask me anything about Quinton's projects, work history or education"
     }
   ]);
 

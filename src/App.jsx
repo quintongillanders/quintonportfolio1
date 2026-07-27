@@ -267,6 +267,28 @@ function Home() {
         ]
       },
 
+        nzi: {
+          keywords: [
+            "new zealand insulators",
+            "nzi",
+            "insulators",
+            "manufacturing",
+            "warehouse",
+            "forklift",
+            "factory",
+            "power lines",
+            "electrical insulators",
+            "kumeu"
+          ],
+          response: [
+            "Quinton worked at New Zealand Insulators from May 2017 to February 2023 before beginning his software development journey.",
+            "His role involved assembling electrical insulators used on power lines to safely support and separate electrical conductors.",
+            "In 2018, he earned his forklift licence and took on additional warehouse responsibilities, including stacking pallets and preparing products for dispatch.",
+            "Working at NZI helped him develop a strong work ethic, attention to detail, teamwork, and experience in a fast-paced manufacturing environment.",
+            "In 2022, Quinton decided to pursue a career in software development and left NZI in February 2023 to begin studying at Unitec."
+          ]
+        },
+
   aichatbot: {
     keywords: [
       "ai",

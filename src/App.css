@@ -1751,14 +1751,6 @@ html {
 
 }
 
-
-.experience-card:hover {
-
-    transform: translateY(-8px);
-
-}
-
-
 .experience-image {
 
     height: 200px;

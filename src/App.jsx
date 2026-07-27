@@ -48,7 +48,15 @@ function Home() {
       image: "/graduation.png",
       link: "#",
     },
-  ];
+{
+    title: "Work experience at Success Tutoring New Lynn (July 2026)",
+    description:
+      "Once a week for 2 weeks, Quinton Gillanders had an oppurtunity to be an AI Lab Tutor to young students, introducing them to AI, and some fun activities.",
+    image: "/success-tutoring.jpg",
+    link: "/success-tutoring",
+  }, 
+];
+  
 
   const [currentProject, setCurrentProject] = useState(0);
 

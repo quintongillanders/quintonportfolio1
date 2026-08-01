@@ -190,7 +190,7 @@ function Home() {
     response: [
       "Hazard ID is a project Quinton is currently developing.",
       "It is a hazard identification and tracking system designed to improve workplace safety reporting and risk management.",
-      "The project is still under development."
+      "The project is still under development, and may not release until 2027 or 2028."
     ]
   },
 
@@ -212,7 +212,8 @@ function Home() {
       "These include his email address, GitHub, LinkedIn and mobile number.",
       "Discord: settledown191",
       "Facebook: https://www.facebook.com/quinton.gillanders",
-      "Instagram: https://www.instagram.com/quintongillanders/"
+      "Instagram: https://www.instagram.com/quintongillanders/",
+      "Please message him first saying that you came from his portfolio, otherwise he may not accept your request. Hope you understand!"
     ]
   },
 
@@ -344,16 +345,23 @@ const typeMessage = (text, delay = 25) => {
   setInput("");
 
   let matchedResponse = null;
+let bestMatchLength = 0;
 
-  for (const key in knowledgeBase) {
-    const entry = knowledgeBase[key];
+const escapeRegExp = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-    if (entry.keywords.some((kw) => query.includes(kw))) {
+for (const key in knowledgeBase) {
+  const entry = knowledgeBase[key];
+
+  for (const kw of entry.keywords) {
+    // \b = word boundary, so "hi" won't match inside "schoolhive"
+    const pattern = new RegExp(`\\b${escapeRegExp(kw)}\\b`, "i");
+
+    if (pattern.test(query) && kw.length > bestMatchLength) {
       matchedResponse = entry.response;
-      break;
+      bestMatchLength = kw.length;
     }
   }
-
+}
   const finalText =
     matchedResponse?.join("\n\n") ||
     "I don't have info on that yet — try asking about SchoolHIVE, skills, or projects!";

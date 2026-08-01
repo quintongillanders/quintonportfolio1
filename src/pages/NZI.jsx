@@ -131,7 +131,7 @@ export default function NZI() {
           className="case-image"
         />
 
-        <p>The photo above shows the crew sometime in 2021 during the pandemic with out masks on. From left to right: David Glackin, Andrew Laufiso, Myself, and Chris Van Der Werff.</p>
+        <p>The photo above shows the crew sometime in 2021 during the pandemic with our masks on. From left to right: David Glackin, Andrew Laufiso, Myself, and Chris Van Der Werff.</p>
 
 
       </section>

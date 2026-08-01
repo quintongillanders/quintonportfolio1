@@ -416,7 +416,7 @@ for (const key in knowledgeBase) {
           <h1 className="hero-name">Quinton Gillanders</h1>
 
           <p className="hero-text">
-            I'm a software developer with a Bachelor of Computing
+            I'm a Full Stack Software Developer with a Bachelor of Computing
             Systems from Unitec (2025). Completed a capstone
             project from July to November 2025 developing the SchoolHIVE Marketplace NZ platform as
             part of a collaborative team. Experienced in building

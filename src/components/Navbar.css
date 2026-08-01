@@ -10,11 +10,9 @@
 
   padding: 18px 36px;
 
-  background: rgba(11, 18, 32, 0.65);
+  background: linear-gradient(180deg, #7c4a2d, #4a2a1a);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* LEFT (LOGO) */
@@ -104,6 +102,9 @@
   justify-self: end;
   font-size: 30px;
   transition: 0.2s ease;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .hamburger:hover {
@@ -113,21 +114,22 @@
 /* MOBILE MENU */
 .mobile-menu {
   position: absolute;
-  top: 70px;
+  top: 100%;
   left: 0;
   width: 100%;
 
-  background: rgba(11, 18, 32, 0.95);
-  backdrop-filter: blur(16px);
+  background: linear-gradient(180deg, #7c4a2d, #4a2a1a);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 20px 0;
+  padding: 24px 0;
   gap: 18px;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 2000;
 }
 
 .mobile-menu a {
@@ -152,7 +154,7 @@
 
   .navbar {
     grid-template-columns: 1fr auto;
-    padding: 14px 20px;
+    padding: 14px 24px 14px 20px;
   }
 
   .nav-center,
@@ -161,7 +163,7 @@
   }
 
   .hamburger {
-    display: block;
+    display: flex;
   }
 
   .nav-left .logo {

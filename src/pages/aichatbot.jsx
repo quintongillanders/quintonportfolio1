@@ -1,12 +1,23 @@
 import { Link } from "react-router-dom";
 
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import BuildIcon from "@mui/icons-material/Build";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
+import BoltIcon from "@mui/icons-material/Bolt";
+import LanguageIcon from "@mui/icons-material/Language";
+import ChatIcon from "@mui/icons-material/Chat";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
+
 export default function ProjectName() {
   return (
     <div className="case-study">
 
       <div className="back-button-container">
         <Link to="/" className="back-button">
-          ← Back to homepage
+          <ArrowBackIcon /> Back to homepage
         </Link>
       </div>
 
@@ -16,9 +27,9 @@ export default function ProjectName() {
         <h1>QuinC AI</h1>
 
         <div className="case-meta">
-          <span>🏷️ Personal Project</span>
-          <span>🛠️ React + Groq API</span>
-          <span>📅 June 2026 - Present</span>
+          <span><LocalOfferIcon /> Personal Project</span>
+          <span><BuildIcon /> React + Groq API</span>
+          <span><CalendarMonthIcon /> June 2026 - Present</span>
         </div>
 
         <p className="case-intro">
@@ -101,12 +112,12 @@ export default function ProjectName() {
       <h2>Current Features</h2>
 
       <div className="case-card">
-            <p>🤖 Conversational AI powered by Meta's Llama language model</p>
-            <p>⚡ Fast AI responses using the Groq API</p>
-            <p>🌐 Basic internet knowledge using the DuckDuckGo Instant Answer API</p>
-            <p>💬 Modern chat interface built with React</p>
-            <p>📱 Responsive design for desktop and mobile devices</p>
-            <p>🚀 Hosted online using Vercel</p>
+            <p><SmartToyIcon /> Conversational AI powered by Meta's Llama language model</p>
+            <p><BoltIcon /> Fast AI responses using the Groq API</p>
+            <p><LanguageIcon /> Basic internet knowledge using the DuckDuckGo Instant Answer API</p>
+            <p><ChatIcon /> Modern chat interface built with React</p>
+            <p><PhoneIphoneIcon /> Responsive design for desktop and mobile devices</p>
+            <p><RocketLaunchIcon /> Hosted online using Vercel</p>
             </div>
 
       {/* OUTCOME */}

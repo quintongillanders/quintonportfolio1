@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import SchoolIcon from "@mui/icons-material/School";
+import HubIcon from "@mui/icons-material/Hub";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+
 export default function SchoolHive() {
   return (
     <div className="case-study">
@@ -7,7 +12,7 @@ export default function SchoolHive() {
 
       <div className="back-button-container">
       <Link to="/" className="back-button">
-        ← Back to homepage
+        <ArrowBackIcon /> Back to homepage
       </Link>
     </div>
 
@@ -17,9 +22,9 @@ export default function SchoolHive() {
         <h1>SchoolHive Marketplace NZ</h1>
 
         <div className="case-meta">
-          <span>🎓 Capstone Project</span>
-          <span>⚛️ React + Firebase</span>
-          <span>📅 2025</span>
+          <span><SchoolIcon /> Capstone Project</span>
+          <span><HubIcon /> React + Firebase</span>
+          <span><CalendarMonthIcon /> 2025</span>
         </div>
 
         <p className="case-intro">

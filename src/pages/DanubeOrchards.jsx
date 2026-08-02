@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import AgricultureIcon from "@mui/icons-material/Agriculture";
+import GrassIcon from "@mui/icons-material/Grass";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+
 export default function DanubeOrchards() {
   return (
     <div className="case-study">
@@ -10,7 +15,7 @@ export default function DanubeOrchards() {
 
       <div className="back-button-container">
         <Link to="/" className="back-button">
-          ← Back to homepage
+          <ArrowBackIcon /> Back to homepage
         </Link>
       </div>
 
@@ -23,20 +28,12 @@ export default function DanubeOrchards() {
         <h1>Danube Orchards</h1>
 
         <div className="case-meta">
-          <span>🍓 Family Business</span>
-          <span>🌱 Orchard</span>
-          <span>📍 Auckland</span>
+          <span><AgricultureIcon /> Family Business</span>
+          <span><GrassIcon /> Orchard</span>
+          <span><LocationOnIcon /> Auckland</span>
         </div>
 
       </div>
-
-      {/* =========================
-          A Place Full of Memories
-      ========================== */}
-
-      <section className="case-section">
-
-        <h2>A Place Full of Memories</h2>
 
         <p>
           Danube Orchards was my families multi generational family business on my mum's side of the family.
@@ -53,7 +50,7 @@ export default function DanubeOrchards() {
           className="case-image"
         />
 
-      </section>
+   
 
       {/* =========================
           Working at Danube Orchards

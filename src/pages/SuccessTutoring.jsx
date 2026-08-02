@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
+import SchoolIcon from "@mui/icons-material/School";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+
 export default function SuccessTutoring() {
   return (
     <div className="case-study">
@@ -7,7 +12,7 @@ export default function SuccessTutoring() {
       {/* Back Button */}
       <div className="back-button-container">
         <Link to="/" className="back-button">
-          ← Back to homepage
+          <ArrowBackIcon /> Back to homepage
         </Link>
       </div>
 
@@ -16,9 +21,9 @@ export default function SuccessTutoring() {
         <h1>Success Tutoring New Lynn</h1>
 
         <div className="case-meta">
-          <span>🤖 AI Education</span>
-          <span>🎓 AI Tutor</span>
-          <span>📅 2026</span>
+          <span><SmartToyIcon /> AI Education</span>
+          <span><SchoolIcon /> AI Tutor</span>
+          <span><CalendarMonthIcon /> 2026</span>
         </div>
 
         <p className="case-intro">

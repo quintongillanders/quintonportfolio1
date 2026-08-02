@@ -89,7 +89,7 @@ function Home() {
       "good evening"
     ],
     response: [
-      "Hello! 👋 I'm Quinton's AI Assistant.",
+      "Hello! I'm Quinton's AI Assistant.",
       "I'm here to answer questions about Quinton's projects, skills, education, and experience.",
       "Feel free to ask me about SchoolHIVE, Hazard ID, QuinC AI, the Worm Catching Game, Quinton's education, skills, or social media."
     ]

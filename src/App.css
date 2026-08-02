@@ -336,7 +336,7 @@ h1, h2, h3 {
 }
 
 .case-study p {
-  color: #94a3b8;
+  color: #ffffff;
   line-height: 1.8;
   margin-bottom: 16px;
 }
@@ -344,7 +344,7 @@ h1, h2, h3 {
 .case-intro {
   text-align: center;
   font-size: 1.2rem;
-  color: #cbd5e1;
+  color: #ffffff;
   margin-bottom: 40px;
 }
 
@@ -464,12 +464,20 @@ h1, h2, h3 {
 }
 
 .case-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.9rem;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(148,163,184,0.2);
-  color: #cbd5e1;
+  color: #ffffff;
+}
+
+.case-meta span svg {
+  font-size: 1.1rem;
+  color: #818cf8;
 }
 
 .case-section {
@@ -1813,4 +1821,49 @@ html {
 
     margin-bottom: 25px;
 
+}
+
+.case-study section {
+  padding: 0;
+}
+
+/* =========================
+   FEATURE LIST ICONS
+========================= */
+
+.case-card p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.case-card p svg {
+  flex-shrink: 0;
+  color: #818cf8;
+  font-size: 1.3rem;
+}
+
+/* Back button icon alignment */
+.back-button svg {
+  font-size: 1.2rem;
+  color: #818cf8;
+}
+
+.case-study section {
+  padding: 40px 8%;
+}
+
+/* =========================
+   CASE STUDY WHITE TEXT
+========================= */
+
+.case-study p,
+.case-study li,
+.case-study span,
+.case-study h3 {
+  color: #ffffff !important;
 }

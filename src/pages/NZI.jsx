@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import FactoryIcon from "@mui/icons-material/Factory";
+import InventoryIcon from "@mui/icons-material/Inventory";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+
 export default function NZI() {
   return (
     <div className="case-study">
@@ -10,7 +15,7 @@ export default function NZI() {
 
       <div className="back-button-container">
         <Link to="/" className="back-button">
-          ← Back to homepage
+          <ArrowBackIcon /> Back to homepage
         </Link>
       </div>
 
@@ -23,9 +28,9 @@ export default function NZI() {
         <h1>New Zealand Insulators</h1>
 
         <div className="case-meta">
-          <span>🏭 Manufacturing</span>
-          <span>📦 Warehouse</span>
-          <span>📅 2017 - 2023</span>
+          <span><FactoryIcon /> Manufacturing</span>
+          <span><InventoryIcon /> Warehouse</span>
+          <span><CalendarMonthIcon /> 2017 - 2023</span>
         </div>
 
         <p className="case-intro">

@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import CodeIcon from "@mui/icons-material/Code";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+
 export default function WormGameCaseStudy() {
   return (
     <div className="case-study">
@@ -7,7 +12,7 @@ export default function WormGameCaseStudy() {
       {/* BACK BUTTON */}
       <div className="back-button-container">
         <Link to="/" className="back-button">
-          ← Back to homepage
+          <ArrowBackIcon /> Back to homepage
         </Link>
       </div>
 
@@ -16,9 +21,9 @@ export default function WormGameCaseStudy() {
         <h1>Worm Catching Game (2024)</h1>
 
         <div className="case-meta">
-          <span>🎮 Web Game</span>
-          <span>⚛️ JavaScript</span>
-          <span>📅 2024</span>
+          <span><SportsEsportsIcon /> Web Game</span>
+          <span><CodeIcon /> JavaScript</span>
+          <span><CalendarMonthIcon /> 2024</span>
         </div>
 
         <p className="case-intro">

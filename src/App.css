@@ -329,16 +329,16 @@ h1, h2, h3 {
 }
 
 .case-study h2 {
-  margin-top: 60px;
-  margin-bottom: 20px;
+  margin-top: 80px;
+  margin-bottom: 30px;
   font-size: 2rem;
   color: #f8fafc;
 }
 
 .case-study p {
   color: #ffffff;
-  line-height: 1.8;
-  margin-bottom: 16px;
+  line-height: 2;
+  margin-bottom: 24px;
 }
 
 .case-intro {
@@ -481,7 +481,7 @@ h1, h2, h3 {
 }
 
 .case-section {
-  margin: 70px 0;
+  margin: 90px 0;
 }
 
 .case-section h2 {
@@ -1834,11 +1834,13 @@ html {
 .case-card p {
   display: flex;
   align-items: center;
-  gap: 10px;
-  justify-content: flex-start;
-  text-align: left !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  gap: 12px;
+  justify-content: center;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 18px !important;
+  line-height: 1.9 !important;
 }
 
 .case-card p svg {

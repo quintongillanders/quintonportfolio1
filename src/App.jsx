@@ -19,6 +19,7 @@ import HtmlIcon from "@mui/icons-material/Html";
 import CssIcon from "@mui/icons-material/Css";
 import StorageIcon from "@mui/icons-material/Storage";
 import ApiIcon from "@mui/icons-material/Api";
+import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
 
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -747,15 +748,21 @@ for (const key in knowledgeBase) {
 
     </div>
 
+
+  
     <div className="card">
 
-      <div className="card-image">
-        <img src="/hazardid.png.avif" alt="Hazard ID project" />
+      <div
+        className="card-image card-image-coming-soon"
+        role="img"
+        aria-label="Hazard ID coming soon"
+      >
+        <HourglassEmptyIcon className="coming-soon-icon" />
       </div>
 
       <div className="card-content">
 
-        <h3>Hazard ID (2026)</h3>
+        <h3>Hazard ID (Date TBC)</h3>
 
         <p>
           A hazard identification and tracking tool built to help streamline safety reporting and risk management workflows. Coming soon!
@@ -815,16 +822,20 @@ for (const key in knowledgeBase) {
 
     <div className="card">
 
-  <div className="card-image">
-    <img src="/hazardid.png.avif" alt="Coming Soon project" />
+  <div
+    className="card-image card-image-coming-soon"
+    role="img"
+    aria-label="TutorOS coming soon"
+  >
+    <HourglassEmptyIcon className="coming-soon-icon" />
   </div>
 
   <div className="card-content">
 
-    <h3>Coming Soon...</h3>
+    <h3>TutorOS</h3>
 
     <p>
-      More details on this project will be shared in the coming months.
+      More details on TutorOS will be shared in the coming months.
     </p>
 
     <div className="project-buttons">
@@ -842,6 +853,40 @@ for (const key in knowledgeBase) {
   </div>
 
 </div>
+
+    <div className="card">
+
+      <div
+        className="card-image card-image-coming-soon"
+        role="img"
+        aria-label="QuinX Learn coming soon"
+      >
+        <HourglassEmptyIcon className="coming-soon-icon" />
+      </div>
+
+      <div className="card-content">
+
+        <h3>QuinX Learn</h3>
+
+        <p>
+          More details on QuinX Learn will be shared in the coming months.
+        </p>
+
+        <div className="project-buttons">
+
+          <a
+            href="#"
+            className="project-link"
+            onClick={(e) => e.preventDefault()}
+          >
+            Coming Soon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
 
 
 

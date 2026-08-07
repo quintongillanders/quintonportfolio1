@@ -832,7 +832,7 @@ for (const key in knowledgeBase) {
 
   <div className="card-content">
 
-    <h3>TutorOS</h3>
+    <h3>TutorOS (Date TBC)</h3>
 
     <p>
       More details on TutorOS will be shared in the coming months.
@@ -866,7 +866,7 @@ for (const key in knowledgeBase) {
 
       <div className="card-content">
 
-        <h3>QuinX Learn</h3>
+        <h3>QuinX Learn (Date TBC)</h3>
 
         <p>
           More details on QuinX Learn will be shared in the coming months.

@@ -954,6 +954,8 @@ function App() {
       <DynamicBackground />
       <Navbar />
 
+
+        {/*  Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/schoolhive" element={<SchoolHive />} />

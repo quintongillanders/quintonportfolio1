@@ -749,41 +749,6 @@ for (const key in knowledgeBase) {
     </div>
 
 
-  
-    <div className="card">
-
-      <div
-        className="card-image card-image-coming-soon"
-        role="img"
-        aria-label="Hazard ID coming soon"
-      >
-        <HourglassEmptyIcon className="coming-soon-icon" />
-      </div>
-
-      <div className="card-content">
-
-        <h3>Hazard ID (Date TBC)</h3>
-
-        <p>
-          A hazard identification and tracking tool built to help streamline safety reporting and risk management workflows. Coming soon!
-        </p>
-
-        <div className="project-buttons">
-
-          <a
-            href="#"
-            className="project-link"
-            onClick={(e) => e.preventDefault()}
-          >
-            More details coming soon
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
     <div className="card">
 
       <div className="card-image">
@@ -880,6 +845,40 @@ for (const key in knowledgeBase) {
             onClick={(e) => e.preventDefault()}
           >
             Coming Soon
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="card">
+
+      <div
+        className="card-image card-image-coming-soon"
+        role="img"
+        aria-label="Hazard ID coming soon"
+      >
+        <HourglassEmptyIcon className="coming-soon-icon" />
+      </div>
+
+      <div className="card-content">
+
+        <h3>Hazard ID (Date TBC)</h3>
+
+        <p>
+          A hazard identification and tracking tool built to help streamline safety reporting and risk management workflows. Coming soon!
+        </p>
+
+        <div className="project-buttons">
+
+          <a
+            href="#"
+            className="project-link"
+            onClick={(e) => e.preventDefault()}
+          >
+            More details coming soon
           </a>
 
         </div>

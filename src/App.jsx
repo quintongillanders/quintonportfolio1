@@ -587,12 +587,9 @@ for (const key in knowledgeBase) {
                 <span>Seasonal Orchard Worker</span>
 
                 <p>
-                  <p>
                   Danube Orchards was my families multi-generation orchard located in Whenuapai, Auckland. 
                   Please take the time to read about this, as it was a very important part of my life,
                   as well as my families history.
-                </p>
-
                 </p>
 
                 <a href="/danube" className="project-link">

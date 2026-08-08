@@ -1910,6 +1910,296 @@ html[data-theme="light"] .featured-box {
   backdrop-filter: blur(8px);
 }
 
+/* =========================
+   RESPONSIVE LAYOUT
+========================= */
+
+img,
+video {
+  max-width: 100%;
+}
+
+.hero-split,
+.project-grid,
+.experience-grid,
+.case-study,
+.chatbot {
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+
+  section,
+  .case-study section {
+    padding-inline: clamp(18px, 5vw, 42px);
+  }
+
+  section {
+    padding-block: clamp(64px, 10vw, 90px);
+  }
+
+  h1,
+  .hero-name {
+    font-size: clamp(2.25rem, 9vw, 3.2rem);
+    overflow-wrap: anywhere;
+  }
+
+  h2,
+  .experience h2 {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+  }
+
+  .hero-split {
+    min-height: auto;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(42px, 9vw, 70px);
+    padding: 72px clamp(18px, 5vw, 42px);
+  }
+
+  .hero-left,
+  .hero-right {
+    min-width: 0;
+  }
+
+  .hero-left,
+  .hero-left p,
+  .hero-left h1 {
+    text-align: center !important;
+  }
+
+  .hero-left {
+    align-items: center;
+    transform: none;
+  }
+
+  .hero-avatar {
+    width: clamp(132px, 38vw, 180px);
+    height: clamp(132px, 38vw, 180px);
+  }
+
+  .featured-box {
+    width: min(100%, 520px);
+    max-width: 100%;
+    height: auto;
+  }
+
+  .featured-image-wrapper {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .featured-content {
+    min-height: 0;
+    gap: 12px;
+    padding: clamp(18px, 5vw, 26px);
+  }
+
+  .featured-content h2,
+  .featured-content p {
+    text-align: center !important;
+  }
+
+  .featured-content h2 {
+    margin-top: 0;
+    font-size: clamp(1.25rem, 5vw, 1.55rem);
+  }
+
+  .featured-content p {
+    font-size: 1rem;
+  }
+
+  .carousel-controls {
+    margin-top: 4px;
+  }
+
+  .carousel-arrow {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .carousel-dot {
+    width: 11px;
+    height: 11px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 28px;
+  }
+
+  .card {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .experience {
+    padding: 72px clamp(18px, 5vw, 42px);
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 28px;
+  }
+
+  .experience-content {
+    padding: clamp(20px, 5vw, 30px);
+  }
+
+  .case-study {
+    width: 100%;
+    padding: 72px clamp(16px, 5vw, 32px);
+  }
+
+  .case-split,
+  .case-gallery,
+  .case-outcome-images,
+  .case-visuals,
+  .case-stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .case-meta,
+  .case-tags,
+  .case-stats {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+
+  section,
+  .experience {
+    padding-block: 56px;
+  }
+
+  .hero-split {
+    padding-top: 54px;
+    padding-bottom: 58px; 
+  }
+
+  .featured-box,
+  .card,
+  .experience-card,
+  .chatbot-box {
+    border-radius: 14px;
+  }
+
+  .featured-image-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  .featured-content {
+    padding: 18px 16px;
+  }
+
+  .carousel-controls {
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .tech-stack {
+    gap: 20px 10px;
+  }
+
+  .tech-item {
+    width: calc(33.333% - 10px);
+    min-width: 82px;
+  }
+
+  .tech-item img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .card-image {
+    height: clamp(180px, 56vw, 220px);
+  }
+
+  .experience-image {
+    height: clamp(180px, 55vw, 220px);
+  }
+
+  .project-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .project-buttons .project-link,
+  .card-content > .project-link {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .case-box,
+  .stat {
+    min-width: 0;
+    padding: 18px 14px;
+  }
+
+  .case-card p {
+    align-items: flex-start;
+  }
+
+  .chatbot {
+    margin-block: 56px 84px;
+    padding-inline: 12px;
+  }
+
+  .chat-input-area {
+    flex-wrap: wrap;
+  }
+
+  .chat-input {
+    min-width: 0;
+  }
+
+  .chat-send {
+    min-height: 44px;
+  }
+
+  .notfound {
+    padding: 24px 18px;
+  }
+
+  .notfound h1 {
+    font-size: clamp(4.5rem, 24vw, 7rem);
+  }
+}
+
+@media (max-width: 380px) {
+  .carousel-dots {
+    gap: 6px;
+  }
+
+  .carousel-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .project-link,
+  .back-button,
+  .link-button {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .chat-input {
+    flex-basis: 100%;
+  }
+
+  .chat-send {
+    width: 100%;
+  }
+}
+
 html[data-theme="light"] .hero-avatar {
   border-color: #1983a8;
   box-shadow: 0 0 0 8px rgba(25, 131, 168, .16);

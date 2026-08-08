@@ -592,35 +592,3 @@ html[data-theme="light"] .rain-layer span {
 html[data-theme="light"] .dynamic-background::after {
     background: radial-gradient(circle at center, transparent 55%, rgba(41, 98, 124, .08));
 }
-
-/* Sunrise / sunset theme transition (no visible sun) */
-.dynamic-background::before {
-    content: "";
-    position: absolute;
-    inset: -6% 0 0;
-    background: linear-gradient(180deg, #67c8f5 0%, #a6dcf4 45%, #f7e7b3 100%);
-    opacity: 0;
-    transform: translateY(8%);
-    transition: opacity 1.5s ease, transform 1.5s cubic-bezier(.22, .8, .3, 1);
-    pointer-events: none;
-}
-
-.sunset-layer,
-.city-layer,
-.fog-layer,
-.dynamic-background::after {
-    transition: opacity 1.35s ease, background-color 1.35s ease;
-}
-
-html[data-theme="light"] .dynamic-background {
-    background: linear-gradient(180deg, #b86b3f 0%, #9a4f38 28%, #4b4650 60%, #11151d 100%);
-}
-
-html[data-theme="light"] .dynamic-background::before {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-html[data-theme="light"] .sunset-layer {
-    opacity: 0;
-}

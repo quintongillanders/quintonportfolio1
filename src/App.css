@@ -7,29 +7,6 @@
   box-sizing: border-box;
 }
 
-body,
-.navbar,
-.mobile-menu,
-.card,
-.featured-box,
-.experience-card,
-.case-box,
-.case-meta span,
-.stat,
-.skills-grid span,
-.project-link,
-.back-button,
-.link-button,
-.chatbot-box,
-.chat-message,
-.chat-input-area,
-.chat-input,
-.chat-send,
-h1, h2, h3, p, li {
-  transition: color .8s ease, background-color .8s ease,
-              border-color .8s ease, box-shadow .8s ease;
-}
-
 /* ROOT */
 html, body {
   height: 100%;
@@ -1918,6 +1895,26 @@ html[data-theme="light"] .hero-right {
   backdrop-filter: none;
 }
 
+html[data-theme="light"] .project-grid .card,
+html[data-theme="light"] .experience-card {
+  background: rgba(244, 251, 253, .72);
+  border-color: rgba(22, 77, 98, .24);
+  box-shadow: 0 10px 28px rgba(26, 75, 94, .14);
+  backdrop-filter: blur(8px);
+}
+
+html[data-theme="light"] .featured-box {
+  background: rgba(244, 251, 253, .72);
+  border-color: rgba(22, 77, 98, .24);
+  box-shadow: 0 10px 28px rgba(26, 75, 94, .14);
+  backdrop-filter: blur(8px);
+}
+
+html[data-theme="light"] .hero-avatar {
+  border-color: #1983a8;
+  box-shadow: 0 0 0 8px rgba(25, 131, 168, .16);
+}
+
 html[data-theme="light"] .skills-grid span {
   color: #173b4a;
   background: transparent;
@@ -2000,7 +1997,6 @@ html[data-theme="light"] .case-meta span {
 }
 
 html[data-theme="light"] .card-image,
-html[data-theme="light"] .featured-image-wrapper,
 html[data-theme="light"] .experience-image {
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(26, 75, 94, .2);
@@ -2048,3 +2044,10 @@ html[data-theme="light"] .carousel-dot.active { background: #145f82; }
 html[data-theme="light"] .chat-message.user,
 html[data-theme="light"] .chat-send { background: linear-gradient(135deg, #14749a, #0e526f); }
 html[data-theme="light"] .chat-input:focus { border-color: rgba(20,95,130,.65); box-shadow: 0 0 0 3px rgba(20,95,130,.16); }
+
+html[data-theme="light"] .featured-box {
+  background: rgba(244, 251, 253, .72);
+  border-color: rgba(22, 77, 98, .24);
+  box-shadow: 0 10px 28px rgba(26, 75, 94, .14);
+  backdrop-filter: blur(8px);
+}

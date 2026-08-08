@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import FactoryIcon from "@mui/icons-material/Factory";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -15,7 +14,7 @@ export default function NZI() {
 
       <div className="back-button-container">
         <Link to="/" className="back-button">
-          <ArrowBackIcon /> Back to homepage
+          Back to homepage
         </Link>
       </div>
 

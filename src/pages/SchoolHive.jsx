@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import SchoolIcon from "@mui/icons-material/School";
 import HubIcon from "@mui/icons-material/Hub";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -12,7 +11,7 @@ export default function SchoolHive() {
 
       <div className="back-button-container">
       <Link to="/" className="back-button">
-        <ArrowBackIcon /> Back to homepage
+        Back to homepage
       </Link>
     </div>
 

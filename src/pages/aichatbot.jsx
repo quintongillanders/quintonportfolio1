@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import BuildIcon from "@mui/icons-material/Build";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -17,7 +16,7 @@ export default function ProjectName() {
 
       <div className="back-button-container">
         <Link to="/" className="back-button">
-          <ArrowBackIcon /> Back to homepage
+          Back to homepage
         </Link>
       </div>
 

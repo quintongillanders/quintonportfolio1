@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import AgricultureIcon from "@mui/icons-material/Agriculture";
 import GrassIcon from "@mui/icons-material/Grass";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -15,7 +14,7 @@ export default function DanubeOrchards() {
 
       <div className="back-button-container">
         <Link to="/" className="back-button">
-          <ArrowBackIcon /> Back to homepage
+          Back to homepage
         </Link>
       </div>
 

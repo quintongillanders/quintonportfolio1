@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import CodeIcon from "@mui/icons-material/Code";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -12,7 +11,7 @@ export default function WormGameCaseStudy() {
       {/* BACK BUTTON */}
       <div className="back-button-container">
         <Link to="/" className="back-button">
-          <ArrowBackIcon /> Back to homepage
+          Back to homepage
         </Link>
       </div>
 

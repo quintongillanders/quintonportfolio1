@@ -946,6 +946,10 @@ for (const key in knowledgeBase) {
 }
 
 function App() {
+  const [theme, setTheme] = useState(() =>
+    localStorage.getItem("portfolio-theme") === "light" ? "light" : "dark"
+  );
+
   useLayoutEffect(() => {
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
@@ -954,12 +958,46 @@ function App() {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
 
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem("portfolio-theme", theme);
+  }, [theme]);
+
+  useEffect(() => {
+    const toggleTheme = (event) => {
+      const target = event.target;
+      const isTyping =
+        target instanceof HTMLElement &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.isContentEditable);
+
+      if (event.key.toLowerCase() === "t" && !isTyping) {
+        setTheme((current) => (current === "dark" ? "light" : "dark"));
+      }
+    };
+
+    window.addEventListener("keydown", toggleTheme);
+    return () => window.removeEventListener("keydown", toggleTheme);
+  }, []);
+
   return (
 
     
     <>
       <DynamicBackground />
       <Navbar />
+      <button
+        type="button"
+        className="theme-toggle"
+        onClick={() => setTheme((current) => current === "dark" ? "light" : "dark")}
+        aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+        title="Press T to change theme"
+      >
+        <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
+        {theme === "dark" ? "Light" : "Dark"}
+        <kbd>T</kbd>
+      </button>
 
 
         {/*  Routes */}

@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useLayoutEffect, useRef } from "react";
 
 import Navbar from "./components/Navbar";
 
@@ -946,6 +946,14 @@ for (const key in knowledgeBase) {
 }
 
 function App() {
+  useLayoutEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   return (
 
     

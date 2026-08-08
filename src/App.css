@@ -1998,7 +1998,7 @@ html[data-theme="light"] .case-meta span {
 
 html[data-theme="light"] .card-image,
 html[data-theme="light"] .experience-image {
-  border-radius: 14px;
+  border-radius: 14px 14px 0 0;
   box-shadow: 0 8px 24px rgba(26, 75, 94, .2);
 }
 

@@ -36,11 +36,6 @@ export default function DanubeOrchards() {
 
         <p>
           Danube Orchards was my families multi generational family business on my mum's side of the family.
-          We were growing strawberries for 94 years, and only for 52 years we grew them in Whenuapai.
-          My Dida (Grandfather in Croatian), Arthur Rakich, built the Orchard in 1974, where him and my Nana,
-          Lorraine Rakich, would live until she passed on my 17th birthday in 2016.
-          It is where my family would continue to grow strawberries until February 2026, when our final strawberry
-          season ended.
         </p>
 
         <img
@@ -60,10 +55,9 @@ export default function DanubeOrchards() {
         <h2>Working at Danube Orchards</h2>
 
         <p>
-          While I was only working on and off at the Orchard since November 2014, I was able to work in the packing shed.
+          While I was only working on and off at the Orchard since November 2014, my job was in the packing shed.
           This is where we packed the strawberries to be sent to supermarkets such as Pak'n Save and New World.
-          I would be standing at the end of the conveyor belt, checking the punnets that our staff would be packing,
-          making sure there were no squashed or rotten strawberries.
+          I would be standing at the end of the conveyor belt, doing the quality control checks.
           They would then go into the heat sealing machine to be covered by our label and then into the green crates
           to be put on a pallet ready for supermarkets.
         </p>
@@ -95,7 +89,7 @@ export default function DanubeOrchards() {
         <h2>The People</h2>
 
         <p>
-          The orchard was run by my Grandfather Arthur and my Nana Lorraine.
+          The orchard was run by my Grandfather Arthur and my late Nana Lorraine Rakich.
           At some point, my Uncle Anthony Rakich would take over from them and run the Orchard.
           I would work alongside my Mum (Yvonne Gillanders), my Brother (Alex Gillanders),
           my Cousin (George Rakich), my Grandfather (Arthur Rakich), and my Uncle (Anthony Rakich).
@@ -152,7 +146,7 @@ export default function DanubeOrchards() {
           />
 
           <p>
-            In the photo above, you can see my grandad in the middle surrounded by all of his grandchildren, and great grandchildren. Taken on April 11th 2025, his 95th birthday.
+            In the photo above, you can see my grandad in the middle surrounded by all of his grandchildren and their partners, and great grandchildren. Taken on April 11th 2025, his 95th birthday.
           </p>
 
           <img

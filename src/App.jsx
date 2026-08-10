@@ -92,7 +92,7 @@ function Home() {
     response: [
       "Hello! I'm Quinton's AI Assistant.",
       "I'm here to answer questions about Quinton's projects, skills, education, and experience.",
-      "Feel free to ask me about SchoolHIVE, Hazard ID, QuinC AI, the Worm Catching Game, Quinton's education, skills, or social media."
+      "Feel free to ask me about SchoolHIVE, Hazard ID, QuinC AI, QuinX Learn, TutorOS, the Worm Catching Game, Quinton's education, skills, or social media."
     ]
   },
 
@@ -160,8 +160,8 @@ function Home() {
       "work"
     ],
     response: [
-      "Quinton has built several projects including SchoolHIVE Marketplace NZ, the Worm Catching Game, Hazard ID and QuinC AI.",
-      "His work mainly focuses on interactive web applications built with React."
+      "Quinton has built or is developing several projects including SchoolHIVE Marketplace NZ, the Worm Catching Game, Hazard ID, QuinC AI, QuinX Learn and TutorOS.",
+      "His work mainly focuses on interactive web applications built with React, including upcoming AI-powered education tools."
     ]
   },
 
@@ -192,6 +192,33 @@ function Home() {
       "Hazard ID is a project Quinton is currently developing.",
       "It is a hazard identification and tracking system designed to improve workplace safety reporting and risk management.",
       "The project is still under development, and may not release until 2027 or 2028."
+    ]
+  },
+
+  quinxlearn: {
+    keywords: [
+      "quinx learn",
+      "quinx",
+      "ai education tool",
+      "education tool",
+      "learning tool"
+    ],
+    response: [
+      "QuinX Learn is an upcoming AI education tool being developed by Quinton.",
+      "The project is currently in development and more details will be shared in the future."
+    ]
+  },
+
+  tutoros: {
+    keywords: [
+      "tutoros",
+      "tutor os",
+      "tutor operating system",
+      "tutoring project"
+    ],
+    response: [
+      "TutorOS is another upcoming project being developed by Quinton.",
+      "It is currently in development, with more information and a release date to be announced in the near future."
     ]
   },
 

@@ -92,7 +92,7 @@ function Home() {
     response: [
       "Hello! I'm Quinton's AI Assistant.",
       "I'm here to answer questions about Quinton's projects, skills, education, and experience.",
-      "Feel free to ask me about SchoolHIVE, Hazard ID, QuinC AI, QuinX Learn, TutorOS, the Worm Catching Game, Quinton's education, skills, or social media."
+      "Feel free to ask me about SchoolHIVE, Hazard ID, AI chatbot, QuinX Learn, TutorOS, the Worm Catching Game, Quinton's education, skills, or social media."
     ]
   },
 
@@ -160,7 +160,7 @@ function Home() {
       "work"
     ],
     response: [
-      "Quinton has built or is developing several projects including SchoolHIVE Marketplace NZ, the Worm Catching Game, Hazard ID, QuinC AI, QuinX Learn and TutorOS.",
+      "Quinton has built or is developing several projects including SchoolHIVE Marketplace NZ, the Worm Catching Game, Hazard ID, an AI chatbot, QuinX Learn and TutorOS.",
       "His work mainly focuses on interactive web applications built with React, including upcoming AI-powered education tools."
     ]
   },
@@ -323,12 +323,11 @@ function Home() {
       "ai",
       "chatbot",
       "chat bot",
-      "quinc ai",
-      "quinc",
+      "ai chatbot",
       "bot"
     ],
     response: [
-      "QuinC AI is Quinton's personal AI chatbot project.",
+      "AI chatbot is Quinton's personal chatbot project.",
       "The project was created to learn more about AI and modern web technologies.",
       "It currently supports AI conversations, conversation memory and basic web search.",
       "It is still actively being improved with new features."
@@ -781,7 +780,7 @@ for (const key in knowledgeBase) {
 
       <div className="card-content">
 
-        <h3>QuinC AI (2026)</h3>
+        <h3>AI Chatbot (2026)</h3>
 
         <p>
           A friendly AI chatbot that I have started working on and will continue to work on over time.

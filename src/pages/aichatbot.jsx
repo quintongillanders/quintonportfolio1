@@ -23,7 +23,7 @@ export default function ProjectName() {
       {/* HERO */}
       <div className="case-hero">
 
-        <h1>QuinC AI</h1>
+        <h1>AI Chatbot</h1>
 
         <div className="case-meta">
           <span><LocalOfferIcon /> Personal Project</span>

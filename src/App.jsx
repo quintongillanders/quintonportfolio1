@@ -92,7 +92,7 @@ function Home() {
     response: [
       "Hello! I'm Quinton's AI Assistant.",
       "I'm here to answer questions about Quinton's projects, skills, education, and experience.",
-      "Feel free to ask me about SchoolHIVE, Hazard ID, AI chatbot, QuinX Learn, TutorOS, the Worm Catching Game, Quinton's education, skills, or social media."
+      "Feel free to ask me about SchoolHIVE, Hazard ID, AI chatbot, quinelo, TutorOS, the Worm Catching Game, Quinton's education, skills, or social media."
     ]
   },
 
@@ -160,7 +160,7 @@ function Home() {
       "work"
     ],
     response: [
-      "Quinton has built or is developing several projects including SchoolHIVE Marketplace NZ, the Worm Catching Game, Hazard ID, an AI chatbot, QuinX Learn and TutorOS.",
+      "Quinton has built or is developing several projects including SchoolHIVE Marketplace NZ, the Worm Catching Game, Hazard ID, an AI chatbot, quinelo and TutorOS.",
       "His work mainly focuses on interactive web applications built with React, including upcoming AI-powered education tools."
     ]
   },
@@ -195,16 +195,15 @@ function Home() {
     ]
   },
 
-  quinxlearn: {
+  quinelo: {
     keywords: [
-      "quinx learn",
-      "quinx",
+      "quinelo",
       "ai education tool",
       "education tool",
       "learning tool"
     ],
     response: [
-      "QuinX Learn is an upcoming AI education tool being developed by Quinton.",
+      "quinelo is an upcoming AI education tool being developed by Quinton.",
       "The project is currently in development and more details will be shared in the future."
     ]
   },
@@ -847,17 +846,17 @@ for (const key in knowledgeBase) {
       <div
         className="card-image card-image-coming-soon"
         role="img"
-        aria-label="QuinX Learn coming soon"
+        aria-label="quinelo coming soon"
       >
         <HourglassEmptyIcon className="coming-soon-icon" />
       </div>
 
       <div className="card-content">
 
-        <h3>QuinX Learn (Date TBC)</h3>
+        <h3>quinelo (Date TBC)</h3>
 
         <p>
-          More details on QuinX Learn will be shared in the coming months.
+          More details on quinelo will be shared in the coming months.
         </p>
 
         <div className="project-buttons">

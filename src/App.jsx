@@ -11,6 +11,7 @@ import AiChatBotCaseStudy from "./pages/aichatbot";
 import SuccessTutoring from "./pages/SuccessTutoring";
 import DanubeOrchards from "./pages/DanubeOrchards";
 import NewZealandInsulators from "./pages/NZI";
+import Quinelo from "./pages/quinelo";
 import NotFound from "./pages/NotFound";
 
 import CodeIcon from "@mui/icons-material/Code";
@@ -203,8 +204,8 @@ function Home() {
       "learning tool"
     ],
     response: [
-      "quinelo is an upcoming AI education tool being developed by Quinton.",
-      "The project is currently in development and more details will be shared in the future."
+      "quinelo is an education tool in development that helps teachers save time when preparing quizzes.",
+      "Teachers will be able to generate quizzes and export them as ready-to-use PDF files."
     ]
   },
 
@@ -843,12 +844,8 @@ for (const key in knowledgeBase) {
 
     <div className="card">
 
-      <div
-        className="card-image card-image-coming-soon"
-        role="img"
-        aria-label="quinelo coming soon"
-      >
-        <HourglassEmptyIcon className="coming-soon-icon" />
+      <div className="card-image">
+        <img src="/quinelo.png" alt="quinelo project" />
       </div>
 
       <div className="card-content">
@@ -856,17 +853,17 @@ for (const key in knowledgeBase) {
         <h3>quinelo (Date TBC)</h3>
 
         <p>
-          More details on quinelo will be shared in the coming months.
+          An education tool designed to help teachers save time by generating
+          ready-to-use quiz PDFs.
         </p>
 
         <div className="project-buttons">
 
           <a
-            href="#"
-            className="project-link"
-            onClick={(e) => e.preventDefault()}
+            href="/quinelo"
+            className="project-link secondary"
           >
-            Coming Soon
+            Learn More
           </a>
 
         </div>
@@ -1031,6 +1028,7 @@ function App() {
         <Route path="/success-tutoring" element={<SuccessTutoring />} />
         <Route path="/danube" element={<DanubeOrchards />} />
         <Route path="/nzi" element={<NewZealandInsulators />} />
+        <Route path="/quinelo" element={<Quinelo />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

@@ -810,40 +810,6 @@ for (const key in knowledgeBase) {
 
     <div className="card">
 
-  <div
-    className="card-image card-image-coming-soon"
-    role="img"
-    aria-label="TutorOS coming soon"
-  >
-    <HourglassEmptyIcon className="coming-soon-icon" />
-  </div>
-
-  <div className="card-content">
-
-    <h3>TutorOS (Date TBC)</h3>
-
-    <p>
-      More details on TutorOS will be shared in the coming months.
-    </p>
-
-    <div className="project-buttons">
-
-      <a
-        href="#"
-        className="project-link"
-        onClick={(e) => e.preventDefault()}
-      >
-        Coming Soon
-      </a>
-
-    </div>
-
-  </div>
-
-</div>
-
-    <div className="card">
-
       <div className="card-image">
         <img src="/quinelo.png" alt="quinelo project" />
       </div>
@@ -864,6 +830,40 @@ for (const key in knowledgeBase) {
             className="project-link secondary"
           >
             Learn More
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="card">
+
+      <div
+        className="card-image card-image-coming-soon"
+        role="img"
+        aria-label="TutorOS coming soon"
+      >
+        <HourglassEmptyIcon className="coming-soon-icon" />
+      </div>
+
+      <div className="card-content">
+
+        <h3>TutorOS (Date TBC)</h3>
+
+        <p>
+          More details on TutorOS will be shared in the coming months.
+        </p>
+
+        <div className="project-buttons">
+
+          <a
+            href="#"
+            className="project-link"
+            onClick={(e) => e.preventDefault()}
+          >
+            Coming Soon
           </a>
 
         </div>

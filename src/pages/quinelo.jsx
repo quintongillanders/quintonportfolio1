@@ -20,7 +20,7 @@ export default function Quinelo() {
         <div className="case-meta">
           <span><SchoolIcon /> Education Tool</span>
           <span><BuildIcon /> In Development</span>
-          <span><CalendarMonthIcon /> Date TBC</span>
+          <span><CalendarMonthIcon /> November 7, 2026</span>
         </div>
 
         <p className="case-intro">

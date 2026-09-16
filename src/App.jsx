@@ -816,7 +816,7 @@ for (const key in knowledgeBase) {
 
       <div className="card-content">
 
-        <h3>quinelo (November 7, 2026)</h3>
+        <h3>quinelo (Release TBA)</h3>
 
         <p>
           An education tool designed to help teachers save time by generating

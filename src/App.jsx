@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Routes, Route } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
 
 import Navbar from "./components/Navbar";
@@ -11,6 +11,7 @@ import SuccessTutoring from "./pages/SuccessTutoring";
 import DanubeOrchards from "./pages/DanubeOrchards";
 import NewZealandInsulators from "./pages/NZI";
 import Quinelo from "./pages/quinelo";
+import CV from "./pages/CV";
 import NotFound from "./pages/NotFound";
 
 import CodeIcon from "@mui/icons-material/Code";
@@ -496,14 +497,12 @@ for (const key in knowledgeBase) {
             responsive user interfaces using React.js, CSS and MUI.
           </p>
 
-          <a
-            href="/Quinton Gillanders CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/cv"
             className="project-link"
           >
             View My CV
-          </a>
+          </Link>
 
         </div>
 
@@ -1076,6 +1075,7 @@ function App() {
         <Route path="/danube" element={<DanubeOrchards />} />
         <Route path="/nzi" element={<NewZealandInsulators />} />
         <Route path="/quinelo" element={<Quinelo />} />
+        <Route path="/cv" element={<CV />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

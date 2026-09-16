@@ -261,8 +261,16 @@ h1, h2, h3 {
 }
 
 .card p {
-  color: #94a3b8;
+  color: #ffffff;
   font-size: 0.95rem;
+}
+
+html:not([data-theme="light"]) :is(.card, .experience-card, .github-card, .case-card, .featured-box) :is(h3, p, li, span) {
+  color: #ffffff;
+}
+
+html:not([data-theme="light"]) .experience-content span {
+  opacity: 1;
 }
 
 /* =========================
@@ -1946,16 +1954,26 @@ html[data-theme="light"] .hero-right {
   backdrop-filter: none;
 }
 
-html[data-theme="light"] .project-grid .card,
+html[data-theme="light"] .card,
+html[data-theme="light"] .github-card,
+html[data-theme="light"] .case-card,
 html[data-theme="light"] .experience-card {
-  background: rgba(244, 251, 253, .72);
+  background: #f4fbfd;
   border-color: rgba(22, 77, 98, .24);
   box-shadow: 0 10px 28px rgba(26, 75, 94, .14);
   backdrop-filter: blur(8px);
 }
 
+html[data-theme="light"] :is(.card, .experience-card, .github-card, .case-card, .featured-box) :is(h2, h3, p, li, span) {
+  color: #102f3c;
+}
+
+html[data-theme="light"] .experience-content span {
+  opacity: 1;
+}
+
 html[data-theme="light"] .featured-box {
-  background: rgba(244, 251, 253, .72);
+  background: #f4fbfd;
   border-color: rgba(22, 77, 98, .24);
   box-shadow: 0 10px 28px rgba(26, 75, 94, .14);
   backdrop-filter: blur(8px);
@@ -2387,7 +2405,7 @@ html[data-theme="light"] .chat-send { background: linear-gradient(135deg, #14749
 html[data-theme="light"] .chat-input:focus { border-color: rgba(20,95,130,.65); box-shadow: 0 0 0 3px rgba(20,95,130,.16); }
 
 html[data-theme="light"] .featured-box {
-  background: rgba(244, 251, 253, .72);
+  background: #f4fbfd;
   border-color: rgba(22, 77, 98, .24);
   box-shadow: 0 10px 28px rgba(26, 75, 94, .14);
   backdrop-filter: blur(8px);

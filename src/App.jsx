@@ -219,7 +219,7 @@ function Home() {
       "work"
     ],
     response: [
-      "Quinton has worked on SchoolHIVE Marketplace NZ and the Worm Catching Game. He's also developing quinelo, TutorOS, and Hazard ID.",
+      "Quinton has worked on SchoolHIVE Marketplace NZ and the Worm Catching Game. His education tool quinelo is currently in closed beta, and he's also developing TutorOS and Hazard ID.",
       "Most of his work is built around interactive web apps. Which project would you like to hear about?"
 ]
   },
@@ -253,12 +253,18 @@ function Home() {
   quinelo: {
     keywords: [
       "quinelo",
+      "quinelo website",
+      "quinelo release date",
+      "quinelo closed beta",
       "ai education tool",
       "education tool",
-      "learning tool"
+      "learning tool",
+      "quiz pdfs",
+      "quiz preparation"
     ],
     response: [
-      "quinelo is an education tool Quinton is working on to make quiz preparation quicker for teachers. The idea is to generate quizzes and export them as ready-to-use PDFs. It's still in development."
+      "quinelo is an education tool Quinton is building to help teachers spend less time preparing quizzes. It generates ready-to-use quiz PDFs for the classroom.",
+      "It's currently in closed beta, and a public release date hasn't been announced yet. Find out more at https://www.quinelo.co.nz."
 ]
   },
 
@@ -820,11 +826,11 @@ for (const key in knowledgeBase) {
 
       <div className="card-content">
 
-        <h3>quinelo (Release TBA)</h3>
+        <h3>quinelo (2026, Closed Beta)</h3>
 
         <p>
           An education tool designed to help teachers save time by generating
-          ready-to-use quiz PDFs.
+          ready-to-use quiz PDFs. Currently in closed beta, with the release date to be announced.
         </p>
 
         <div className="project-buttons">
@@ -1056,7 +1062,6 @@ function App() {
         aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
         title="Press T to change theme"
       >
-        <span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>
         {theme === "dark" ? "Light" : "Dark"}
         <kbd>T</kbd>
       </button>

@@ -7,7 +7,6 @@ import Navbar from "./components/Navbar";
 
 import SchoolHive from "./pages/SchoolHive";
 import WormGameCaseStudy from "./pages/Worm Catching Game";
-import AiChatBotCaseStudy from "./pages/aichatbot";
 import SuccessTutoring from "./pages/SuccessTutoring";
 import DanubeOrchards from "./pages/DanubeOrchards";
 import NewZealandInsulators from "./pages/NZI";
@@ -220,7 +219,7 @@ function Home() {
       "work"
     ],
     response: [
-      "Quinton has worked on SchoolHIVE Marketplace NZ, the Worm Catching Game, and an AI chatbot. He's also developing quinelo, TutorOS, and Hazard ID.",
+      "Quinton has worked on SchoolHIVE Marketplace NZ and the Worm Catching Game. He's also developing quinelo, TutorOS, and Hazard ID.",
       "Most of his work is built around interactive web apps. Which project would you like to hear about?"
 ]
   },
@@ -371,7 +370,7 @@ function Home() {
       "bot"
     ],
     response: [
-      "Quinton's AI chatbot project started as a way to learn more about AI and web development. It supports AI conversations, conversation memory, and basic web search, and he's still adding to it."
+      "Quinton's standalone AI chatbot project has been discontinued and removed from the portfolio. You can still ask me about his other projects, work, and hobbies here."
 ]
   }
 };
@@ -816,42 +815,6 @@ for (const key in knowledgeBase) {
     <div className="card">
 
       <div className="card-image">
-        <img src="/aichat1.png" alt="Aichatbot project" />
-      </div>
-
-      <div className="card-content">
-
-        <h3>AI Chatbot (2026)</h3>
-
-        <p>
-          A friendly AI chatbot that I have started working on and will continue to work on over time.
-        </p>
-
-        <div className="project-buttons">
-
-          <a
-            href="https://aichatbot-lilac-two.vercel.app/" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link"
-          >
-            Visit Chatbot
-          </a>
-
-          <a href="/aichatbot" className="project-link secondary">
-            Learn More
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <div className="card">
-
-      <div className="card-image">
         <img src="/quinelo.png" alt="quinelo project" />
       </div>
 
@@ -1095,7 +1058,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/schoolhive" element={<SchoolHive />} />
         <Route path="/wormcatchinggame" element={<WormGameCaseStudy />} />
-        <Route path="/aichatbot" element={<AiChatBotCaseStudy />} />
         <Route path="/success-tutoring" element={<SuccessTutoring />} />
         <Route path="/danube" element={<DanubeOrchards />} />
         <Route path="/nzi" element={<NewZealandInsulators />} />

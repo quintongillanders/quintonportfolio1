@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" rx="20" fill="#e9eef1"/>
+  <rect x="40" y="40" width="1120" height="595" rx="12" fill="none" stroke="#b5c3cc" stroke-width="2" stroke-dasharray="12 12"/>
+  <text x="600" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#425b6b">Screenshot coming soon</text>
+</svg>

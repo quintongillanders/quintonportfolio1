@@ -1,0 +1,24 @@
+/* Keep the case study layout shared with SchoolHive. */
+.quinelo-page .case-image,
+.quinelo-page .case-hero-image {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.quinelo-page .case-image img,
+.quinelo-page .case-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.quinelo-openai-logo {
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #ffffff;
+}

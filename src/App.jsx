@@ -61,10 +61,10 @@ const hobbies = [
   },
   {
     title: "Shows",
-    chatResponse: "Quinton enjoys finding a new series to get into or rewatching an old favourite. He got into Squid Game in 2025 and was hooked.",
-    keywords: ["shows", "tv", "television", "series", "squid game"],
+    chatResponse: "Quinton enjoys finding a new series to get into or rewatching an old favourite.",
+    keywords: ["shows", "tv", "television", "series"],
     image: "/squidgame.png",
-    description: "I love finding shows to watch. In 2025 I finally got into Squid Game and was hooked. I always try to find new shows to watch or rewatch.",
+    description: "I love finding new shows to watch or rewatching old favourites.",
     Icon: LiveTvIcon,
   },
   {

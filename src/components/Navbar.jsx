@@ -87,6 +87,13 @@ function Navbar() {
 
         <button
           className="nav-link-button"
+          onClick={() => navigateToSection("hobbies")}
+        >
+          Hobbies
+        </button>
+
+        <button
+          className="nav-link-button"
           onClick={() => navigateToSection("chatbot")}
         >
           Get to know me
@@ -180,6 +187,13 @@ function Navbar() {
             Projects
           </button>
 
+
+          <button
+            className="nav-link-button"
+            onClick={() => navigateToSection("hobbies")}
+          >
+            Hobbies
+          </button>
 
           <button
             className="nav-link-button"

@@ -129,7 +129,7 @@
 }
 
 /* MOBILE VIEW */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
   .navbar {
     grid-template-columns: 1fr auto;

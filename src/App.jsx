@@ -37,12 +37,16 @@ import DynamicBackground from "./components/DynamicBackground";
 const hobbies = [
   {
     title: "Gaming",
+    chatResponse: "Quinton's a big Rockstar Games fan, but he plays plenty of other games too, including Forza Horizon and Crash Bandicoot.",
+    keywords: ["gaming", "games", "video games", "rockstar", "rockstar games", "forza", "forza horizon", "crash bandicoot"],
     image: "/nikobellic.png",
     description: "I am a huge Rockstar Games fan, but I love all kinds of games outside of Rockstar Games aswell, including Forza Horizon, Crash Bandicoot, and many more.",
     Icon: SportsEsportsIcon,
   },
   {
     title: "Gym",
+    chatResponse: "Quinton started going to the gym with a friend in 2024 and has kept it up since. He usually goes on weekday mornings.",
+    keywords: ["gym", "fitness", "workout", "workouts", "working out"],
     image: "/gym.jpg",
     imagePosition: "center 20%",
     description: "Started going to the gym with my friend in 2024, and have been going consistently since then. Usually every weekday morning.",
@@ -50,18 +54,24 @@ const hobbies = [
   },
   {
     title: "Going for Runs",
+    chatResponse: "Running is a newer hobby for Quinton. He started in August 2026 and usually meets friends at Victoria Park in the city for a run.",
+    keywords: ["running", "runs", "going for runs", "jogging", "victoria park"],
     image: "/run.jpg",
     description: "Only just recently started going for runs in August 2026. Usually meet up with some friends at Victoria Park in the city.",
     Icon: DirectionsRunIcon,
   },
   {
     title: "Shows",
+    chatResponse: "Quinton enjoys finding a new series to get into or rewatching an old favourite. He got into Squid Game in 2025 and was hooked.",
+    keywords: ["shows", "tv", "television", "series", "squid game"],
     image: "/squidgame.png",
-    description: "I love finding shows to watch. Last year I finally got into Squid Game and was hooked. I always try to find new shows to watch or rewatch.",
+    description: "I love finding shows to watch. In 2025 I finally got into Squid Game and was hooked. I always try to find new shows to watch or rewatch.",
     Icon: LiveTvIcon,
   },
   {
     title: "Family & Friends",
+    chatResponse: "Quinton loves spending time with family and friends. He says he's not always the best at reaching out, but he tries to catch up when he can.",
+    keywords: ["family", "friends", "family and friends", "family & friends", "spending time with family"],
     image: "/friendsfamily.jpg.JPEG",
     description: "I love to spend time with my friends and family. Although I am not the best at reaching out to people, I try to reach out when I can.",
     Icon: PeopleIcon,
@@ -108,7 +118,7 @@ function Home() {
   const [messages, setMessages] = useState([
     {
       sender: "bot",
-      text: "Hi there! I'm Quinton's chat Assistant. Ask me anything about Quinton's projects, work history or education"
+      text: "Hey! I can tell you a bit about Quinton—what he's built, where he's worked, or what he enjoys outside coding. What would you like to know?"
     }
   ]);
 
@@ -119,6 +129,20 @@ function Home() {
 
   // ---------------- HARD CODED KNOWLEDGE BASE ----------------
   const knowledgeBase = {
+  hobbies: {
+    keywords: ["hobbies", "hobby", "interests", "free time", "spare time", "outside of coding", "for fun"],
+    response: [
+      "Outside coding, Quinton's usually gaming, at the gym, out for a run, or watching a show. He also loves spending time with family and friends. He's a big Rockstar Games fan, and running is a more recent hobby."
+    ]
+  },
+  // Keep conversational hobby answers alongside the editable cards above.
+  ...Object.fromEntries(hobbies.map((hobby) => [
+    `hobby-${hobby.title}`,
+    {
+      keywords: hobby.keywords,
+      response: [hobby.chatResponse || `Here's how Quinton describes it: “${hobby.description}”`]
+    }
+  ])),
   greetings: {
     keywords: [
       "hi",
@@ -133,9 +157,7 @@ function Home() {
       "good evening"
     ],
     response: [
-      "Hello! I'm Quinton's AI Assistant.",
-      "I'm here to answer questions about Quinton's projects, skills, education, and experience.",
-      "Feel free to ask me about SchoolHIVE, Hazard ID, AI chatbot, quinelo, TutorOS, the Worm Catching Game, Quinton's education, skills, or social media."
+      "Hey! What would you like to know about Quinton? You could ask about his projects, his background, or what he does for fun."
     ]
   },
 
@@ -148,10 +170,9 @@ function Home() {
       "capstone"
     ],
     response: [
-      "SchoolHIVE Marketplace NZ was Quinton Gillanders' 2025 capstone project built using React, Firebase, and Material UI.",
-      "The platform was designed to solve real-world issues around access to school uniforms and essential school resources in South Auckland communities.",
-      "Quinton worked in a team of three (QAK404), and the project was successfully delivered, featured on RNZ, and won 1st place at the Unitec Whānau Day Showcase."
-    ]
+      "SchoolHIVE was Quinton's 2025 capstone project at Unitec. He built it with two teammates using React, Firebase, and Material UI to help South Auckland families access school uniforms and essentials.",
+      "The team, QAK404, won first place at the Unitec Whānau Day Showcase, and the project was featured on RNZ."
+]
   },
 
   skills: {
@@ -170,10 +191,8 @@ function Home() {
       "mui"
     ],
     response: [
-      "Quinton primarily develops web applications using React and JavaScript.",
-      "He also has experience with Firebase, Material UI, HTML, CSS, Python, Java and C#.",
-      "His main focus is building responsive, user-friendly web applications."
-    ]
+      "Quinton mostly builds web apps with React and JavaScript. He's also worked with Firebase, Material UI, HTML, CSS, Python, Java, and C#. His focus is making apps that are easy to use and work well across different screens."
+]
   },
 
   education: {
@@ -187,10 +206,8 @@ function Home() {
       "university"
     ],
     response: [
-      "Quinton completed a Bachelor of Computing Systems at Unitec in 2025.",
-      "During his studies he specialised in software development with a strong focus on React and JavaScript.",
-      "His final-year capstone project was the SchoolHIVE Marketplace NZ platform."
-    ]
+      "Quinton finished his Bachelor of Computing Systems at Unitec in 2025, focusing on software development. That's where he worked on SchoolHIVE as his final-year capstone project."
+]
   },
 
   projects: {
@@ -203,9 +220,9 @@ function Home() {
       "work"
     ],
     response: [
-      "Quinton has built or is developing several projects including SchoolHIVE Marketplace NZ, the Worm Catching Game, Hazard ID, an AI chatbot, quinelo and TutorOS.",
-      "His work mainly focuses on interactive web applications built with React, including upcoming AI-powered education tools."
-    ]
+      "Quinton has worked on SchoolHIVE Marketplace NZ, the Worm Catching Game, and an AI chatbot. He's also developing quinelo, TutorOS, and Hazard ID.",
+      "Most of his work is built around interactive web apps. Which project would you like to hear about?"
+]
   },
 
   wormgame: {
@@ -217,10 +234,8 @@ function Home() {
       "javascript game"
     ],
     response: [
-      "The Worm Catching Game was built in 2024 using HTML, CSS and JavaScript.",
-      "Players catch moving worms before the timer runs out.",
-      "The project includes keyboard controls, sound effects, a timer and a game over screen."
-    ]
+      "It's a browser game Quinton built in 2024 with HTML, CSS, and JavaScript. You try to catch moving worms before the timer runs out, with keyboard controls and sound effects along the way."
+]
   },
 
   hazardid: {
@@ -232,10 +247,8 @@ function Home() {
       "safety tool"
     ],
     response: [
-      "Hazard ID is a project Quinton is currently developing.",
-      "It is a hazard identification and tracking system designed to improve workplace safety reporting and risk management.",
-      "The project is still under development, and may not release until 2027 or 2028."
-    ]
+      "Hazard ID is a tool Quinton is developing to help people identify and track workplace hazards. It's still in development and may not be out until 2027 or 2028."
+]
   },
 
   quinelo: {
@@ -246,9 +259,8 @@ function Home() {
       "learning tool"
     ],
     response: [
-      "quinelo is an education tool in development that helps teachers save time when preparing quizzes.",
-      "Teachers will be able to generate quizzes and export them as ready-to-use PDF files."
-    ]
+      "quinelo is an education tool Quinton is working on to make quiz preparation quicker for teachers. The idea is to generate quizzes and export them as ready-to-use PDFs. It's still in development."
+]
   },
 
   tutoros: {
@@ -259,9 +271,8 @@ function Home() {
       "tutoring project"
     ],
     response: [
-      "TutorOS is another upcoming project being developed by Quinton.",
-      "It is currently in development, with more information and a release date to be announced in the near future."
-    ]
+      "TutorOS is another project Quinton has in development. There aren't many details to share yet, and a release date hasn't been announced."
+]
   },
 
   socialmedia: {
@@ -307,12 +318,9 @@ function Home() {
     "family orchard"
   ],
   response: [
-    "Danube Orchards was Quinton Gillanders' family's multi-generational strawberry business.",
-    "The orchard grew strawberries for 94 years, with the Whenuapai orchard operating for 52 years after being established by his grandfather Arthur Rakich in 1974.",
-    "Quinton worked in the packing shed from 2014 until the final strawberry season ended in February 2026, checking punnets before they were sealed and prepared for supermarkets such as New World and Pak'nSave.",
-    "The orchard was an important part of Quinton's childhood and family life, hosting birthdays, Christmas celebrations, weddings and many family gatherings.",
-    "In 2026 the property was sold to Auckland Transport for a future Park and Ride, marking the end of nearly a century of strawberry growing."
-  ]
+      "Danube Orchards was Quinton's family's strawberry business, so it was a big part of both his working life and his childhood. He worked in the packing shed from 2014 until the final season ended in February 2026, checking strawberry punnets before they went out to supermarkets.",
+      "His grandfather Arthur Rakich established the Whenuapai orchard in 1974. The family grew strawberries for 94 years altogether, and the orchard hosted plenty of birthdays, weddings, and Christmases. The property was sold to Auckland Transport in 2026 for a future Park and Ride."
+]
 },
 
       successtutoring: {
@@ -331,11 +339,8 @@ function Home() {
           "students"
         ],
         response: [
-          "In July 2026, Quinton worked with Success Tutoring New Lynn as an AI Lab Tutor.",
-          "He delivered two weekly AI workshops for young students, introducing them to Artificial Intelligence through fun, interactive activities and demonstrations.",
-          "The workshops focused on helping students understand what AI is, how it can be used creatively, and the importance of using AI responsibly.",
-          "Quinton hopes to continue working with Success Tutoring and expand the AI Lab programme in the future."
-        ]
+      "In July 2026, Quinton spent two weeks helping young students explore AI at Success Tutoring New Lynn, with one workshop each week. The sessions used fun activities and demos to cover what AI is, how to use it creatively, and how to use it responsibly. He hopes to do more with the programme in future."
+]
       },
 
         nzi: {
@@ -352,12 +357,9 @@ function Home() {
             "kumeu"
           ],
           response: [
-            "Quinton worked at New Zealand Insulators from May 2017 to February 2023 before beginning his software development journey.",
-            "His role involved assembling electrical insulators used on power lines to safely support and separate electrical conductors.",
-            "In 2018, he earned his forklift licence and took on additional warehouse responsibilities, including stacking pallets and preparing products for dispatch.",
-            "Working at NZI helped him develop a strong work ethic, attention to detail, teamwork, and experience in a fast-paced manufacturing environment.",
-            "In 2022, Quinton decided to pursue a career in software development and left NZI in February 2023 to begin studying at Unitec."
-          ]
+      "Before studying software development, Quinton worked at New Zealand Insulators from May 2017 to February 2023, assembling electrical insulators for power lines. He got his forklift licence in 2018 and also helped with warehouse work and dispatch.",
+      "He decided to change careers in 2022 and left the following February to start at Unitec."
+]
         },
 
   aichatbot: {
@@ -369,11 +371,8 @@ function Home() {
       "bot"
     ],
     response: [
-      "AI chatbot is Quinton's personal chatbot project.",
-      "The project was created to learn more about AI and modern web technologies.",
-      "It currently supports AI conversations, conversation memory and basic web search.",
-      "It is still actively being improved with new features."
-    ]
+      "Quinton's AI chatbot project started as a way to learn more about AI and web development. It supports AI conversations, conversation memory, and basic web search, and he's still adding to it."
+]
   }
 };
 
@@ -433,7 +432,7 @@ for (const key in knowledgeBase) {
 }
   const finalText =
     matchedResponse?.join("\n\n") ||
-    "I don't have info on that yet — try asking about SchoolHIVE, skills, or projects!";
+    "I'm not sure about that one. Could you rephrase it or name the topic you're interested in? I know about Quinton's projects, work, studies, and hobbies.";
 
   // typing animation
   setTypingMessage("");

@@ -56,7 +56,20 @@ export default function Quinelo() {
         </div>
       </section>
 
-      {/* LINKS: Add a live project or repository link here when available. */}
+      <section className="case-section">
+        <h2>Try quinelo</h2>
+        <p>Visit quinelo to explore the live project.</p>
+        <div className="project-buttons">
+          <a
+            href="https://www.quinelo.co.nz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            Live Project
+          </a>
+        </div>
+      </section>
     </div>
   );
 }

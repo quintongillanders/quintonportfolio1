@@ -830,6 +830,15 @@ for (const key in knowledgeBase) {
         <div className="project-buttons">
 
           <a
+            href="https://www.quinelo.co.nz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            View Website
+          </a>
+
+          <a
             href="/quinelo"
             className="project-link secondary"
           >

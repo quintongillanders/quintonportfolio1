@@ -66,7 +66,6 @@
 }
 
 
-
 /* =========================
    DARK LOWER ATMOSPHERE
 ========================= */
@@ -89,7 +88,6 @@
     );
 
 }
-
 
 
 /* =========================
@@ -119,7 +117,6 @@
     );
 
 }
-
 
 
 /* =========================
@@ -154,7 +151,6 @@
     pointer-events:none;
 
 }
-
 
 
 /* =========================
@@ -202,7 +198,6 @@
 }
 
 
-
 @keyframes fogMove {
 
 
@@ -230,264 +225,9 @@
 }
 
 
-
-/* =========================
-   RAIN CONTAINER
-========================= */
-
-.rain-layer {
-
-    position:absolute;
-
-    inset:0;
-
-    overflow:hidden;
-
-
-    filter:blur(.35px);
-
-
-    mix-blend-mode:screen;
-
-
-    opacity:.8;
-
-
-    animation:
-
-    windMove 7s ease-in-out infinite alternate;
-
-    transition: opacity 1s ease, filter 1s ease;
-
-}
-
-
-
-/* =========================
-   RAIN DROPS
-========================= */
-
-.rain-layer span {
-
-
-    position:absolute;
-
-
-    top:-200px;
-
-
-    width:1.2px;
-
-
-    height:70px;
-
-
-    background:
-
-
-    linear-gradient(
-        transparent,
-        rgba(210,220,240,0.7)
-    );
-
-
-    opacity:.45;
-
-
-    animation:
-
-    rainFall linear infinite;
-
-}
-
-
-
-/* =========================
-   RAIN DEPTH
-========================= */
-
-.rain-layer span:nth-child(3n) {
-
-    height:95px;
-
-    opacity:.35;
-
-}
-
-
-
-.rain-layer span:nth-child(5n) {
-
-    height:55px;
-
-    opacity:.25;
-
-}
-
-
-
-.rain-layer span:nth-child(8n) {
-
-    height:130px;
-
-    opacity:.45;
-
-}
-
-
-
-/* =========================
-   RANDOM RAIN ANGLES
-========================= */
-
-.rain-layer span:nth-child(2n) {
-
-    transform:rotate(12deg);
-
-}
-
-
-.rain-layer span:nth-child(3n) {
-
-    transform:rotate(20deg);
-
-}
-
-
-.rain-layer span:nth-child(5n) {
-
-    transform:rotate(28deg);
-
-}
-
-
-.rain-layer span:nth-child(7n) {
-
-    transform:rotate(-8deg);
-
-}
-
-
-
-/* =========================
-   RAIN POSITIONS
-========================= */
-
-.rain-layer span:nth-child(1n) {
-    left:5%;
-    animation-duration:1.8s;
-}
-
-
-.rain-layer span:nth-child(2n) {
-    left:15%;
-    animation-duration:2.2s;
-}
-
-
-.rain-layer span:nth-child(3n) {
-    left:25%;
-    animation-duration:1.6s;
-}
-
-
-.rain-layer span:nth-child(4n) {
-    left:35%;
-    animation-duration:2.5s;
-}
-
-
-.rain-layer span:nth-child(5n) {
-    left:45%;
-    animation-duration:2s;
-}
-
-
-.rain-layer span:nth-child(6n) {
-    left:55%;
-    animation-duration:1.9s;
-}
-
-
-.rain-layer span:nth-child(7n) {
-    left:65%;
-    animation-duration:2.4s;
-}
-
-
-.rain-layer span:nth-child(8n) {
-    left:75%;
-    animation-duration:1.7s;
-}
-
-
-.rain-layer span:nth-child(9n) {
-    left:85%;
-    animation-duration:2.6s;
-}
-
-
-.rain-layer span:nth-child(10n) {
-    left:95%;
-    animation-duration:2.1s;
-}
-
-
-
-/* =========================
-   RAIN MOVEMENT
-========================= */
-
-@keyframes rainFall {
-
-
-    from {
-
-        transform:
-
-        translate3d(0,-20vh,0)
-
-        rotate(15deg);
-
-    }
-
-
-    to {
-
-        transform:
-
-        translate3d(-100px,120vh,0)
-
-        rotate(25deg);
-
-    }
-
-}
-
-
-
 /* =========================
    WIND
 ========================= */
-
-@keyframes windMove {
-
-
-    from {
-
-        transform:translateX(-15px);
-
-    }
-
-
-    to {
-
-        transform:translateX(20px);
-
-    }
-
-}
-
 
 
 /* =========================
@@ -517,27 +257,6 @@
 
 }
 
-/* Individually varied drops create natural depth without repeating columns. */
-.rain-layer span {
-    left: var(--rain-left) !important;
-    width: var(--rain-width) !important;
-    height: var(--rain-length) !important;
-    opacity: var(--rain-opacity) !important;
-    filter: blur(var(--rain-blur)) drop-shadow(0 0 1.5px rgba(225, 238, 255, .38));
-    background: linear-gradient(transparent, rgba(225, 238, 255, .9));
-    animation-duration: var(--rain-duration) !important;
-    animation-delay: var(--rain-delay);
-}
-
-@keyframes rainFall {
-    from {
-        transform: translate3d(0, -20vh, 0) rotate(var(--rain-angle));
-    }
-
-    to {
-        transform: translate3d(var(--rain-drift), 120vh, 0) rotate(var(--rain-angle));
-    }
-}
 
 html[data-theme="light"] .dynamic-background {
     background: linear-gradient(180deg, #67c8f5 0%, #a6dcf4 45%, #f7e7b3 100%);
@@ -560,34 +279,6 @@ html[data-theme="light"] .fog-layer {
     opacity: .28;
 }
 
-html[data-theme="light"] .rain-layer {
-    opacity: 0;
-    filter: blur(7px);
-    pointer-events: none;
-    animation: windMove 7s ease-in-out infinite alternate,
-               rainFizzleOut 1s ease forwards;
-}
-
-html:not([data-theme="light"]) .rain-layer {
-    animation: windMove 7s ease-in-out infinite alternate,
-               rainFizzleIn 1.25s ease both;
-}
-
-@keyframes rainFizzleOut {
-    0% { opacity: .8; filter: blur(.35px); }
-    55% { opacity: .35; filter: blur(2px); }
-    100% { opacity: 0; filter: blur(7px); }
-}
-
-@keyframes rainFizzleIn {
-    0% { opacity: 0; filter: blur(7px); }
-    45% { opacity: .3; filter: blur(2px); }
-    100% { opacity: .8; filter: blur(.35px); }
-}
-
-html[data-theme="light"] .rain-layer span {
-    background: linear-gradient(transparent, rgba(38, 105, 148, .62));
-}
 
 html[data-theme="light"] .dynamic-background::after {
     background: radial-gradient(circle at center, transparent 55%, rgba(41, 98, 124, .08));

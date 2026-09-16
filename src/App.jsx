@@ -21,13 +21,55 @@ import CssIcon from "@mui/icons-material/Css";
 import StorageIcon from "@mui/icons-material/Storage";
 import ApiIcon from "@mui/icons-material/Api";
 import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
+import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
+import LiveTvIcon from "@mui/icons-material/LiveTv";
+import PeopleIcon from "@mui/icons-material/People";
 
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 import DynamicBackground from "./components/DynamicBackground";
 
+// Images go in public: public/gym.jpg is referenced here as /gym.jpg.
+// Edit these cards or add more hobbies here.
+const hobbies = [
+  {
+    title: "Gaming",
+    image: "/nikobellic.png",
+    description: "I am a huge Rockstar Games fan, but I love all kinds of games outside of Rockstar Games aswell, including Forza Horizon, Crash Bandicoot, and many more.",
+    Icon: SportsEsportsIcon,
+  },
+  {
+    title: "Gym",
+    image: "/gym.jpg",
+    imagePosition: "center 20%",
+    description: "Started going to the gym with my friend in 2024, and have been going consistently since then. Usually every weekday morning.",
+    Icon: FitnessCenterIcon,
+  },
+  {
+    title: "Going for Runs",
+    image: "/run.jpg",
+    description: "Only just recently started going for runs in August 2026. Usually meet up with some friends at Victoria Park in the city.",
+    Icon: DirectionsRunIcon,
+  },
+  {
+    title: "Shows",
+    image: "/squidgame.png",
+    description: "I love finding shows to watch. Last year I finally got into Squid Game and was hooked. I always try to find new shows to watch or rewatch.",
+    Icon: LiveTvIcon,
+  },
+  {
+    title: "Family & Friends",
+    image: "/friendsfamily.jpg.JPEG",
+    description: "I love to spend time with my friends and family. Although I am not the best at reaching out to people, I try to reach out when I can.",
+    Icon: PeopleIcon,
+  },
+];
+
 function Home() {
+  const [missingHobbyImages, setMissingHobbyImages] = useState({});
 
   const featuredProjects = [
     {
@@ -911,6 +953,36 @@ for (const key in knowledgeBase) {
   </div>
 
 </section>
+
+      {/* HOBBIES */}
+      <section id="hobbies" className="hobbies" aria-labelledby="hobbies-heading">
+        <h2 id="hobbies-heading">Hobbies</h2>
+        <p className="hobbies-intro">A few things I enjoy outside of coding.</p>
+
+        <div className="project-grid">
+          {hobbies.map(({ title, description, image, imagePosition, Icon }) => (
+            <article className="card" key={title}>
+              <div className={`card-image${missingHobbyImages[image] ? " card-image-coming-soon" : ""}`}>
+                {missingHobbyImages[image] ? (
+                  <Icon className="coming-soon-icon" aria-hidden="true" />
+                ) : (
+                  <img
+                    src={image}
+                    alt={title}
+                    style={{ objectPosition: imagePosition }}
+                    loading="lazy"
+                    onError={() => setMissingHobbyImages((current) => ({ ...current, [image]: true }))}
+                  />
+                )}
+              </div>
+              <div className="card-content">
+                <h3>{title}</h3>
+                <p>{description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
       {/* CHATBOT (NOW HARD CODED) */}
       <section id="chatbot" className="chatbot">

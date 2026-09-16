@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+/* HOBBIES */
+.hobbies-intro {
+  text-align: center;
+  margin: 16px auto 36px;
+}
+
 /* RESET */
 * {
   margin: 0;

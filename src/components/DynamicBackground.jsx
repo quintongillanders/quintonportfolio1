@@ -15,7 +15,7 @@ export default function DynamicBackground() {
 
             <div className="rain-layer">
 
-                {Array.from({ length: 110 }).map((_, index) => {
+                {Array.from({ length: 55 }).map((_, index) => {
                     const depth = ((index * 37) % 100) / 100;
                     const rainStyle = {
                         "--rain-left": `${((index * 47.31) % 108) - 4}%`,

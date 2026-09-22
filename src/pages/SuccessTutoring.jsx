@@ -67,6 +67,13 @@ export default function SuccessTutoring() {
         </div>
       </section>
 
+    <h2>Workshop Slides</h2>
+      <div className="back-button-container">
+        <Link to="/success-tutoring/links" className="back-button">
+          Click here to view the slides from the workshop
+        </Link>
+      </div>
+
       {/* Special Thanks */}
       <section className="case-thanks">
         <h2>Special Thanks</h2>

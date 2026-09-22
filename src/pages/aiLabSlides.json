@@ -1,0 +1,182 @@
+[
+  {
+    "src" : "\/ai-lab-slides\/slide-1.jpg",
+    "text" : "AI Lab\n9\/22\/26"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-2.jpg",
+    "text" : "Introduction\nQUINTON GILLANDERS\nSOFTWARE DEVELOPER THAT LIKES BUILDING COOL APPS"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-3.jpg",
+    "text" : "By the end of this\nlesson, you will:\nUNDERSTAND WHAT AI IS (HISTORY, DEFINITION, COMMON USE)\nRECOGNIZE AI IN EVERYDAY LIFE (SOCIAL MEDIA, GOOGLE MAPS, NETFLIX, SIRI, CHATGPT, ETC).\nBUILD CURIOSITY AND CONFIDENCE IN ENGAGING WITH AI."
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-4.jpg",
+    "text" : "Have you\nused AI\nBefore?"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-5.jpg",
+    "text" : "Lesson 1 - What is AI?\nAI learns from lots of information\nAI can answer questions and solve problems\nAI can create stories, pictures and music\nWhile it is helpful, it can also make some mistakes"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-6.jpg",
+    "text" : "Human Intelligence VS Artificial\nIntelligence\nHumans AI\nHave Emotions No Emotions\nCreative Learns from examples\nCan use common sense Follows patterns\nLearn from life experiences Learns from data"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-7.jpg",
+    "text" : "How does AI Actually Work?\nAI Looks at millions of examples\nIt finds patterns, and uses those patterns to make predictions\nExample:\nIt will look at thousands of cat photos, learn that they have pointy ears, and then\nwill be able to recognize another cat."
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-8.jpg",
+    "text" : "How does AI Actually Work?\nWhen given a task, AI will use the patterns to predict outputs. Some\nmore examples:\n- Typing \"hav\" - autocorrect will predict \"have\"\n- Spotify will recommend songs like the ones you already love\n- TikTok and Youtube will show videos based on what you watch and\nrewatch"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-9.jpg",
+    "text" : "Icebreaker: AI in my pocket\nStep 1: List 3 ways you already use AI in your daily life.\n(Hint: think about social media, apps, games or\ndevices at home!)\nStep 2: Share and compare!\nTurn to a partner and share one of your examples.\n- Did they come up with the same ones as you?\n- Or did they think of something you hadn't noticed?\nAlso be ready to share one cool example with the\nclass!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-10.jpg",
+    "text" : "Activity 1: Design your own AI!\nInvent a brand-new AI tool that could be useful (or\nfun!) in everyday life. Give it a name, explain what\ndata it would need to be trained on, and describe\nwhat it could do.\n1) 2) 4) What is the name of the AI?\nWhat data does it learn from?\n3) How does it work?\nWhat problem does it solve? And why it's fun!\n5) Bonus Challenge: Draw a quick sketch of what\nyour AI could look like!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-11.jpg",
+    "text" : "Different Types of AI in daily life!\nAI isn't just one thing, it's everywhere. From the moment you wake up\nand check your phone, to the time you go to bed scrolling through\nyour favorite apps.\nExamples:\nNetflix recommending a new show\nSnapchat applying a funny filter to your face\nYour phone suggesting the quickest route to your school"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-12.jpg",
+    "text" : "Different Types of AI in daily life!\nCommon types you see every day:\n• Recommendation AI\n• Recognition AI\n• Language AI\n• Predictive AI\n• Creative AI"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-13.jpg",
+    "text" : "Activity 1 – Debate Corner = Helpful or\ntoo smart?\nPick one of the following discussion starts and share your opinions:\n1. AI makes life easier\n2. AI knows us too well\n3. Creative AI is not real creativity\n4. AI will eventually replace some jobs – and that's okay.\nEach side shares their thoughts for 2 minutes, then swaps roles and\nargues with the opposite side!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-14.jpg",
+    "text" : "Activity 2 – Spot the game!)\nI will describe different situations, and you must uses AI or not!\nAI (Whole class\ncall out whether it\nWhoever gets the most right wins a mini prize or bragging rights!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-15.jpg",
+    "text" : "Activity 1: The good, curious (Pairs or groups)\nthe bad and the\nList examples of how AI helps the world and where it could cause\nproblems\nThe Good The Bad The Curious (Qs)\nDetect diseases early Spreads fake\ninformation\nCan AI have feelings?\nReduces pollution May replace some\njobs\nWho controls what AI\nlearns?"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-16.jpg",
+    "text" : "Activity 2: If I could use AI to change the\nworld (Individual)\nImagine you could use AI to fix one global problem – hunger, climate\nchange, education, poverty, etc.\nWrite or draw your idea:\n- What problem would you solve?\n- What kind of AI would you create to do it?\n- Who would benefit the most?\nBe creative – there are no wrong answers!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-17.jpg",
+    "text" : "End of\nLesson 1!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-18.jpg",
+    "text" : "Lesson 2 - Writing Prompts"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-19.jpg",
+    "text" : "By the end of this lesson -\nYou will be able to:\nUnderstand what a prompt is and how it guides AI responses.\nUse effective structures when writing prompts (role, task,\ncontext, format).\nWrite clear, creative and practical prompts that produce\nstrong results."
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-20.jpg",
+    "text" : "What is a\nprompt?\nA prompt is an instruction\nor question you give to an\nAI tool.\nIt is how we communicate\nwith AI and tell it what we\nwant it to do, how we\nwant it done, and what\nkind of response we can\nexpect\nThe AI's output is only as\ngood as your input!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-21.jpg",
+    "text" : "What is a\nprompt?\nImagine if you're asking a\nfriend to draw a picture of\nyou\nIf you just said, \"Draw\nsomething\", that would\nmean anything.\nNow imagine you ask:\n\"Draw a cute cartoon cat\nwearing sunglasses and\nholding an ice cream\""
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-22.jpg",
+    "text" : "Result"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-23.jpg",
+    "text" : "Activity 1 – Prompt\nDetectives!\nThe goal for this activity: Spot the most effective\nprompt.\nBelow are three prompts AI prompts\n\"Write about animals\"\n\"Write a fun paragraph about why penguins can't fly\"\n\"Animals info please\"\nWhich is best and why?\nHow could you improve the other two prompts?"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-24.jpg",
+    "text" : "Activity 2 – Draw it\nwith words\nYour goal is to visualize how clarity shapes\ncreativity.\nImagine you're asking AI to \"draw\"\nsomething using words.\nWrite one short vague prompt and one\nclear descriptive prompt for the same\nimage.\nExamples:\nVague: \"Draw something cool\"\nSpecific: \"Draw a robot surfing a rainbow\nwave under a starry sky.\""
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-25.jpg",
+    "text" : "Activity 2 – Draw it\nwith words\nReflection:\nWhat details made the second prompt\nstronger?"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-26.jpg",
+    "text" : "The Prompt Formula"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-27.jpg",
+    "text" : "Every strong prompt usually includes four key parts that\nwork together to tell the AI exactly what to do and how\nto do it\nPart What it means Example\nRole Tell the Ai who it\nshould be or act as\n\"You are a travel\nagent...\"\nTask Tell it what to do – the\nmain goal or activity\n\"...write a short\nitinerary...\"\nContext Give background\ndetails or information\nto help the AI tailor it's\nresponse\n\"… for a family visiting\nJapan...\"\nFormat Explain how you want\nthe answer to look –\nlist, paragraph, table,\nscript, etc.\n\"… as a bullet-point\nlist.\""
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-28.jpg",
+    "text" : "Why each part\nmatters\nWhen you give AI a role, you're telling it who to\nbecome for your request\nIf you say \"You're a teacher\" - The AI explains\nthings simply\nIf you say \"You're a scientist\" - The AI becomes\nmore technical and detailed.\nSome more examples:\n\"You are a film critic, write a review for Toy Story 5\"\n\"You are a primary school teacher, explain\nphotosynthesis to Year 5 students\"\n\"You are a travel blogger, describe how your trip\nto Paris was\"."
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-29.jpg",
+    "text" : "Role Roulette\nGROUP GAME"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-30.jpg",
+    "text" : "Role Roulette\nPart 1\nInstructions\nYour goal is to experiment with how changing the role\nimpacts the AI's tone and response.\nI will write the different roles clearly on the whiteboard\n- Artist\n- Teacher\n- CEO\n- Wizard\n- Astronaut\nExample:\n\"Describe how to make a sandwich\"\nArtist: \"You are an artist describing a sandwich as a\nmasterpiece\".\nScientist: \"You are a scientist explaining the sandwich\nprocess step-by-step\"."
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-31.jpg",
+    "text" : "Role Roulette Part\n2 Instructions\nSome prompts don't quite hit the mark,\ncan you fix them?\nHere are some weak prompts:\n1. \"Write about space.\"\n2. \"You are a chef. Talk about\nfood\"\n3. \"Make a poem about love\"\nYour job is to rewrite each one to\nmake it strong by adding all four\nparts – Role, Task. Context and\nFormat\nExample fix:\n\"You are a science teacher.\nExplain how recycling helps the\nplanet to a Year 6 class using\nsimple bullet points\"."
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-32.jpg",
+    "text" : "End of\nLesson 2!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-33.jpg",
+    "text" : "Lesson 3 - Advanced\nPrompting and\nRefinement"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-34.jpg",
+    "text" : "By the end of this lesson,\nyou will be able to:\nLearn advanced strategies, role assignment,\nmulti-step prompts, iteration\nCompare simple vs advanced prompting\nDevelop problem solving skills with AI"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-35.jpg",
+    "text" : "Simple Vs Advanced\nPrompting\nSimple Prompt - \"Write a story about\nfriendship\"\nAdvanced Prompt: \"You are a friendly Year\n7 teacher, write a warm story about\nfriendship using 100 words\"."
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-36.jpg",
+    "text" : "Technique 1 – Role\nAssignment\nTell AI who to be:\n\"You are a history teacher...\"\n\"You are a fun inventor...\"\n\"You are a kind coach...\"\nGood roles, better tone ideas!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-37.jpg",
+    "text" : "Technique 2 – Multi\nStep Prompts\nBreak big tasks into steps:\n- Plan\n- Create\n- Review\nExample:\n\"First, list 3 ideas for a school recycling\ncampaign. Then choose the best one.\nFinally, write a poster slogan.\""
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-38.jpg",
+    "text" : "Technique 3 –\nIteration (Improve it!)\nYou don't have to stop at the first answer!\nImprove it by giving feedback to the AI\nExamples:\n\"Make it shorter and funnier\"\n\"Add examples for Year 7 students\""
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-39.jpg",
+    "text" : "Activity – Prompt\nmakeover challenge\nAI won't always get it right the first time, and that's okay!\nIn this activity, you will practice iteration, which means\nimproving your prompts through feedback and testing\nStart with this simple prompt: \"Write about friendship\"\nImprove it 3 times (make it clearer each round)\nShare your best version!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-40.jpg",
+    "text" : "End of\nLesson 3!"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-41.jpg",
+    "text" : "Lesson 4 - Responsible\nand Ethical AI Use"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-42.jpg",
+    "text" : "By the end of this will be able to:\nUse AI effectively and safely\nUnderstand common problems (bias, plagiarism, misinformation, privacy)\nUnderstand how to be a responsible AI user\nlesson, you"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-43.jpg",
+    "text" : "The 4 biggest things\nto watch out for\nBias – AI can copy unfair ideas\nfrom its training data\nPlagiarism – Don't copy AI work as\nyour own\nMisinformation – AI can make\nmistakes or invent facts\nPrivacy – Don't share personal\ninformation"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-44.jpg",
+    "text" : "Final Activity – Would\nyou risk it?\nThis is a mini ethical decision game. There is no right or\nwrong – just your judgment.\nInstructions:\nRead each scenario on the next slide\nChoose if it is okay to use AI or not okay to use AI\nWrite a one sentence explanation of why\nDiscuss your reasoning with a partner or a small group"
+  },
+  {
+    "src" : "\/ai-lab-slides\/slide-45.jpg",
+    "text" : "Final Activity – Would\nyou risk it?\nScenarios\nYour group decides to use AI to generate half of a report\nto save time, but only one member plans to declare it in\nthe submission notes.\nAfter receiving teacher feedback, you paste your whole\nessay into ai and ask it to \"rewrite based on this\nfeedback\" instead of revising sections yourself.\nYou use AI to help check grammar and structure before\nsubmission.\nBefore an exam, you use AI to practice by asking it to\nquiz you with sample questions based on your notes. You\ndouble-check the answers yourself afterward.\nYou use AI to summarise lecture notes you already wrote\nyourself"
+  }
+]

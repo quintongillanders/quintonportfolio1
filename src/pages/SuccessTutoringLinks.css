@@ -1,0 +1,179 @@
+/* Keep the shared case-study, case-hero and button styles used by the portfolio. */
+.ai-lab-page {
+  --lab-line: rgba(148, 163, 184, 0.2);
+  --lab-accent: #ffb16f;
+  --lab-control-background: rgba(231, 126, 65, 0.15);
+  --lab-control-border: rgba(244, 162, 97, 0.38);
+}
+
+.ai-lab-page section.ai-lab-viewer {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--lab-line);
+  border-radius: 16px;
+  background: transparent;
+}
+
+.ai-lab-viewer-header,
+.ai-lab-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+}
+
+.ai-lab-slide-count {
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.ai-lab-stage {
+  display: flex;
+  justify-content: center;
+}
+
+.ai-lab-stage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 65vh;
+  object-fit: contain;
+  margin: 0;
+  border-radius: 0;
+}
+
+.ai-lab-progress {
+  height: 3px;
+  background: var(--lab-line);
+}
+
+.ai-lab-progress > div {
+  height: 100%;
+  background: var(--lab-accent);
+  transition: width 180ms ease;
+}
+
+.ai-lab-controls button {
+  min-height: 44px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.ai-lab-controls button:hover:not(:disabled) {
+  border-color: var(--lab-accent);
+}
+
+.ai-lab-controls button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.ai-lab-jump {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.ai-lab-jump select {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--lab-control-border);
+  border-radius: 12px;
+  background: var(--lab-control-background);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  color-scheme: dark;
+}
+
+.ai-lab-page :is(button, select, a, section):focus-visible {
+  outline: 3px solid var(--lab-accent);
+  outline-offset: 3px;
+}
+
+.ai-lab-page p.ai-lab-keyboard-hint {
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 16px 0 40px;
+  opacity: 0.75;
+}
+
+.ai-lab-resources {
+  border-top: 1px solid var(--lab-line);
+  padding-top: 30px;
+  text-align: center;
+}
+
+.ai-lab-page .ai-lab-resources p {
+  margin: 8px 0 24px;
+}
+
+.ai-lab-resource-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ai-lab-page .back-button-container a,
+.ai-lab-page .ai-lab-resource-actions a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ai-lab-page .ai-lab-resource-actions a {
+  margin: 0;
+}
+
+html[data-theme="light"] .ai-lab-page {
+  --lab-line: rgba(20, 66, 84, 0.28);
+  --lab-accent: #145f82;
+  --lab-control-background: rgba(239, 249, 252, 0.9);
+  --lab-control-border: rgba(20, 95, 130, 0.42);
+}
+
+html[data-theme="light"] .ai-lab-jump select {
+  color-scheme: light;
+}
+
+@media (max-width: 600px) {
+  .ai-lab-viewer-header,
+  .ai-lab-controls {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .ai-lab-viewer-header {
+    font-size: 0.85rem;
+  }
+
+  .ai-lab-controls button {
+    padding: 10px 8px;
+    font-size: 0.8rem;
+    gap: 2px;
+  }
+
+  .ai-lab-jump {
+    gap: 0;
+  }
+
+  .ai-lab-jump span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-lab-progress > div {
+    transition: none;
+  }
+}

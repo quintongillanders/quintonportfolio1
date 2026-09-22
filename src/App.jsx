@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import SchoolHive from "./pages/SchoolHive";
 import WormGameCaseStudy from "./pages/Worm Catching Game";
 import SuccessTutoring from "./pages/SuccessTutoring";
+import SuccessTutoringLinks from "./pages/SuccessTutoringLinks";
 import DanubeOrchards from "./pages/DanubeOrchards";
 import NewZealandInsulators from "./pages/NZI";
 import Quinelo from "./pages/quinelo";
@@ -1072,6 +1073,7 @@ function App() {
         <Route path="/schoolhive" element={<SchoolHive />} />
         <Route path="/wormcatchinggame" element={<WormGameCaseStudy />} />
         <Route path="/success-tutoring" element={<SuccessTutoring />} />
+        <Route path="/success-tutoring/links" element={<SuccessTutoringLinks />} />
         <Route path="/danube" element={<DanubeOrchards />} />
         <Route path="/nzi" element={<NewZealandInsulators />} />
         <Route path="/quinelo" element={<Quinelo />} />

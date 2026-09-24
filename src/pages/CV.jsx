@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./CV.css";
 
-const cvUrl = "/Quinton%20Gillanders%20CV.pdf";
+const cvUrl = "/QuintonCV2026.pdf";
 
 export default function CV() {
   return (

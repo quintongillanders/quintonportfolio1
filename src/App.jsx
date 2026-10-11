@@ -12,6 +12,7 @@ import SuccessTutoringLinks from "./pages/SuccessTutoringLinks";
 import DanubeOrchards from "./pages/DanubeOrchards";
 import NewZealandInsulators from "./pages/NZI";
 import Quinelo from "./pages/quinelo";
+import TutorOS from "./pages/TutorOS";
 import CV from "./pages/CV";
 import NotFound from "./pages/NotFound";
 
@@ -872,18 +873,15 @@ for (const key in knowledgeBase) {
         <h3>TutorOS (Date TBC)</h3>
 
         <p>
-          More details on TutorOS will be shared in the coming months.
+          A web app for managing students and tutoring sessions in one place.
+          Coming soon.
         </p>
 
         <div className="project-buttons">
 
-          <a
-            href="#"
-            className="project-link"
-            onClick={(e) => e.preventDefault()}
-          >
-            Coming Soon
-          </a>
+          <Link to="/tutoros" className="project-link">
+            Learn More
+          </Link>
 
         </div>
 
@@ -1077,6 +1075,7 @@ function App() {
         <Route path="/danube" element={<DanubeOrchards />} />
         <Route path="/nzi" element={<NewZealandInsulators />} />
         <Route path="/quinelo" element={<Quinelo />} />
+        <Route path="/tutoros" element={<TutorOS />} />
         <Route path="/cv" element={<CV />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

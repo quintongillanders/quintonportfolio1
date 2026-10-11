@@ -860,12 +860,8 @@ for (const key in knowledgeBase) {
 
     <div className="card">
 
-      <div
-        className="card-image card-image-coming-soon"
-        role="img"
-        aria-label="TutorOS coming soon"
-      >
-        <HourglassEmptyIcon className="coming-soon-icon" />
+      <div className="card-image">
+        <img src="/tutoros.png" alt="TutorOS homepage" />
       </div>
 
       <div className="card-content">

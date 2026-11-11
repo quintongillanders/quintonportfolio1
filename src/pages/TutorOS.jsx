@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import SchoolIcon from "@mui/icons-material/School";
-import HourglassEmptyIcon from "@mui/icons-material/HourglassEmpty";
+import BuildIcon from "@mui/icons-material/Build";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 export default function TutorOS() {
   return (
@@ -15,12 +16,16 @@ export default function TutorOS() {
         <h1>TutorOS</h1>
         <div className="case-meta">
           <span><SchoolIcon /> Tutoring Management Tool</span>
-          <span><HourglassEmptyIcon /> Coming soon</span>
+          <span><BuildIcon /> Completed Prototype</span>
+          <span><CalendarMonthIcon /> November 2026</span>
         </div>
         <p className="case-intro">
-          TutorOS is a web app I am developing in collaboration with Success Tutoring New Lynn to help tutors manage students
+          TutorOS is a web app I developed in collaboration with Success Tutoring New Lynn to help tutors manage students
           and tutoring sessions in one place.
         </p>
+        <div className="case-hero-image">
+          <img src="/tutoros.png" alt="TutorOS prototype homepage" />
+        </div>
       </div>
 
       <h2>What is TutorOS?</h2>
@@ -33,12 +38,18 @@ export default function TutorOS() {
         </p>
       </div>
 
-      <h2>Coming soon</h2>
+      <h2>Project outcome</h2>
       <div className="case-card">
         <p>
-          This project is still in development. More details and the full case
-          study are coming soon. A public release date has not been announced yet.
+          The project was completed as a prototype in November 2026 in
+          collaboration with Success Tutoring New Lynn. TutorOS will not be
+          released to the public.
         </p>
+      </div>
+      <div className="back-button-container">
+        <Link to="/success-tutoring" className="back-button">
+          My work with Success Tutoring
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect x="2" y="2" width="1196" height="671" rx="24" fill="#182331" stroke="#718096" stroke-width="2" stroke-dasharray="12 10"/>
+  <g fill="none" stroke="#a7b4c5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="555" y="240" width="90" height="70" rx="8"/>
+    <circle cx="581" cy="262" r="7"/>
+    <path d="m559 301 24-24 18 18 17-17 23 23"/>
+  </g>
+  <text x="600" y="370" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">Screenshot coming soon</text>
+  <text x="600" y="415" fill="#a7b4c5" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">TutorOS</text>
+</svg>

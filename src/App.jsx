@@ -866,11 +866,10 @@ for (const key in knowledgeBase) {
 
       <div className="card-content">
 
-        <h3>TutorOS (Date TBC)</h3>
+        <h3>TutorOS (2026)</h3>
 
         <p>
-          A web app for managing students and tutoring sessions in one place.
-          Coming soon.
+          TutorOS was a project I was working on in collaboration with Success Tutoring New Lynn. The project was completed as a prototype in November 2026, and will not be released to the public.
         </p>
 
         <div className="project-buttons">

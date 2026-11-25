@@ -74,9 +74,16 @@ export default function TutorOS() {
         </ul>
       </div>
 
+      <h2>Student profiles</h2>
+      <figure className="case-image tutoros-student-profile">
+        <img src="/studentprofile1.png" alt="TutorOS student profiles, first view" loading="lazy" />
+      </figure>
+      <figure className="case-image tutoros-student-profile">
+        <img src="/studentprofile2.png" alt="TutorOS student profiles, second view" loading="lazy" />
+      </figure>
+
       {/* Replace these placeholder sources with screenshots added to public/. */}
       {[
-        "Student profiles",
         "Tutoring sessions and learning plans",
         "Parent updates",
       ].map((title) => (

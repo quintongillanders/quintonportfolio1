@@ -75,29 +75,26 @@ export default function TutorOS() {
       </div>
 
       <h2>Student profiles</h2>
-      <figure className="case-image tutoros-student-profile">
+      <figure className="case-image tutoros-screenshot">
         <img src="/studentprofile1.png" alt="TutorOS student profiles, first view" loading="lazy" />
       </figure>
-      <figure className="case-image tutoros-student-profile">
+      <figure className="case-image tutoros-screenshot">
         <img src="/studentprofile2.png" alt="TutorOS student profiles, second view" loading="lazy" />
       </figure>
 
-      {/* Replace these placeholder sources with screenshots added to public/. */}
-      {[
-        "Tutoring sessions and learning plans",
-        "Parent updates",
-      ].map((title) => (
-        <div key={title}>
-          <h2>{title}</h2>
-          <figure className="case-image">
-            <img
-              src="/tutoros-screenshot-placeholder.svg"
-              alt={`${title} screenshot placeholder`}
-              loading="lazy"
-            />
-          </figure>
-        </div>
-      ))}
+      <h2>Tutoring sessions and learning plans</h2>
+      <figure className="case-image tutoros-screenshot">
+        <img src="/sessionscreen.png" alt="TutorOS tutoring sessions and learning plans" loading="lazy" />
+      </figure>
+
+      <h2>Parent updates</h2>
+      <figure className="case-image">
+        <img
+          src="/tutoros-screenshot-placeholder.svg"
+          alt="Parent updates screenshot placeholder"
+          loading="lazy"
+        />
+      </figure>
 
       <h2>Project Outcome</h2>
       <div className="case-card">

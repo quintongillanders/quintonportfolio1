@@ -512,11 +512,11 @@ html:not([data-theme="light"]) .experience-content span {
   transition: transform 0.3s ease;
 }
 
-.tutoros-student-profile {
+.tutoros-screenshot {
   margin-inline: auto;
 }
 
-.tutoros-student-profile img {
+.tutoros-screenshot img {
   box-sizing: border-box;
   max-width: 100%;
   height: auto;

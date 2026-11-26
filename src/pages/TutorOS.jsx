@@ -88,10 +88,17 @@ export default function TutorOS() {
       </figure>
 
       <h2>Parent updates</h2>
-      <figure className="case-image">
+      <figure className="case-image tutoros-screenshot">
         <img
-          src="/tutoros-screenshot-placeholder.svg"
-          alt="Parent updates screenshot placeholder"
+          src="/parent%20update1.png"
+          alt="TutorOS parent updates, first view"
+          loading="lazy"
+        />
+      </figure>
+      <figure className="case-image tutoros-screenshot">
+        <img
+          src="/parent%20update2.png"
+          alt="TutorOS parent updates, second view"
           loading="lazy"
         />
       </figure>
